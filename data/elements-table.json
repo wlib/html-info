@@ -1,0 +1,1708 @@
+[
+  {
+    "tag": "a",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element",
+    "descriptionText": "Hyperlink",
+    "specificAttributes": [
+      {
+        "attribute": "href",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href"
+      },
+      {
+        "attribute": "target",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target"
+      },
+      {
+        "attribute": "download",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download"
+      },
+      {
+        "attribute": "ping",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#ping"
+      },
+      {
+        "attribute": "rel",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel"
+      },
+      {
+        "attribute": "hreflang",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang"
+      },
+      {
+        "attribute": "type",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type"
+      },
+      {
+        "attribute": "referrerpolicy",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy"
+      }
+    ]
+  },
+  {
+    "tag": "abbr",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-abbr-element",
+    "descriptionText": "Abbreviation",
+    "specificAttributes": []
+  },
+  {
+    "tag": "address",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-address-element",
+    "descriptionText": "Contact information for a page or article element",
+    "specificAttributes": []
+  },
+  {
+    "tag": "area",
+    "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#the-area-element",
+    "descriptionText": "Hyperlink or dead area on an image map",
+    "specificAttributes": [
+      {
+        "attribute": "alt",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-alt"
+      },
+      {
+        "attribute": "coords",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-coords"
+      },
+      {
+        "attribute": "shape",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape"
+      },
+      {
+        "attribute": "href",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href"
+      },
+      {
+        "attribute": "target",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target"
+      },
+      {
+        "attribute": "download",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download"
+      },
+      {
+        "attribute": "ping",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#ping"
+      },
+      {
+        "attribute": "rel",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel"
+      },
+      {
+        "attribute": "referrerpolicy",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy"
+      }
+    ]
+  },
+  {
+    "tag": "article",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-article-element",
+    "descriptionText": "Self-contained syndicatable or reusable composition",
+    "specificAttributes": []
+  },
+  {
+    "tag": "aside",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-aside-element",
+    "descriptionText": "Sidebar for tangentially related content",
+    "specificAttributes": []
+  },
+  {
+    "tag": "audio",
+    "specLink": "https://html.spec.whatwg.org/multipage/media.html#the-audio-element",
+    "descriptionText": "Audio player",
+    "specificAttributes": [
+      {
+        "attribute": "src",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-src"
+      },
+      {
+        "attribute": "crossorigin",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin"
+      },
+      {
+        "attribute": "preload",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload"
+      },
+      {
+        "attribute": "autoplay",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay"
+      },
+      {
+        "attribute": "loop",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop"
+      },
+      {
+        "attribute": "muted",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted"
+      },
+      {
+        "attribute": "controls",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls"
+      }
+    ]
+  },
+  {
+    "tag": "b",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element",
+    "descriptionText": "Keywords",
+    "specificAttributes": []
+  },
+  {
+    "tag": "base",
+    "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-base-element",
+    "descriptionText": "Base URL and default target navigable for hyperlinks and forms",
+    "specificAttributes": [
+      {
+        "attribute": "href",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href"
+      },
+      {
+        "attribute": "target",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-target"
+      }
+    ]
+  },
+  {
+    "tag": "bdi",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdi-element",
+    "descriptionText": "Text directionality isolation",
+    "specificAttributes": []
+  },
+  {
+    "tag": "bdo",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element",
+    "descriptionText": "Text directionality formatting",
+    "specificAttributes": []
+  },
+  {
+    "tag": "blockquote",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element",
+    "descriptionText": "A section quoted from another source",
+    "specificAttributes": [
+      {
+        "attribute": "cite",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-blockquote-cite"
+      }
+    ]
+  },
+  {
+    "tag": "body",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-body-element",
+    "descriptionText": "Document body",
+    "specificAttributes": [
+      {
+        "attribute": "onafterprint",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onafterprint"
+      },
+      {
+        "attribute": "onbeforeprint",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeprint"
+      },
+      {
+        "attribute": "onbeforeunload",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeunload"
+      },
+      {
+        "attribute": "onhashchange",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onhashchange"
+      },
+      {
+        "attribute": "onlanguagechange",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onlanguagechange"
+      },
+      {
+        "attribute": "onmessage",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessage"
+      },
+      {
+        "attribute": "onmessageerror",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessageerror"
+      },
+      {
+        "attribute": "onoffline",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onoffline"
+      },
+      {
+        "attribute": "ononline",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-ononline"
+      },
+      {
+        "attribute": "onpagehide",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpagehide"
+      },
+      {
+        "attribute": "onpageshow",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageshow"
+      },
+      {
+        "attribute": "onpopstate",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpopstate"
+      },
+      {
+        "attribute": "onrejectionhandled",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onrejectionhandled"
+      },
+      {
+        "attribute": "onstorage",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onstorage"
+      },
+      {
+        "attribute": "onunhandledrejection",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunhandledrejection"
+      },
+      {
+        "attribute": "onunload",
+        "specLink": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunload"
+      }
+    ]
+  },
+  {
+    "tag": "br",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-br-element",
+    "descriptionText": "Line break, e.g. in poem or postal address",
+    "specificAttributes": []
+  },
+  {
+    "tag": "button",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element",
+    "descriptionText": "Button control",
+    "specificAttributes": [
+      {
+        "attribute": "disabled",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled"
+      },
+      {
+        "attribute": "form",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form"
+      },
+      {
+        "attribute": "formaction",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction"
+      },
+      {
+        "attribute": "formenctype",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype"
+      },
+      {
+        "attribute": "formmethod",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod"
+      },
+      {
+        "attribute": "formnovalidate",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate"
+      },
+      {
+        "attribute": "formtarget",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget"
+      },
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name"
+      },
+      {
+        "attribute": "popoverhidetarget",
+        "specLink": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hide-target"
+      },
+      {
+        "attribute": "popovershowtarget",
+        "specLink": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-show-target"
+      },
+      {
+        "attribute": "popovertoggletarget",
+        "specLink": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-toggle-target"
+      },
+      {
+        "attribute": "type",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type"
+      },
+      {
+        "attribute": "value",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-value"
+      }
+    ]
+  },
+  {
+    "tag": "canvas",
+    "specLink": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-element",
+    "descriptionText": "Scriptable bitmap canvas",
+    "specificAttributes": [
+      {
+        "attribute": "width",
+        "specLink": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-width"
+      },
+      {
+        "attribute": "height",
+        "specLink": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height"
+      }
+    ]
+  },
+  {
+    "tag": "caption",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-caption-element",
+    "descriptionText": "Table caption",
+    "specificAttributes": []
+  },
+  {
+    "tag": "cite",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-cite-element",
+    "descriptionText": "Title of a work",
+    "specificAttributes": []
+  },
+  {
+    "tag": "code",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-code-element",
+    "descriptionText": "Computer code",
+    "specificAttributes": []
+  },
+  {
+    "tag": "col",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-col-element",
+    "descriptionText": "Table column",
+    "specificAttributes": [
+      {
+        "attribute": "span",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-col-span"
+      }
+    ]
+  },
+  {
+    "tag": "colgroup",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-colgroup-element",
+    "descriptionText": "Group of columns in a table",
+    "specificAttributes": [
+      {
+        "attribute": "span",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-colgroup-span"
+      }
+    ]
+  },
+  {
+    "tag": "data",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-data-element",
+    "descriptionText": "Machine-readable equivalent",
+    "specificAttributes": [
+      {
+        "attribute": "value",
+        "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-data-value"
+      }
+    ]
+  },
+  {
+    "tag": "datalist",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-datalist-element",
+    "descriptionText": "Container for options for combo box control",
+    "specificAttributes": []
+  },
+  {
+    "tag": "dd",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dd-element",
+    "descriptionText": "Content for corresponding dt element(s)",
+    "specificAttributes": []
+  },
+  {
+    "tag": "del",
+    "specLink": "https://html.spec.whatwg.org/multipage/edits.html#the-del-element",
+    "descriptionText": "A removal from the document",
+    "specificAttributes": [
+      {
+        "attribute": "cite",
+        "specLink": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite"
+      },
+      {
+        "attribute": "datetime",
+        "specLink": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime"
+      }
+    ]
+  },
+  {
+    "tag": "details",
+    "specLink": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element",
+    "descriptionText": "Disclosure control for hiding details",
+    "specificAttributes": [
+      {
+        "attribute": "open",
+        "specLink": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-open"
+      }
+    ]
+  },
+  {
+    "tag": "dfn",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-dfn-element",
+    "descriptionText": "Defining instance",
+    "specificAttributes": []
+  },
+  {
+    "tag": "dialog",
+    "specLink": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element",
+    "descriptionText": "Dialog box or window",
+    "specificAttributes": [
+      {
+        "attribute": "open",
+        "specLink": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-open"
+      }
+    ]
+  },
+  {
+    "tag": "div",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-div-element",
+    "descriptionText": "Generic flow container, or container for name-value groups in dl elements",
+    "specificAttributes": []
+  },
+  {
+    "tag": "dl",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element",
+    "descriptionText": "Association list consisting of zero or more name-value groups",
+    "specificAttributes": []
+  },
+  {
+    "tag": "dt",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-dt-element",
+    "descriptionText": "Legend for corresponding dd element(s)",
+    "specificAttributes": []
+  },
+  {
+    "tag": "em",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element",
+    "descriptionText": "Stress emphasis",
+    "specificAttributes": []
+  },
+  {
+    "tag": "embed",
+    "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-embed-element",
+    "descriptionText": "Plugin",
+    "specificAttributes": [
+      {
+        "attribute": "src",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src"
+      },
+      {
+        "attribute": "type",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type"
+      },
+      {
+        "attribute": "width",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+      },
+      {
+        "attribute": "height",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+      }
+    ]
+  },
+  {
+    "tag": "fieldset",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-fieldset-element",
+    "descriptionText": "Group of form controls",
+    "specificAttributes": [
+      {
+        "attribute": "disabled",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled"
+      },
+      {
+        "attribute": "form",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form"
+      },
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name"
+      }
+    ]
+  },
+  {
+    "tag": "figcaption",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figcaption-element",
+    "descriptionText": "Caption for figure",
+    "specificAttributes": []
+  },
+  {
+    "tag": "figure",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-figure-element",
+    "descriptionText": "Figure with optional caption",
+    "specificAttributes": []
+  },
+  {
+    "tag": "footer",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-footer-element",
+    "descriptionText": "Footer for a page or section",
+    "specificAttributes": []
+  },
+  {
+    "tag": "form",
+    "specLink": "https://html.spec.whatwg.org/multipage/forms.html#the-form-element",
+    "descriptionText": "User-submittable form",
+    "specificAttributes": [
+      {
+        "attribute": "accept-charset",
+        "specLink": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-accept-charset"
+      },
+      {
+        "attribute": "action",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-action"
+      },
+      {
+        "attribute": "autocomplete",
+        "specLink": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-autocomplete"
+      },
+      {
+        "attribute": "enctype",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype"
+      },
+      {
+        "attribute": "method",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method"
+      },
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-name"
+      },
+      {
+        "attribute": "novalidate",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-novalidate"
+      },
+      {
+        "attribute": "rel",
+        "specLink": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-rel"
+      },
+      {
+        "attribute": "target",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-target"
+      }
+    ]
+  },
+  {
+    "tag": "h1",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": []
+  },
+  {
+    "tag": "head",
+    "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
+    "descriptionText": "Container for document metadata",
+    "specificAttributes": []
+  },
+  {
+    "tag": "header",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-header-element",
+    "descriptionText": "Introductory or navigational aids for a page or section",
+    "specificAttributes": []
+  },
+  {
+    "tag": "hgroup",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-hgroup-element",
+    "descriptionText": "Heading container",
+    "specificAttributes": []
+  },
+  {
+    "tag": "hr",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-hr-element",
+    "descriptionText": "Thematic break",
+    "specificAttributes": []
+  },
+  {
+    "tag": "html",
+    "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-html-element",
+    "descriptionText": "Root element",
+    "specificAttributes": [
+      {
+        "attribute": "manifest",
+        "specLink": "https://html.spec.whatwg.org/multipage/obsolete.html#attr-html-manifest"
+      }
+    ]
+  },
+  {
+    "tag": "i",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element",
+    "descriptionText": "Alternate voice",
+    "specificAttributes": []
+  },
+  {
+    "tag": "iframe",
+    "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element",
+    "descriptionText": "Child navigable",
+    "specificAttributes": [
+      {
+        "attribute": "src",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src"
+      },
+      {
+        "attribute": "srcdoc",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc"
+      },
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name"
+      },
+      {
+        "attribute": "sandbox",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox"
+      },
+      {
+        "attribute": "allow",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow"
+      },
+      {
+        "attribute": "allowfullscreen",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen"
+      },
+      {
+        "attribute": "width",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+      },
+      {
+        "attribute": "height",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+      },
+      {
+        "attribute": "referrerpolicy",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-referrerpolicy"
+      },
+      {
+        "attribute": "loading",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-loading"
+      }
+    ]
+  },
+  {
+    "tag": "img",
+    "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-img-element",
+    "descriptionText": "Image",
+    "specificAttributes": [
+      {
+        "attribute": "alt",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt"
+      },
+      {
+        "attribute": "src",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src"
+      },
+      {
+        "attribute": "srcset",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset"
+      },
+      {
+        "attribute": "sizes",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-sizes"
+      },
+      {
+        "attribute": "crossorigin",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin"
+      },
+      {
+        "attribute": "usemap",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap"
+      },
+      {
+        "attribute": "ismap",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap"
+      },
+      {
+        "attribute": "width",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+      },
+      {
+        "attribute": "height",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+      },
+      {
+        "attribute": "referrerpolicy",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-referrerpolicy"
+      },
+      {
+        "attribute": "decoding",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-decoding"
+      },
+      {
+        "attribute": "loading",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading"
+      }
+    ]
+  },
+  {
+    "tag": "input",
+    "specLink": "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
+    "descriptionText": "Form control",
+    "specificAttributes": [
+      {
+        "attribute": "accept",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-accept"
+      },
+      {
+        "attribute": "alt",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-alt"
+      },
+      {
+        "attribute": "autocomplete",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete"
+      },
+      {
+        "attribute": "checked",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-checked"
+      },
+      {
+        "attribute": "dirname",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname"
+      },
+      {
+        "attribute": "disabled",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled"
+      },
+      {
+        "attribute": "form",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form"
+      },
+      {
+        "attribute": "formaction",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction"
+      },
+      {
+        "attribute": "formenctype",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype"
+      },
+      {
+        "attribute": "formmethod",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod"
+      },
+      {
+        "attribute": "formnovalidate",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate"
+      },
+      {
+        "attribute": "formtarget",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget"
+      },
+      {
+        "attribute": "height",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+      },
+      {
+        "attribute": "list",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-list"
+      },
+      {
+        "attribute": "max",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-max"
+      },
+      {
+        "attribute": "maxlength",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength"
+      },
+      {
+        "attribute": "min",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-min"
+      },
+      {
+        "attribute": "minlength",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-minlength"
+      },
+      {
+        "attribute": "multiple",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple"
+      },
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name"
+      },
+      {
+        "attribute": "pattern",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern"
+      },
+      {
+        "attribute": "placeholder",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-placeholder"
+      },
+      {
+        "attribute": "popoverhidetarget",
+        "specLink": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hide-target"
+      },
+      {
+        "attribute": "popovershowtarget",
+        "specLink": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-show-target"
+      },
+      {
+        "attribute": "popovertoggletarget",
+        "specLink": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover-toggle-target"
+      },
+      {
+        "attribute": "readonly",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly"
+      },
+      {
+        "attribute": "required",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-required"
+      },
+      {
+        "attribute": "size",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-size"
+      },
+      {
+        "attribute": "src",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-src"
+      },
+      {
+        "attribute": "step",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-step"
+      },
+      {
+        "attribute": "type",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-type"
+      },
+      {
+        "attribute": "value",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-value"
+      },
+      {
+        "attribute": "width",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+      }
+    ]
+  },
+  {
+    "tag": "ins",
+    "specLink": "https://html.spec.whatwg.org/multipage/edits.html#the-ins-element",
+    "descriptionText": "An addition to the document",
+    "specificAttributes": [
+      {
+        "attribute": "cite",
+        "specLink": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite"
+      },
+      {
+        "attribute": "datetime",
+        "specLink": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime"
+      }
+    ]
+  },
+  {
+    "tag": "kbd",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-kbd-element",
+    "descriptionText": "User input",
+    "specificAttributes": []
+  },
+  {
+    "tag": "label",
+    "specLink": "https://html.spec.whatwg.org/multipage/forms.html#the-label-element",
+    "descriptionText": "Caption for a form control",
+    "specificAttributes": [
+      {
+        "attribute": "for",
+        "specLink": "https://html.spec.whatwg.org/multipage/forms.html#attr-label-for"
+      }
+    ]
+  },
+  {
+    "tag": "legend",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element",
+    "descriptionText": "Caption for fieldset",
+    "specificAttributes": []
+  },
+  {
+    "tag": "li",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-li-element",
+    "descriptionText": "List item",
+    "specificAttributes": [
+      {
+        "attribute": "value",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-li-value"
+      }
+    ]
+  },
+  {
+    "tag": "link",
+    "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-link-element",
+    "descriptionText": "Link metadata",
+    "specificAttributes": [
+      {
+        "attribute": "href",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-href"
+      },
+      {
+        "attribute": "crossorigin",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin"
+      },
+      {
+        "attribute": "rel",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel"
+      },
+      {
+        "attribute": "as",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-as"
+      },
+      {
+        "attribute": "media",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-media"
+      },
+      {
+        "attribute": "hreflang",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-hreflang"
+      },
+      {
+        "attribute": "type",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type"
+      },
+      {
+        "attribute": "sizes",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-sizes"
+      },
+      {
+        "attribute": "imagesrcset",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset"
+      },
+      {
+        "attribute": "imagesizes",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesizes"
+      },
+      {
+        "attribute": "referrerpolicy",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-referrerpolicy"
+      },
+      {
+        "attribute": "integrity",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-integrity"
+      },
+      {
+        "attribute": "blocking",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking"
+      },
+      {
+        "attribute": "color",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-color"
+      },
+      {
+        "attribute": "disabled",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled"
+      }
+    ]
+  },
+  {
+    "tag": "main",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element",
+    "descriptionText": "Container for the dominant contents of the document",
+    "specificAttributes": []
+  },
+  {
+    "tag": "map",
+    "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#the-map-element",
+    "descriptionText": "Image map",
+    "specificAttributes": [
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-map-name"
+      }
+    ]
+  },
+  {
+    "tag": "mark",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element",
+    "descriptionText": "Highlight",
+    "specificAttributes": []
+  },
+  {
+    "tag": "math",
+    "specLink": "https://www.w3.org/Math/draft-spec/chapter2.html#interf.toplevel",
+    "descriptionText": "MathML root",
+    "specificAttributes": []
+  },
+  {
+    "tag": "menu",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-menu-element",
+    "descriptionText": "Menu of commands",
+    "specificAttributes": []
+  },
+  {
+    "tag": "meta",
+    "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
+    "descriptionText": "Text metadata",
+    "specificAttributes": [
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-name"
+      },
+      {
+        "attribute": "http-equiv",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv"
+      },
+      {
+        "attribute": "content",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-content"
+      },
+      {
+        "attribute": "charset",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-charset"
+      },
+      {
+        "attribute": "media",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media"
+      }
+    ]
+  },
+  {
+    "tag": "meter",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-meter-element",
+    "descriptionText": "Gauge",
+    "specificAttributes": [
+      {
+        "attribute": "value",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-value"
+      },
+      {
+        "attribute": "min",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-min"
+      },
+      {
+        "attribute": "max",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max"
+      },
+      {
+        "attribute": "low",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-low"
+      },
+      {
+        "attribute": "high",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-high"
+      },
+      {
+        "attribute": "optimum",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-optimum"
+      }
+    ]
+  },
+  {
+    "tag": "nav",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-nav-element",
+    "descriptionText": "Section with navigational links",
+    "specificAttributes": []
+  },
+  {
+    "tag": "noscript",
+    "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element",
+    "descriptionText": "Fallback content for script",
+    "specificAttributes": []
+  },
+  {
+    "tag": "object",
+    "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-object-element",
+    "descriptionText": "Image, child navigable, or plugin",
+    "specificAttributes": [
+      {
+        "attribute": "data",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-data"
+      },
+      {
+        "attribute": "type",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type"
+      },
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-name"
+      },
+      {
+        "attribute": "form",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form"
+      },
+      {
+        "attribute": "width",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+      },
+      {
+        "attribute": "height",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+      }
+    ]
+  },
+  {
+    "tag": "ol",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ol-element",
+    "descriptionText": "Ordered list",
+    "specificAttributes": [
+      {
+        "attribute": "reversed",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-reversed"
+      },
+      {
+        "attribute": "start",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-start"
+      },
+      {
+        "attribute": "type",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type"
+      }
+    ]
+  },
+  {
+    "tag": "optgroup",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-optgroup-element",
+    "descriptionText": "Group of options in a list box",
+    "specificAttributes": [
+      {
+        "attribute": "disabled",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled"
+      },
+      {
+        "attribute": "label",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-label"
+      }
+    ]
+  },
+  {
+    "tag": "option",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element",
+    "descriptionText": "Option in a list box or combo box control",
+    "specificAttributes": [
+      {
+        "attribute": "disabled",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled"
+      },
+      {
+        "attribute": "label",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label"
+      },
+      {
+        "attribute": "selected",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected"
+      },
+      {
+        "attribute": "value",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value"
+      }
+    ]
+  },
+  {
+    "tag": "output",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element",
+    "descriptionText": "Calculated output value",
+    "specificAttributes": [
+      {
+        "attribute": "for",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-output-for"
+      },
+      {
+        "attribute": "form",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form"
+      },
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name"
+      }
+    ]
+  },
+  {
+    "tag": "p",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-p-element",
+    "descriptionText": "Paragraph",
+    "specificAttributes": []
+  },
+  {
+    "tag": "picture",
+    "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element",
+    "descriptionText": "Image",
+    "specificAttributes": []
+  },
+  {
+    "tag": "pre",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-pre-element",
+    "descriptionText": "Block of preformatted text",
+    "specificAttributes": []
+  },
+  {
+    "tag": "progress",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-progress-element",
+    "descriptionText": "Progress bar",
+    "specificAttributes": [
+      {
+        "attribute": "value",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value"
+      },
+      {
+        "attribute": "max",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max"
+      }
+    ]
+  },
+  {
+    "tag": "q",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element",
+    "descriptionText": "Quotation",
+    "specificAttributes": [
+      {
+        "attribute": "cite",
+        "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-q-cite"
+      }
+    ]
+  },
+  {
+    "tag": "rp",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rp-element",
+    "descriptionText": "Parenthesis for ruby annotation text",
+    "specificAttributes": []
+  },
+  {
+    "tag": "rt",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-rt-element",
+    "descriptionText": "Ruby annotation text",
+    "specificAttributes": []
+  },
+  {
+    "tag": "ruby",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-ruby-element",
+    "descriptionText": "Ruby annotation(s)",
+    "specificAttributes": []
+  },
+  {
+    "tag": "s",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-s-element",
+    "descriptionText": "Inaccurate text",
+    "specificAttributes": []
+  },
+  {
+    "tag": "samp",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-samp-element",
+    "descriptionText": "Computer output",
+    "specificAttributes": []
+  },
+  {
+    "tag": "script",
+    "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#the-script-element",
+    "descriptionText": "Embedded script",
+    "specificAttributes": [
+      {
+        "attribute": "src",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src"
+      },
+      {
+        "attribute": "type",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type"
+      },
+      {
+        "attribute": "nomodule",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule"
+      },
+      {
+        "attribute": "async",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async"
+      },
+      {
+        "attribute": "defer",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-defer"
+      },
+      {
+        "attribute": "crossorigin",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin"
+      },
+      {
+        "attribute": "integrity",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-integrity"
+      },
+      {
+        "attribute": "referrerpolicy",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-referrerpolicy"
+      },
+      {
+        "attribute": "blocking",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking"
+      }
+    ]
+  },
+  {
+    "tag": "section",
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-section-element",
+    "descriptionText": "Generic document or application section",
+    "specificAttributes": []
+  },
+  {
+    "tag": "select",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-select-element",
+    "descriptionText": "List box control",
+    "specificAttributes": [
+      {
+        "attribute": "autocomplete",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete"
+      },
+      {
+        "attribute": "disabled",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled"
+      },
+      {
+        "attribute": "form",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form"
+      },
+      {
+        "attribute": "multiple",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple"
+      },
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name"
+      },
+      {
+        "attribute": "required",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-required"
+      },
+      {
+        "attribute": "size",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size"
+      }
+    ]
+  },
+  {
+    "tag": "slot",
+    "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element",
+    "descriptionText": "Shadow tree slot",
+    "specificAttributes": [
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-slot-name"
+      }
+    ]
+  },
+  {
+    "tag": "small",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-small-element",
+    "descriptionText": "Side comment",
+    "specificAttributes": []
+  },
+  {
+    "tag": "source",
+    "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element",
+    "descriptionText": "Image source for img or media source for video or audio",
+    "specificAttributes": [
+      {
+        "attribute": "src",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-src"
+      },
+      {
+        "attribute": "type",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type"
+      },
+      {
+        "attribute": "srcset",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset"
+      },
+      {
+        "attribute": "sizes",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-sizes"
+      },
+      {
+        "attribute": "media",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-media"
+      },
+      {
+        "attribute": "width",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+      },
+      {
+        "attribute": "height",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+      }
+    ]
+  },
+  {
+    "tag": "span",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element",
+    "descriptionText": "Generic phrasing container",
+    "specificAttributes": []
+  },
+  {
+    "tag": "strong",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-strong-element",
+    "descriptionText": "Importance",
+    "specificAttributes": []
+  },
+  {
+    "tag": "style",
+    "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-style-element",
+    "descriptionText": "Embedded styling information",
+    "specificAttributes": [
+      {
+        "attribute": "media",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-media"
+      },
+      {
+        "attribute": "blocking",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking"
+      }
+    ]
+  },
+  {
+    "tag": "sub",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements",
+    "descriptionText": "Subscript",
+    "specificAttributes": []
+  },
+  {
+    "tag": "summary",
+    "specLink": "https://html.spec.whatwg.org/multipage/interactive-elements.html#the-summary-element",
+    "descriptionText": "Caption for details",
+    "specificAttributes": []
+  },
+  {
+    "tag": "sup",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements",
+    "descriptionText": "Superscript",
+    "specificAttributes": []
+  },
+  {
+    "tag": "svg",
+    "specLink": "https://svgwg.org/svg2-draft/struct.html#SVGElement",
+    "descriptionText": "SVG root",
+    "specificAttributes": []
+  },
+  {
+    "tag": "table",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-table-element",
+    "descriptionText": "Table",
+    "specificAttributes": []
+  },
+  {
+    "tag": "tbody",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-tbody-element",
+    "descriptionText": "Group of rows in a table",
+    "specificAttributes": []
+  },
+  {
+    "tag": "td",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-td-element",
+    "descriptionText": "Table cell",
+    "specificAttributes": [
+      {
+        "attribute": "colspan",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan"
+      },
+      {
+        "attribute": "rowspan",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan"
+      },
+      {
+        "attribute": "headers",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers"
+      }
+    ]
+  },
+  {
+    "tag": "template",
+    "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#the-template-element",
+    "descriptionText": "Template",
+    "specificAttributes": []
+  },
+  {
+    "tag": "textarea",
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-textarea-element",
+    "descriptionText": "Multiline text controls",
+    "specificAttributes": [
+      {
+        "attribute": "autocomplete",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete"
+      },
+      {
+        "attribute": "cols",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols"
+      },
+      {
+        "attribute": "dirname",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname"
+      },
+      {
+        "attribute": "disabled",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled"
+      },
+      {
+        "attribute": "form",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form"
+      },
+      {
+        "attribute": "maxlength",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength"
+      },
+      {
+        "attribute": "minlength",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-minlength"
+      },
+      {
+        "attribute": "name",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name"
+      },
+      {
+        "attribute": "placeholder",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-placeholder"
+      },
+      {
+        "attribute": "readonly",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly"
+      },
+      {
+        "attribute": "required",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-required"
+      },
+      {
+        "attribute": "rows",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-rows"
+      },
+      {
+        "attribute": "wrap",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap"
+      }
+    ]
+  },
+  {
+    "tag": "tfoot",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element",
+    "descriptionText": "Group of footer rows in a table",
+    "specificAttributes": []
+  },
+  {
+    "tag": "th",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-th-element",
+    "descriptionText": "Table header cell",
+    "specificAttributes": [
+      {
+        "attribute": "colspan",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan"
+      },
+      {
+        "attribute": "rowspan",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan"
+      },
+      {
+        "attribute": "headers",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers"
+      },
+      {
+        "attribute": "scope",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope"
+      },
+      {
+        "attribute": "abbr",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-abbr"
+      }
+    ]
+  },
+  {
+    "tag": "thead",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-thead-element",
+    "descriptionText": "Group of heading rows in a table",
+    "specificAttributes": []
+  },
+  {
+    "tag": "time",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-time-element",
+    "descriptionText": "Machine-readable equivalent of date- or time-related data",
+    "specificAttributes": [
+      {
+        "attribute": "datetime",
+        "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-time-datetime"
+      }
+    ]
+  },
+  {
+    "tag": "title",
+    "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-title-element",
+    "descriptionText": "Document title",
+    "specificAttributes": []
+  },
+  {
+    "tag": "tr",
+    "specLink": "https://html.spec.whatwg.org/multipage/tables.html#the-tr-element",
+    "descriptionText": "Table row",
+    "specificAttributes": []
+  },
+  {
+    "tag": "track",
+    "specLink": "https://html.spec.whatwg.org/multipage/media.html#the-track-element",
+    "descriptionText": "Timed text track",
+    "specificAttributes": [
+      {
+        "attribute": "default",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-default"
+      },
+      {
+        "attribute": "kind",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-kind"
+      },
+      {
+        "attribute": "label",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-label"
+      },
+      {
+        "attribute": "src",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-src"
+      },
+      {
+        "attribute": "srclang",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-srclang"
+      }
+    ]
+  },
+  {
+    "tag": "u",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-u-element",
+    "descriptionText": "Unarticulated annotation",
+    "specificAttributes": []
+  },
+  {
+    "tag": "ul",
+    "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element",
+    "descriptionText": "List",
+    "specificAttributes": []
+  },
+  {
+    "tag": "var",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-var-element",
+    "descriptionText": "Variable",
+    "specificAttributes": []
+  },
+  {
+    "tag": "video",
+    "specLink": "https://html.spec.whatwg.org/multipage/media.html#the-video-element",
+    "descriptionText": "Video player",
+    "specificAttributes": [
+      {
+        "attribute": "src",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-src"
+      },
+      {
+        "attribute": "crossorigin",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin"
+      },
+      {
+        "attribute": "poster",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-video-poster"
+      },
+      {
+        "attribute": "preload",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload"
+      },
+      {
+        "attribute": "autoplay",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay"
+      },
+      {
+        "attribute": "playsinline",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-video-playsinline"
+      },
+      {
+        "attribute": "loop",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop"
+      },
+      {
+        "attribute": "muted",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted"
+      },
+      {
+        "attribute": "controls",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls"
+      },
+      {
+        "attribute": "width",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
+      },
+      {
+        "attribute": "height",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height"
+      }
+    ]
+  },
+  {
+    "tag": "wbr",
+    "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-wbr-element",
+    "descriptionText": "Line breaking opportunity",
+    "specificAttributes": []
+  }
+]

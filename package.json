@@ -1,0 +1,27 @@
+{
+  "name": "html-info",
+  "description": "Practical data and typescript types for HTML",
+  "keywords": [
+    "html",
+    "attributes",
+    "typescript",
+    "types"
+  ],
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Ethridge",
+    "url": "https://git.io/de"
+  },
+  "homepage": "https://github.com/wlib/html-info#readme",
+  "bugs": "https://github.com/wlib/html-info/issues",
+  "repository": "https://github.com/wlib/html-info.git",
+  "types": "./index.d.ts",
+  "scripts": {
+    "build": "node ./build.mjs",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "jsdom": "^21.1.0"
+  }
+}
