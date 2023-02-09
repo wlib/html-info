@@ -1,0 +1,2477 @@
+[
+  {
+    "attribute": "abbr",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-abbr",
+        "element": "th"
+      }
+    ],
+    "descriptionText": "Alternative label to use for the header cell when referencing the cell in other contexts",
+    "value": "Text*"
+  },
+  {
+    "attribute": "accept",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-accept",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Hint for expected file type in file upload controls",
+    "value": "Set of comma-separated tokens* consisting of valid MIME type strings with no parameters or audio/*, video/*, or image/*"
+  },
+  {
+    "attribute": "accept-charset",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-accept-charset",
+        "element": "form"
+      }
+    ],
+    "descriptionText": "Character encodings to use for form submission",
+    "value": "ASCII case-insensitive match for \"UTF-8\""
+  },
+  {
+    "attribute": "accesskey",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute"
+      }
+    ],
+    "descriptionText": "Keyboard shortcut to activate or focus element",
+    "value": "Ordered set of unique space-separated tokens, none of which are identical to another, each consisting of one code point in length"
+  },
+  {
+    "attribute": "action",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-action",
+        "element": "form"
+      }
+    ],
+    "descriptionText": "URL to use for form submission",
+    "value": "Valid non-empty URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "allow",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow",
+        "element": "iframe"
+      }
+    ],
+    "descriptionText": "Permissions policy to be applied to the iframe's contents",
+    "value": "Serialized permissions policy"
+  },
+  {
+    "attribute": "allowfullscreen",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowfullscreen",
+        "element": "iframe"
+      }
+    ],
+    "descriptionText": "Whether to allow the iframe's contents to use requestFullscreen()",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "alt",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-alt",
+        "element": "area"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-alt",
+        "element": "img"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-alt",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Replacement text for use when images are not available",
+    "value": "Text*"
+  },
+  {
+    "attribute": "as",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-as",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Potential destination for a preload request (for rel=\"preload\" and rel=\"modulepreload\")",
+    "value": "Potential destination, for rel=\"preload\"; script-like destination, for rel=\"modulepreload\""
+  },
+  {
+    "attribute": "async",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-async",
+        "element": "script"
+      }
+    ],
+    "descriptionText": "Execute script when available, without blocking while fetching",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "autocapitalize",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize"
+      }
+    ],
+    "descriptionText": "Recommended autocapitalization behavior (for supported input methods)",
+    "value": "\"on\";\n          \"off\";\n          \"none\";\n          \"sentences\";\n          \"words\";\n          \"characters\""
+  },
+  {
+    "attribute": "autocomplete",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-autocomplete",
+        "element": "form"
+      }
+    ],
+    "descriptionText": "Default setting for autofill feature for controls in the form",
+    "value": "\"on\"; \"off\""
+  },
+  {
+    "attribute": "autocomplete",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+        "element": "select"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-autocomplete",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "Hint for form autofill feature",
+    "value": "Autofill field name and related tokens*"
+  },
+  {
+    "attribute": "autofocus",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-fe-autofocus"
+      }
+    ],
+    "descriptionText": "Automatically focus the element when the page is loaded",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "autoplay",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay",
+        "element": "audio"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Hint that the media resource can be started automatically when the page is loaded",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "blocking",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-blocking",
+        "element": "link"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking",
+        "element": "script"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-blocking",
+        "element": "style"
+      }
+    ],
+    "descriptionText": "Whether the element is potentially render-blocking",
+    "value": "Unordered set of unique space-separated tokens*"
+  },
+  {
+    "attribute": "charset",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-charset",
+        "element": "meta"
+      }
+    ],
+    "descriptionText": "Character encoding declaration",
+    "value": "\"utf-8\""
+  },
+  {
+    "attribute": "checked",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-checked",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Whether the control is checked",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "cite",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-blockquote-cite",
+        "element": "blockquote"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite",
+        "element": "del"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-cite",
+        "element": "ins"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-q-cite",
+        "element": "q"
+      }
+    ],
+    "descriptionText": "Link to the source of the quotation or more information about the edit",
+    "value": "Valid URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "class",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/dom.html#classes"
+      }
+    ],
+    "descriptionText": "Classes to which the element belongs",
+    "value": "Set of space-separated tokens"
+  },
+  {
+    "attribute": "color",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-color",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Color to use when customizing a site's icon (for rel=\"mask-icon\")",
+    "value": "CSS <color>"
+  },
+  {
+    "attribute": "cols",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "Maximum number of characters per line",
+    "value": "Valid non-negative integer greater than zero"
+  },
+  {
+    "attribute": "colspan",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan",
+        "element": "td"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan",
+        "element": "th"
+      }
+    ],
+    "descriptionText": "Number of columns that the cell is to span",
+    "value": "Valid non-negative integer greater than zero"
+  },
+  {
+    "attribute": "content",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-content",
+        "element": "meta"
+      }
+    ],
+    "descriptionText": "Value of the element",
+    "value": "Text*"
+  },
+  {
+    "attribute": "contenteditable",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable"
+      }
+    ],
+    "descriptionText": "Whether the element is editable",
+    "value": "\"true\"; \"false\""
+  },
+  {
+    "attribute": "controls",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls",
+        "element": "audio"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-controls",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Show user agent controls",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "coords",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-coords",
+        "element": "area"
+      }
+    ],
+    "descriptionText": "Coordinates for the shape to be created in an image map",
+    "value": "Valid list of floating-point numbers*"
+  },
+  {
+    "attribute": "crossorigin",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin",
+        "element": "audio"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin",
+        "element": "img"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin",
+        "element": "link"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin",
+        "element": "script"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "How the element handles crossorigin requests",
+    "value": "\"anonymous\"; \"use-credentials\""
+  },
+  {
+    "attribute": "data",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-data",
+        "element": "object"
+      }
+    ],
+    "descriptionText": "Address of the resource",
+    "value": "Valid non-empty URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "datetime",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime",
+        "element": "del"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/edits.html#attr-mod-datetime",
+        "element": "ins"
+      }
+    ],
+    "descriptionText": "Date and (optionally) time of the change",
+    "value": "Valid date string with optional time"
+  },
+  {
+    "attribute": "datetime",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-time-datetime",
+        "element": "time"
+      }
+    ],
+    "descriptionText": "Machine-readable value",
+    "value": "Valid month string,\n          valid date string,\n          valid yearless date string,\n          valid time string,\n          valid local date and time string,\n          valid time-zone offset string,\n          valid global date and time string,\n          valid week string,\n          valid non-negative integer, or\n          valid duration string"
+  },
+  {
+    "attribute": "decoding",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-decoding",
+        "element": "img"
+      }
+    ],
+    "descriptionText": "Decoding hint to use when processing this image for presentation",
+    "value": "\"sync\";\n          \"async\";\n          \"auto\""
+  },
+  {
+    "attribute": "default",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-default",
+        "element": "track"
+      }
+    ],
+    "descriptionText": "Enable the track if no other text track is more suitable",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "defer",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-defer",
+        "element": "script"
+      }
+    ],
+    "descriptionText": "Defer script execution",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "dir",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-dir"
+      }
+    ],
+    "descriptionText": "The text directionality of the element",
+    "value": "\"ltr\"; \"rtl\"; \"auto\""
+  },
+  {
+    "attribute": "dir",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-bdo-element",
+        "element": "bdo"
+      }
+    ],
+    "descriptionText": "The text directionality of the element",
+    "value": "\"ltr\"; \"rtl\""
+  },
+  {
+    "attribute": "dirname",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-dirname",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "Name of form control to use for sending the element's directionality in form submission",
+    "value": "Text*"
+  },
+  {
+    "attribute": "disabled",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+        "element": "button"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-disabled",
+        "element": "optgroup"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-disabled",
+        "element": "option"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+        "element": "select"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled",
+        "element": "textarea"
+      },
+      {
+        "type": "form-associated custom elements",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled"
+      }
+    ],
+    "descriptionText": "Whether the form control is disabled",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "disabled",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-fieldset-disabled",
+        "element": "fieldset"
+      }
+    ],
+    "descriptionText": "Whether the descendant form controls, except any inside legend, are disabled",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "disabled",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Whether the link is disabled",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "download",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download",
+        "element": "a"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-download",
+        "element": "area"
+      }
+    ],
+    "descriptionText": "Whether to download the resource instead of navigating to it, and its filename if so",
+    "value": "Text"
+  },
+  {
+    "attribute": "draggable",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/dnd.html#attr-draggable"
+      }
+    ],
+    "descriptionText": "Whether the element is draggable",
+    "value": "\"true\"; \"false\""
+  },
+  {
+    "attribute": "enctype",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype",
+        "element": "form"
+      }
+    ],
+    "descriptionText": "Entry list encoding type to use for form submission",
+    "value": "\"application/x-www-form-urlencoded\"; \"multipart/form-data\"; \"text/plain\""
+  },
+  {
+    "attribute": "enterkeyhint",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint"
+      }
+    ],
+    "descriptionText": "Hint for selecting an enter key action",
+    "value": "\"enter\";\n          \"done\";\n          \"go\";\n          \"next\";\n          \"previous\";\n          \"search\";\n          \"send\""
+  },
+  {
+    "attribute": "for",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/forms.html#attr-label-for",
+        "element": "label"
+      }
+    ],
+    "descriptionText": "Associate the label with form control",
+    "value": "ID*"
+  },
+  {
+    "attribute": "for",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-output-for",
+        "element": "output"
+      }
+    ],
+    "descriptionText": "Specifies controls from which the output was calculated",
+    "value": "Unordered set of unique space-separated tokens consisting of IDs*"
+  },
+  {
+    "attribute": "form",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+        "element": "button"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+        "element": "fieldset"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+        "element": "object"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+        "element": "output"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+        "element": "select"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form",
+        "element": "textarea"
+      },
+      {
+        "type": "form-associated custom elements",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fae-form"
+      }
+    ],
+    "descriptionText": "Associates the element with a form element",
+    "value": "ID*"
+  },
+  {
+    "attribute": "formaction",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
+        "element": "button"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formaction",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "URL to use for form submission",
+    "value": "Valid non-empty URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "formenctype",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
+        "element": "button"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formenctype",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Entry list encoding type to use for form submission",
+    "value": "\"application/x-www-form-urlencoded\"; \"multipart/form-data\"; \"text/plain\""
+  },
+  {
+    "attribute": "formmethod",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
+        "element": "button"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formmethod",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Variant to use for form submission",
+    "value": "\"GET\";\n          \"POST\";\n          \"dialog\""
+  },
+  {
+    "attribute": "formnovalidate",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
+        "element": "button"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formnovalidate",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Bypass form control validation for form submission",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "formtarget",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
+        "element": "button"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-formtarget",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Navigable for form submission",
+    "value": "Valid navigable target name or keyword"
+  },
+  {
+    "attribute": "headers",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers",
+        "element": "td"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-headers",
+        "element": "th"
+      }
+    ],
+    "descriptionText": "The header cells for this cell",
+    "value": "Unordered set of unique space-separated tokens consisting of IDs*"
+  },
+  {
+    "attribute": "height",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height",
+        "element": "canvas"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+        "element": "embed"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+        "element": "iframe"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+        "element": "img"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+        "element": "object"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+        "element": "source"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Vertical dimension",
+    "value": "Valid non-negative integer"
+  },
+  {
+    "attribute": "hidden",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden"
+      }
+    ],
+    "descriptionText": "Whether the element is relevant",
+    "value": "\"until-found\";\n          \"hidden\";\n          the empty string"
+  },
+  {
+    "attribute": "high",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-high",
+        "element": "meter"
+      }
+    ],
+    "descriptionText": "Low limit of high range",
+    "value": "Valid floating-point number*"
+  },
+  {
+    "attribute": "href",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href",
+        "element": "a"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-href",
+        "element": "area"
+      }
+    ],
+    "descriptionText": "Address of the hyperlink",
+    "value": "Valid URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "href",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-href",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Address of the hyperlink",
+    "value": "Valid non-empty URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "href",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href",
+        "element": "base"
+      }
+    ],
+    "descriptionText": "Document base URL",
+    "value": "Valid URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "hreflang",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-hreflang",
+        "element": "a"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-hreflang",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Language of the linked resource",
+    "value": "Valid BCP 47 language tag"
+  },
+  {
+    "attribute": "http-equiv",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv",
+        "element": "meta"
+      }
+    ],
+    "descriptionText": "Pragma directive",
+    "value": "\"content-type\";\n          \"default-style\";\n          \"refresh\";\n          \"x-ua-compatible\";\n          \"content-security-policy\""
+  },
+  {
+    "attribute": "id",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute"
+      }
+    ],
+    "descriptionText": "The element's ID",
+    "value": "Text*"
+  },
+  {
+    "attribute": "imagesizes",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesizes",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Image sizes for different page layouts (for rel=\"preload\")",
+    "value": "Valid source size list"
+  },
+  {
+    "attribute": "imagesrcset",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Images to use in different situations, e.g., high-resolution displays, small monitors, etc. (for rel=\"preload\")",
+    "value": "Comma-separated list of image candidate strings"
+  },
+  {
+    "attribute": "inert",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#the-inert-attribute"
+      }
+    ],
+    "descriptionText": "Whether the element is inert.",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "inputmode",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode"
+      }
+    ],
+    "descriptionText": "Hint for selecting an input modality",
+    "value": "\"none\";\n          \"text\";\n          \"tel\";\n          \"email\";\n          \"url\";\n          \"numeric\";\n          \"decimal\";\n          \"search\""
+  },
+  {
+    "attribute": "integrity",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-integrity",
+        "element": "link"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-integrity",
+        "element": "script"
+      }
+    ],
+    "descriptionText": "Integrity metadata used in Subresource Integrity checks [SRI]",
+    "value": "Text"
+  },
+  {
+    "attribute": "is",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is"
+      }
+    ],
+    "descriptionText": "Creates a customized built-in element",
+    "value": "Valid custom element name of a defined customized built-in element"
+  },
+  {
+    "attribute": "ismap",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap",
+        "element": "img"
+      }
+    ],
+    "descriptionText": "Whether the image is a server-side image map",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "itemid",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemid"
+      }
+    ],
+    "descriptionText": "Global identifier for a microdata item",
+    "value": "Valid URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "itemprop",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute"
+      }
+    ],
+    "descriptionText": "Property names of a microdata item",
+    "value": "Unordered set of unique space-separated tokens consisting of valid absolute URLs, defined property names, or text*"
+  },
+  {
+    "attribute": "itemref",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemref"
+      }
+    ],
+    "descriptionText": "Referenced elements",
+    "value": "Unordered set of unique space-separated tokens consisting of IDs*"
+  },
+  {
+    "attribute": "itemscope",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemscope"
+      }
+    ],
+    "descriptionText": "Introduces a microdata item",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "itemtype",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemtype"
+      }
+    ],
+    "descriptionText": "Item types of a microdata item",
+    "value": "Unordered set of unique space-separated tokens consisting of valid absolute URLs*"
+  },
+  {
+    "attribute": "kind",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-kind",
+        "element": "track"
+      }
+    ],
+    "descriptionText": "The type of text track",
+    "value": "\"subtitles\";\n          \"captions\";\n          \"descriptions\";\n          \"chapters\";\n          \"metadata\""
+  },
+  {
+    "attribute": "label",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-optgroup-label",
+        "element": "optgroup"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-label",
+        "element": "option"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-label",
+        "element": "track"
+      }
+    ],
+    "descriptionText": "User-visible label",
+    "value": "Text"
+  },
+  {
+    "attribute": "lang",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-lang"
+      }
+    ],
+    "descriptionText": "Language of the element",
+    "value": "Valid BCP 47 language tag or the empty string"
+  },
+  {
+    "attribute": "list",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-list",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "List of autocomplete options",
+    "value": "ID*"
+  },
+  {
+    "attribute": "loading",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-loading",
+        "element": "iframe"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading",
+        "element": "img"
+      }
+    ],
+    "descriptionText": "Used when determining loading deferral",
+    "value": "\"lazy\";\n          \"eager\""
+  },
+  {
+    "attribute": "loop",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop",
+        "element": "audio"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Whether to loop the media resource",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "low",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-low",
+        "element": "meter"
+      }
+    ],
+    "descriptionText": "High limit of low range",
+    "value": "Valid floating-point number*"
+  },
+  {
+    "attribute": "max",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-max",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Maximum value",
+    "value": "Varies*"
+  },
+  {
+    "attribute": "max",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max",
+        "element": "meter"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max",
+        "element": "progress"
+      }
+    ],
+    "descriptionText": "Upper bound of range",
+    "value": "Valid floating-point number*"
+  },
+  {
+    "attribute": "maxlength",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "Maximum length of value",
+    "value": "Valid non-negative integer"
+  },
+  {
+    "attribute": "media",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-media",
+        "element": "link"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media",
+        "element": "meta"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-media",
+        "element": "source"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-media",
+        "element": "style"
+      }
+    ],
+    "descriptionText": "Applicable media",
+    "value": "Valid media query list"
+  },
+  {
+    "attribute": "method",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method",
+        "element": "form"
+      }
+    ],
+    "descriptionText": "Variant to use for form submission",
+    "value": "\"GET\";\n          \"POST\";\n          \"dialog\""
+  },
+  {
+    "attribute": "min",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-min",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Minimum value",
+    "value": "Varies*"
+  },
+  {
+    "attribute": "min",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-min",
+        "element": "meter"
+      }
+    ],
+    "descriptionText": "Lower bound of range",
+    "value": "Valid floating-point number*"
+  },
+  {
+    "attribute": "minlength",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-minlength",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-minlength",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "Minimum length of value",
+    "value": "Valid non-negative integer"
+  },
+  {
+    "attribute": "multiple",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-multiple",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-multiple",
+        "element": "select"
+      }
+    ],
+    "descriptionText": "Whether to allow multiple values",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "muted",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted",
+        "element": "audio"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-muted",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Whether to mute the media resource by default",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "name",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+        "element": "button"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+        "element": "fieldset"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+        "element": "output"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+        "element": "select"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name",
+        "element": "textarea"
+      },
+      {
+        "type": "form-associated custom elements",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-name"
+      }
+    ],
+    "descriptionText": "Name of the element to use for form submission and in the form.elements API",
+    "value": "Text*"
+  },
+  {
+    "attribute": "name",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/forms.html#attr-form-name",
+        "element": "form"
+      }
+    ],
+    "descriptionText": "Name of form to use in the document.forms API",
+    "value": "Text*"
+  },
+  {
+    "attribute": "name",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-name",
+        "element": "iframe"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-name",
+        "element": "object"
+      }
+    ],
+    "descriptionText": "Name of content navigable",
+    "value": "Valid navigable target name or keyword"
+  },
+  {
+    "attribute": "name",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-map-name",
+        "element": "map"
+      }
+    ],
+    "descriptionText": "Name of image map to reference from the usemap attribute",
+    "value": "Text*"
+  },
+  {
+    "attribute": "name",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-name",
+        "element": "meta"
+      }
+    ],
+    "descriptionText": "Metadata name",
+    "value": "Text*"
+  },
+  {
+    "attribute": "name",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-slot-name",
+        "element": "slot"
+      }
+    ],
+    "descriptionText": "Name of shadow tree slot",
+    "value": "Text"
+  },
+  {
+    "attribute": "nomodule",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-nomodule",
+        "element": "script"
+      }
+    ],
+    "descriptionText": "Prevents execution in user agents that support module scripts",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "nonce",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-nonce"
+      }
+    ],
+    "descriptionText": "Cryptographic nonce used in Content Security Policy checks [CSP]",
+    "value": "Text"
+  },
+  {
+    "attribute": "novalidate",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-novalidate",
+        "element": "form"
+      }
+    ],
+    "descriptionText": "Bypass form control validation for form submission",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "open",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-details-open",
+        "element": "details"
+      }
+    ],
+    "descriptionText": "Whether the details are visible",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "open",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-open",
+        "element": "dialog"
+      }
+    ],
+    "descriptionText": "Whether the dialog box is showing",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "optimum",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-optimum",
+        "element": "meter"
+      }
+    ],
+    "descriptionText": "Optimum value in gauge",
+    "value": "Valid floating-point number*"
+  },
+  {
+    "attribute": "pattern",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Pattern to be matched by the form control's value",
+    "value": "Regular expression matching the JavaScript Pattern production"
+  },
+  {
+    "attribute": "ping",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#ping",
+        "element": "a"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#ping",
+        "element": "area"
+      }
+    ],
+    "descriptionText": "URLs to ping",
+    "value": "Set of space-separated tokens consisting of valid non-empty URLs"
+  },
+  {
+    "attribute": "placeholder",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-placeholder",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-placeholder",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "User-visible label to be placed within the form control",
+    "value": "Text*"
+  },
+  {
+    "attribute": "playsinline",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-video-playsinline",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Encourage the user agent to display video content within the element's playback area",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "popover",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover"
+      }
+    ],
+    "descriptionText": "Makes the element a popover element",
+    "value": "\"auto\";\n          \"manual\";"
+  },
+  {
+    "attribute": "popoverhidetarget",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element",
+        "element": "button"
+      }
+    ],
+    "descriptionText": "Hides the specified popover element when clicked",
+    "value": "ID of the element to hide"
+  },
+  {
+    "attribute": "popovershowtarget",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element",
+        "element": "button"
+      }
+    ],
+    "descriptionText": "Shows the specified popover element when clicked",
+    "value": "ID of the element to show"
+  },
+  {
+    "attribute": "popovertoggletarget",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#the-input-element",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element",
+        "element": "button"
+      }
+    ],
+    "descriptionText": "Toggles the specified popover element when clicked",
+    "value": "ID of the element to toggle"
+  },
+  {
+    "attribute": "poster",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-video-poster",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Poster frame to show prior to video playback",
+    "value": "Valid non-empty URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "preload",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload",
+        "element": "audio"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Hints how much buffering the media resource will likely need",
+    "value": "\"none\";\n          \"metadata\";\n          \"auto\""
+  },
+  {
+    "attribute": "readonly",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-readonly",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-readonly",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "Whether to allow the value to be edited by the user",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "readonly",
+    "elements": [
+      {
+        "type": "form-associated custom elements",
+        "specLink": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-face-readonly"
+      }
+    ],
+    "descriptionText": "Affects willValidate, plus any behavior added by the custom element author",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "referrerpolicy",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy",
+        "element": "a"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-referrerpolicy",
+        "element": "area"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-referrerpolicy",
+        "element": "iframe"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-referrerpolicy",
+        "element": "img"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-referrerpolicy",
+        "element": "link"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-referrerpolicy",
+        "element": "script"
+      }
+    ],
+    "descriptionText": "Referrer policy for fetches initiated by the element",
+    "value": "Referrer policy"
+  },
+  {
+    "attribute": "rel",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel",
+        "element": "a"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-rel",
+        "element": "area"
+      }
+    ],
+    "descriptionText": "Relationship between the location in the document containing the hyperlink and the destination resource",
+    "value": "Unordered set of unique space-separated tokens*"
+  },
+  {
+    "attribute": "rel",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Relationship between the document containing the hyperlink and the destination resource",
+    "value": "Unordered set of unique space-separated tokens*"
+  },
+  {
+    "attribute": "required",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-required",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-required",
+        "element": "select"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-required",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "Whether the control is required for form submission",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "reversed",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-reversed",
+        "element": "ol"
+      }
+    ],
+    "descriptionText": "Number the list backwards",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "rows",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-rows",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "Number of lines to show",
+    "value": "Valid non-negative integer greater than zero"
+  },
+  {
+    "attribute": "rowspan",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan",
+        "element": "td"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan",
+        "element": "th"
+      }
+    ],
+    "descriptionText": "Number of rows that the cell is to span",
+    "value": "Valid non-negative integer"
+  },
+  {
+    "attribute": "sandbox",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-sandbox",
+        "element": "iframe"
+      }
+    ],
+    "descriptionText": "Security rules for nested content",
+    "value": "Unordered set of unique space-separated tokens, ASCII case-insensitive, consisting of\n      \"allow-downloads\"\"allow-forms\"\"allow-modals\"\"allow-orientation-lock\"\"allow-pointer-lock\"\"allow-popups\"\"allow-popups-to-escape-sandbox\"\"allow-presentation\"\"allow-same-origin\"\"allow-scripts\"\"allow-top-navigation\"\"allow-top-navigation-by-user-activation\"\"allow-top-navigation-to-custom-protocols\""
+  },
+  {
+    "attribute": "scope",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope",
+        "element": "th"
+      }
+    ],
+    "descriptionText": "Specifies which cells the header cell applies to",
+    "value": "\"row\";\n          \"col\";\n          \"rowgroup\";\n          \"colgroup\""
+  },
+  {
+    "attribute": "selected",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-selected",
+        "element": "option"
+      }
+    ],
+    "descriptionText": "Whether the option is selected by default",
+    "value": "Boolean attribute"
+  },
+  {
+    "attribute": "shape",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape",
+        "element": "area"
+      }
+    ],
+    "descriptionText": "The kind of shape to be created in an image map",
+    "value": "\"circle\";\n          \"default\";\n          \"poly\";\n          \"rect\""
+  },
+  {
+    "attribute": "size",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-size",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size",
+        "element": "select"
+      }
+    ],
+    "descriptionText": "Size of the control",
+    "value": "Valid non-negative integer greater than zero"
+  },
+  {
+    "attribute": "sizes",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-sizes",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Sizes of the icons (for rel=\"icon\")",
+    "value": "Unordered set of unique space-separated tokens, ASCII case-insensitive, consisting of sizes*"
+  },
+  {
+    "attribute": "sizes",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-sizes",
+        "element": "img"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-sizes",
+        "element": "source"
+      }
+    ],
+    "descriptionText": "Image sizes for different page layouts",
+    "value": "Valid source size list"
+  },
+  {
+    "attribute": "slot",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute"
+      }
+    ],
+    "descriptionText": "The element's desired slot",
+    "value": "Text"
+  },
+  {
+    "attribute": "span",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-col-span",
+        "element": "col"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-colgroup-span",
+        "element": "colgroup"
+      }
+    ],
+    "descriptionText": "Number of columns spanned by the element",
+    "value": "Valid non-negative integer greater than zero"
+  },
+  {
+    "attribute": "spellcheck",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck"
+      }
+    ],
+    "descriptionText": "Whether the element is to have its spelling and grammar checked",
+    "value": "\"true\"; \"false\""
+  },
+  {
+    "attribute": "src",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-src",
+        "element": "audio"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-src",
+        "element": "embed"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-src",
+        "element": "iframe"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-src",
+        "element": "img"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-src",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-src",
+        "element": "script"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-src",
+        "element": "source"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-src",
+        "element": "track"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-src",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Address of the resource",
+    "value": "Valid non-empty URL potentially surrounded by spaces"
+  },
+  {
+    "attribute": "srcdoc",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-srcdoc",
+        "element": "iframe"
+      }
+    ],
+    "descriptionText": "A document to render in the iframe",
+    "value": "The source of an iframe srcdoc document*"
+  },
+  {
+    "attribute": "srclang",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-track-srclang",
+        "element": "track"
+      }
+    ],
+    "descriptionText": "Language of the text track",
+    "value": "Valid BCP 47 language tag"
+  },
+  {
+    "attribute": "srcset",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-srcset",
+        "element": "img"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-srcset",
+        "element": "source"
+      }
+    ],
+    "descriptionText": "Images to use in different situations, e.g., high-resolution displays, small monitors, etc.",
+    "value": "Comma-separated list of image candidate strings"
+  },
+  {
+    "attribute": "start",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-start",
+        "element": "ol"
+      }
+    ],
+    "descriptionText": "Starting value of the list",
+    "value": "Valid integer"
+  },
+  {
+    "attribute": "step",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-step",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Granularity to be matched by the form control's value",
+    "value": "Valid floating-point number greater than zero, or \"any\""
+  },
+  {
+    "attribute": "style",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-style"
+      }
+    ],
+    "descriptionText": "Presentational and formatting instructions",
+    "value": "CSS declarations*"
+  },
+  {
+    "attribute": "tabindex",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex"
+      }
+    ],
+    "descriptionText": "Whether the element is focusable and sequentially focusable, and\n     the relative order of the element for the purposes of sequential focus navigation",
+    "value": "Valid integer"
+  },
+  {
+    "attribute": "target",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target",
+        "element": "a"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-target",
+        "element": "area"
+      }
+    ],
+    "descriptionText": "Navigable for hyperlink navigation",
+    "value": "Valid navigable target name or keyword"
+  },
+  {
+    "attribute": "target",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-base-target",
+        "element": "base"
+      }
+    ],
+    "descriptionText": "Default navigable for hyperlink navigation and form submission",
+    "value": "Valid navigable target name or keyword"
+  },
+  {
+    "attribute": "target",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-target",
+        "element": "form"
+      }
+    ],
+    "descriptionText": "Navigable for form submission",
+    "value": "Valid navigable target name or keyword"
+  },
+  {
+    "attribute": "title",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-title"
+      }
+    ],
+    "descriptionText": "Advisory information for the element",
+    "value": "Text"
+  },
+  {
+    "attribute": "title",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-abbr-title",
+        "element": "abbr"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-dfn-title",
+        "element": "dfn"
+      }
+    ],
+    "descriptionText": "Full term or expansion of abbreviation",
+    "value": "Text"
+  },
+  {
+    "attribute": "title",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-title",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Description of pattern (when used with pattern attribute)",
+    "value": "Text"
+  },
+  {
+    "attribute": "title",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-title",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Title of the link",
+    "value": "Text"
+  },
+  {
+    "attribute": "title",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-title",
+        "element": "link"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-style-title",
+        "element": "style"
+      }
+    ],
+    "descriptionText": "CSS style sheet set name",
+    "value": "Text"
+  },
+  {
+    "attribute": "translate",
+    "elements": [
+      {
+        "type": "global",
+        "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-translate"
+      }
+    ],
+    "descriptionText": "Whether the element is to be translated when the page is localized",
+    "value": "\"yes\"; \"no\""
+  },
+  {
+    "attribute": "type",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/links.html#attr-hyperlink-type",
+        "element": "a"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-type",
+        "element": "link"
+      }
+    ],
+    "descriptionText": "Hint for the type of the referenced resource",
+    "value": "Valid MIME type string"
+  },
+  {
+    "attribute": "type",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type",
+        "element": "button"
+      }
+    ],
+    "descriptionText": "Type of button",
+    "value": "\"submit\";\n          \"reset\";\n          \"button\""
+  },
+  {
+    "attribute": "type",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-embed-type",
+        "element": "embed"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-object-type",
+        "element": "object"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-source-type",
+        "element": "source"
+      }
+    ],
+    "descriptionText": "Type of embedded resource",
+    "value": "Valid MIME type string"
+  },
+  {
+    "attribute": "type",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-type",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Type of form control",
+    "value": "input type keyword"
+  },
+  {
+    "attribute": "type",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type",
+        "element": "ol"
+      }
+    ],
+    "descriptionText": "Kind of list marker",
+    "value": "\"1\";\n          \"a\";\n          \"A\";\n          \"i\";\n          \"I\""
+  },
+  {
+    "attribute": "type",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type",
+        "element": "script"
+      }
+    ],
+    "descriptionText": "Type of script",
+    "value": "\"module\"; a valid MIME type string that is not a JavaScript MIME type essence match"
+  },
+  {
+    "attribute": "usemap",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap",
+        "element": "img"
+      }
+    ],
+    "descriptionText": "Name of image map to use",
+    "value": "Valid hash-name reference*"
+  },
+  {
+    "attribute": "value",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-value",
+        "element": "button"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-option-value",
+        "element": "option"
+      }
+    ],
+    "descriptionText": "Value to be used for form submission",
+    "value": "Text"
+  },
+  {
+    "attribute": "value",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-data-value",
+        "element": "data"
+      }
+    ],
+    "descriptionText": "Machine-readable value",
+    "value": "Text*"
+  },
+  {
+    "attribute": "value",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/input.html#attr-input-value",
+        "element": "input"
+      }
+    ],
+    "descriptionText": "Value of the form control",
+    "value": "Varies*"
+  },
+  {
+    "attribute": "value",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/grouping-content.html#attr-li-value",
+        "element": "li"
+      }
+    ],
+    "descriptionText": "Ordinal value of the list item",
+    "value": "Valid integer"
+  },
+  {
+    "attribute": "value",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-value",
+        "element": "meter"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value",
+        "element": "progress"
+      }
+    ],
+    "descriptionText": "Current value of the element",
+    "value": "Valid floating-point number"
+  },
+  {
+    "attribute": "width",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-width",
+        "element": "canvas"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+        "element": "embed"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+        "element": "iframe"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+        "element": "img"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+        "element": "input"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+        "element": "object"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+        "element": "source"
+      },
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width",
+        "element": "video"
+      }
+    ],
+    "descriptionText": "Horizontal dimension",
+    "value": "Valid non-negative integer"
+  },
+  {
+    "attribute": "wrap",
+    "elements": [
+      {
+        "type": "element",
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap",
+        "element": "textarea"
+      }
+    ],
+    "descriptionText": "How the value of the form control is to be wrapped for form submission",
+    "value": "\"soft\";\n          \"hard\""
+  }
+]
