@@ -10,7 +10,7 @@ const attributesTable             = htmlSpecIndices.window.document.querySelecto
 /** @type { HTMLTableElement } */
 const eventHandlerAttributesTable = htmlSpecIndices.window.document.querySelector("table#ix-event-handlers")
 
-/** @type { import('./build').ElementsTableData } */
+/** @type { import('./index').ElementsTableData } */
 const elementsTableData = Object.fromEntries(
   [...elementsTable.tBodies[0].rows]
     .flatMap(row => {
@@ -63,11 +63,11 @@ const elementsTableData = Object.fromEntries(
 )
 
 await writeFile(
-  new URL("./data/elements-table.json", import.meta.url),
+  new URL("../built/data/elements-table.json", import.meta.url),
   JSON.stringify(elementsTableData, null, 2)
 )
 
-/** @type { import('./build').AttributesTableData } */
+/** @type { import('./index').AttributesTableData } */
 const attributesTableData =
   [...attributesTable.tBodies[0].rows]
     .reduce((attributesTableData, row) => {
@@ -149,11 +149,11 @@ const attributesTableData =
     }, {})
 
 await writeFile(
-  new URL("./data/attributes-table.json", import.meta.url),
+  new URL("../built/data/attributes-table.json", import.meta.url),
   JSON.stringify(attributesTableData, null, 2)
 )
 
-/** @type { import('./build').MergedData } */
+/** @type { import('./index').MergedData } */
 const mergedData = {}
 Object.entries(elementsTableData).forEach(([element, elementInfo]) => {
   mergedData[element] = {
@@ -183,6 +183,6 @@ Object.entries(attributesTableData).forEach(([attribute, attributeInstances]) =>
 })
 
 await writeFile(
-  new URL("./data/merged.json", import.meta.url),
+  new URL("../built/data/merged.json", import.meta.url),
   JSON.stringify(mergedData, null, 2)
 )

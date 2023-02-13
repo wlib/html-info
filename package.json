@@ -18,7 +18,7 @@
   "repository": "https://github.com/wlib/html-info.git",
   "types": "./index.d.ts",
   "scripts": {
-    "build": "node ./build.mjs",
+    "build": "node ./build/index.mjs",
     "prepare": "npm run build"
   },
   "devDependencies": {
