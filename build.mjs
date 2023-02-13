@@ -10,6 +10,7 @@ const attributesTable             = htmlSpecIndices.window.document.querySelecto
 /** @type { HTMLTableElement } */
 const eventHandlerAttributesTable = htmlSpecIndices.window.document.querySelector("table#ix-event-handlers")
 
+/** @type { import('./build').ElementsTableData } */
 const elementsTableData = Object.fromEntries(
   [...elementsTable.tBodies[0].rows]
     .flatMap(row => {
@@ -66,14 +67,15 @@ await writeFile(
   JSON.stringify(elementsTableData, null, 2)
 )
 
+/** @type { import('./build').AttributesTableData } */
 const attributesTableData =
   [...attributesTable.tBodies[0].rows]
-    .flatMap(row => {
+    .reduce((attributesTableData, row) => {
       const [
         _attribute,
         _elements,
         description,
-        value
+        type
       ] = row.cells
 
       const attribute = _attribute.querySelector("code")?.textContent
@@ -104,52 +106,83 @@ const attributesTableData =
 
       const elements =
         [..._elements.querySelectorAll("a")]
-          .flatMap(a => {
+          .reduce((elements, a) => {
             if (a.parentElement.tagName !== "CODE") {
-              if (a.textContent === "HTML elements")
-                return [
-                  {
-                    type: "global",
-                    specLink: a.href
-                  }
-                ]
+              if (a.textContent === "HTML elements") {
+                elements.global = {
+                  specLink: a.href
+                }
+                return elements
+              }
 
-              if (a.textContent === "form-associated custom elements")
-                return [
-                  {
-                    type: "form-associated custom elements",
-                    specLink: a.href
-                  }
-                ]
+              if (a.textContent === "form-associated custom elements") {
+                elements["form-associated custom elements"] = {
+                  specLink: a.href
+                }
+                return elements
+              }
 
               console.log(`skipping attributes table "${attribute}" elements link "${a.textContent}"`)
-              return []
+              return elements
             }
 
             if (parenthesizedElements.has(a.parentElement)) {
               console.log(`skipping attributes table "${attribute}" parenthesized elements link "${a.textContent}"`)
-              return []
+              return elements
             }
 
-            return [
-              {
-                type: "element",
-                specLink: a.href,
-                element: a.textContent
-              }
-            ]
-          })
+            elements.byName ??= {}
+            elements.byName[a.textContent] = {
+              specLink: a.href
+            }
+            return elements
+          }, {})
 
-      return {
-        attribute,
-        elements,
+      attributesTableData[attribute] ??= []
+      attributesTableData[attribute].push({
         descriptionText: description.textContent.trim(),
-        value: value.textContent.trim()
-      }
-    })
+        type: type.textContent.trim(),
+        elements
+      })
 
+      return attributesTableData
+    }, {})
 
 await writeFile(
   new URL("./data/attributes-table.json", import.meta.url),
   JSON.stringify(attributesTableData, null, 2)
+)
+
+/** @type { import('./build').MergedData } */
+const mergedData = {}
+Object.entries(elementsTableData).forEach(([element, elementInfo]) => {
+  mergedData[element] = {
+    specLink: elementInfo.specLink,
+    descriptionText: elementInfo.descriptionText,
+    specificAttributes: {}
+  }
+  Object.entries(elementInfo.specificAttributes).forEach(([attribute, attributeInfo]) => {
+    mergedData[element].specificAttributes[attribute] = {
+      specLinks: [attributeInfo.specLink]
+    }
+  })
+})
+Object.entries(attributesTableData).forEach(([attribute, attributeInstances]) => {
+  attributeInstances.forEach(attributeInstance => {
+    Object.entries(attributeInstance.elements.byName ?? {})
+      .forEach(([element, elementAttributeInstance]) => {
+        const attributeInfo = mergedData[element].specificAttributes[attribute] ??= {}
+        attributeInfo.specLinks ??= []
+        if (!attributeInfo.specLinks.includes(elementAttributeInstance.specLink))
+          attributeInfo.specLinks.push(elementAttributeInstance.specLink)
+
+        attributeInfo.descriptionText = attributeInstance.descriptionText
+        attributeInfo.type = attributeInstance.type
+      })
+  })
+})
+
+await writeFile(
+  new URL("./data/merged.json", import.meta.url),
+  JSON.stringify(mergedData, null, 2)
 )
