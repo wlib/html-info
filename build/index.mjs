@@ -1,6 +1,8 @@
 import { JSDOM } from "jsdom"
 import { writeFile } from "fs/promises"
 
+import { makeInterface, makeCommentedEntry, makeCommaSeparatedBlock } from "./typescript.mjs"
+
 const htmlSpecIndices = await JSDOM.fromURL("https://html.spec.whatwg.org/multipage/indices.html")
 
 /** @type { HTMLTableElement } */
@@ -9,6 +11,7 @@ const elementsTable               = htmlSpecIndices.window.document.querySelecto
 const attributesTable             = htmlSpecIndices.window.document.querySelector("table#attributes-1")
 /** @type { HTMLTableElement } */
 const eventHandlerAttributesTable = htmlSpecIndices.window.document.querySelector("table#ix-event-handlers")
+
 
 /** @type { import('./index').ElementsTableData } */
 const elementsTableData = Object.fromEntries(
@@ -66,6 +69,7 @@ await writeFile(
   new URL("../built/data/elements-table.json", import.meta.url),
   JSON.stringify(elementsTableData, null, 2)
 )
+
 
 /** @type { import('./index').AttributesTableData } */
 const attributesTableData =
@@ -153,6 +157,7 @@ await writeFile(
   JSON.stringify(attributesTableData, null, 2)
 )
 
+
 /** @type { import('./index').MergedData } */
 const mergedData = {}
 Object.entries(elementsTableData).forEach(([element, elementInfo]) => {
@@ -185,4 +190,40 @@ Object.entries(attributesTableData).forEach(([attribute, attributeInstances]) =>
 await writeFile(
   new URL("../built/data/merged.json", import.meta.url),
   JSON.stringify(mergedData, null, 2)
+)
+
+
+const HTMLTagToAttributes = makeInterface("HTMLTagToAttributes",
+  Object.entries(mergedData).map(([element, elementInfo]) => {
+    const comment = `
+${elementInfo.descriptionText}
+
+**Spec**: ${elementInfo.specLink}
+    `.trim()
+
+    const attributeEntries = Object.entries(elementInfo.specificAttributes)
+      .map(([attribute, attributeInfo]) => {
+        const comment = `
+${attributeInfo.descriptionText}
+
+**Type**: ${attributeInfo.type}
+
+**Specs**:
+${
+attributeInfo.specLinks
+  .map(specLink => "- " + specLink)
+  .join("\n")
+}
+        `.trim()
+
+        return makeCommentedEntry(comment, attribute, "string")
+      })
+
+    return makeCommentedEntry(comment, element, makeCommaSeparatedBlock(attributeEntries))
+  })
+)
+
+await writeFile(
+  new URL("../built/types/tag-to-attributes.ts", import.meta.url),
+  HTMLTagToAttributes
 )
