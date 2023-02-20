@@ -454,6 +454,31 @@
     "descriptionText": "Heading",
     "specificAttributes": {}
   },
+  "h2": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
+  "h3": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
+  "h4": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
+  "h5": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
+  "h6": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
   "head": {
     "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
     "descriptionText": "Container for document metadata",
@@ -563,6 +588,9 @@
       },
       "loading": {
         "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading"
+      },
+      "fetchpriority": {
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority"
       }
     }
   },
@@ -759,6 +787,9 @@
       },
       "disabled": {
         "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled"
+      },
+      "fetchpriority": {
+        "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority"
       }
     }
   },
@@ -779,11 +810,6 @@
   "mark": {
     "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element",
     "descriptionText": "Highlight",
-    "specificAttributes": {}
-  },
-  "math": {
-    "specLink": "https://www.w3.org/Math/draft-spec/chapter2.html#interf.toplevel",
-    "descriptionText": "MathML root",
     "specificAttributes": {}
   },
   "menu": {
@@ -1021,6 +1047,9 @@
       },
       "blocking": {
         "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking"
+      },
+      "fetchpriority": {
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority"
       }
     }
   },
@@ -1132,11 +1161,6 @@
   "sup": {
     "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements",
     "descriptionText": "Superscript",
-    "specificAttributes": {}
-  },
-  "svg": {
-    "specLink": "https://svgwg.org/svg2-draft/struct.html#SVGElement",
-    "descriptionText": "SVG root",
     "specificAttributes": {}
   },
   "table": {

@@ -771,6 +771,31 @@
     "descriptionText": "Heading",
     "specificAttributes": {}
   },
+  "h2": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
+  "h3": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
+  "h4": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
+  "h5": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
+  "h6": {
+    "specLink": "https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+    "descriptionText": "Heading",
+    "specificAttributes": {}
+  },
   "head": {
     "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-head-element",
     "descriptionText": "Container for document metadata",
@@ -970,6 +995,13 @@
         ],
         "descriptionText": "Used when determining loading deferral",
         "type": "\"lazy\";\n          \"eager\""
+      },
+      "fetchpriority": {
+        "specLinks": [
+          "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority"
+        ],
+        "descriptionText": "Sets the priority for fetches initiated by the element",
+        "type": "\"auto\";\n          \"high\";\n          \"low\""
       }
     }
   },
@@ -1385,6 +1417,13 @@
         "descriptionText": "Whether the link is disabled",
         "type": "Boolean attribute"
       },
+      "fetchpriority": {
+        "specLinks": [
+          "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority"
+        ],
+        "descriptionText": "Sets the priority for fetches initiated by the element",
+        "type": "\"auto\";\n          \"high\";\n          \"low\""
+      },
       "title": {
         "specLinks": [
           "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-title"
@@ -1415,11 +1454,6 @@
   "mark": {
     "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element",
     "descriptionText": "Highlight",
-    "specificAttributes": {}
-  },
-  "math": {
-    "specLink": "https://www.w3.org/Math/draft-spec/chapter2.html#interf.toplevel",
-    "descriptionText": "MathML root",
     "specificAttributes": {}
   },
   "menu": {
@@ -1821,6 +1855,13 @@
         ],
         "descriptionText": "Whether the element is potentially render-blocking",
         "type": "Unordered set of unique space-separated tokens*"
+      },
+      "fetchpriority": {
+        "specLinks": [
+          "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority"
+        ],
+        "descriptionText": "Sets the priority for fetches initiated by the element",
+        "type": "\"auto\";\n          \"high\";\n          \"low\""
       }
     }
   },
@@ -2007,11 +2048,6 @@
   "sup": {
     "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements",
     "descriptionText": "Superscript",
-    "specificAttributes": {}
-  },
-  "svg": {
-    "specLink": "https://svgwg.org/svg2-draft/struct.html#SVGElement",
-    "descriptionText": "SVG root",
     "specificAttributes": {}
   },
   "table": {

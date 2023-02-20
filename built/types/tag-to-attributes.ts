@@ -1062,6 +1062,46 @@ export interface HTMLTagToAttributes {
     
   },
   /**
+   * Heading
+   * 
+   * **Spec**: https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+   */
+  "h2": {
+    
+  },
+  /**
+   * Heading
+   * 
+   * **Spec**: https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+   */
+  "h3": {
+    
+  },
+  /**
+   * Heading
+   * 
+   * **Spec**: https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+   */
+  "h4": {
+    
+  },
+  /**
+   * Heading
+   * 
+   * **Spec**: https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+   */
+  "h5": {
+    
+  },
+  /**
+   * Heading
+   * 
+   * **Spec**: https://html.spec.whatwg.org/multipage/sections.html#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements
+   */
+  "h6": {
+    
+  },
+  /**
    * Container for document metadata
    * 
    * **Spec**: https://html.spec.whatwg.org/multipage/semantics.html#the-head-element
@@ -1332,7 +1372,18 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading
      */
-    "loading": string
+    "loading": string,
+    /**
+     * Sets the priority for fetches initiated by the element
+     * 
+     * **Type**: "auto";
+     *           "high";
+     *           "low"
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority
+     */
+    "fetchpriority": string
   },
   /**
    * Form control
@@ -1867,6 +1918,17 @@ export interface HTMLTagToAttributes {
      */
     "disabled": string,
     /**
+     * Sets the priority for fetches initiated by the element
+     * 
+     * **Type**: "auto";
+     *           "high";
+     *           "low"
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority
+     */
+    "fetchpriority": string,
+    /**
      * CSS style sheet set name
      * 
      * **Type**: Text
@@ -1906,14 +1968,6 @@ export interface HTMLTagToAttributes {
    * **Spec**: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element
    */
   "mark": {
-    
-  },
-  /**
-   * MathML root
-   * 
-   * **Spec**: https://www.w3.org/Math/draft-spec/chapter2.html#interf.toplevel
-   */
-  "math": {
     
   },
   /**
@@ -2449,7 +2503,18 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/scripting.html#attr-script-blocking
      */
-    "blocking": string
+    "blocking": string,
+    /**
+     * Sets the priority for fetches initiated by the element
+     * 
+     * **Type**: "auto";
+     *           "high";
+     *           "low"
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority
+     */
+    "fetchpriority": string
   },
   /**
    * Generic document or application section
@@ -2695,14 +2760,6 @@ export interface HTMLTagToAttributes {
    * **Spec**: https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-sub-and-sup-elements
    */
   "sup": {
-    
-  },
-  /**
-   * SVG root
-   * 
-   * **Spec**: https://svgwg.org/svg2-draft/struct.html#SVGElement
-   */
-  "svg": {
     
   },
   /**

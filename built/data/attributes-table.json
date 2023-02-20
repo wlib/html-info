@@ -620,6 +620,25 @@
       }
     }
   ],
+  "fetchpriority": [
+    {
+      "descriptionText": "Sets the priority for fetches initiated by the element",
+      "type": "\"auto\";\n          \"high\";\n          \"low\"",
+      "elements": {
+        "byName": {
+          "img": {
+            "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-fetchpriority"
+          },
+          "link": {
+            "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-fetchpriority"
+          },
+          "script": {
+            "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-fetchpriority"
+          }
+        }
+      }
+    }
+  ],
   "for": [
     {
       "descriptionText": "Associate the label with form control",

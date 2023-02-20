@@ -13,7 +13,7 @@ const attributesTable             = htmlSpecIndices.window.document.querySelecto
 const eventHandlerAttributesTable = htmlSpecIndices.window.document.querySelector("table#ix-event-handlers")
 
 
-/** @type { import('./index').ElementsTableData } */
+/** @type { import("./index").ElementsTableData } */
 const elementsTableData = Object.fromEntries(
   [...elementsTable.tBodies[0].rows]
     .flatMap(row => {
@@ -27,20 +27,22 @@ const elementsTableData = Object.fromEntries(
         DOMInterface
       ] = row.cells
 
-      const tag = element.querySelector("code")?.textContent
-      if (!tag) {
-        console.warn(`skipping elements table row "${element.textContent}"`)
+      const tags = [...element.querySelectorAll("code")]
+        .map(code => code.textContent.trim())
+
+      if (!tags.length) {
+        console.warn(`skipping elements table row "${element.textContent.trim()}"`)
         return []
       }
 
       const specLink = element.querySelector("a").href
 
-      const descriptionText = description.textContent
+      const descriptionText = description.textContent.trim()
 
       const specificAttributes = Object.fromEntries(
         [...attributes.querySelectorAll("code")]
           .map(code => {
-            const attribute = code.textContent
+            const attribute = code.textContent.trim()
             const specLink = code.querySelector("a").href
 
             const key = attribute
@@ -52,16 +54,25 @@ const elementsTableData = Object.fromEntries(
           })
       )
 
-      const key = tag
-      const value = {
-        specLink,
-        descriptionText,
-        specificAttributes
-      }
+      return tags
+        .filter(tag => {
+          if (tag === 'svg' || tag === 'math') {
+            console.warn(`skipping elements table tag <${tag}>`)
+            return false
+          }
 
-      return [
-        [key, value]
-      ]
+          return true
+        })
+        .map(tag => {
+          const key = tag
+          const value = {
+            specLink,
+            descriptionText,
+            specificAttributes
+          }
+
+          return [key, value]
+        })
     })
 )
 
@@ -71,7 +82,7 @@ await writeFile(
 )
 
 
-/** @type { import('./index').AttributesTableData } */
+/** @type { import("./index").AttributesTableData } */
 const attributesTableData =
   [...attributesTable.tBodies[0].rows]
     .reduce((attributesTableData, row) => {
@@ -82,7 +93,11 @@ const attributesTableData =
         type
       ] = row.cells
 
-      const attribute = _attribute.querySelector("code")?.textContent
+      const attribute = _attribute.querySelector("code")?.textContent?.trim()
+      if (!attribute) {
+        console.warn(`skipping attributes table row "${_attribute.textContent.trim()}"`)
+        return attributesTableData
+      }
 
       const parenthesizedElements =
         [..._elements.childNodes]
@@ -112,31 +127,31 @@ const attributesTableData =
         [..._elements.querySelectorAll("a")]
           .reduce((elements, a) => {
             if (a.parentElement.tagName !== "CODE") {
-              if (a.textContent === "HTML elements") {
+              if (a.textContent.trim() === "HTML elements") {
                 elements.global = {
                   specLink: a.href
                 }
                 return elements
               }
 
-              if (a.textContent === "form-associated custom elements") {
+              if (a.textContent.trim() === "form-associated custom elements") {
                 elements["form-associated custom elements"] = {
                   specLink: a.href
                 }
                 return elements
               }
 
-              console.log(`skipping attributes table "${attribute}" elements link "${a.textContent}"`)
+              console.log(`skipping attributes table "${attribute}" elements link "${a.textContent.trim()}"`)
               return elements
             }
 
             if (parenthesizedElements.has(a.parentElement)) {
-              console.log(`skipping attributes table "${attribute}" parenthesized elements link "${a.textContent}"`)
+              console.log(`skipping attributes table "${attribute}" parenthesized elements link "${a.textContent.trim()}"`)
               return elements
             }
 
             elements.byName ??= {}
-            elements.byName[a.textContent] = {
+            elements.byName[a.textContent.trim()] = {
               specLink: a.href
             }
             return elements
@@ -158,7 +173,7 @@ await writeFile(
 )
 
 
-/** @type { import('./index').MergedData } */
+/** @type { import("./index").MergedData } */
 const mergedData = {}
 Object.entries(elementsTableData).forEach(([element, elementInfo]) => {
   mergedData[element] = {
