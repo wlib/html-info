@@ -76,3 +76,16 @@ declare module "html-info" {
   }
 }
 ```
+
+## License Info
+
+html-info's code itself is MIT, but the derived data has been taken from sources with the following notices
+
+HTML spec:
+- https://html.spec.whatwg.org/multipage/acknowledgements.html#ipr
+> Copyright © WHATWG (Apple, Google, Mozilla, Microsoft). This work is licensed under a Creative Commons Attribution 4.0 International License. To the extent portions of it are incorporated into source code, such portions in the source code are licensed under the BSD 3-Clause License instead.
+
+WAI-ARIA spec:
+- https://w3c.github.io/aria/
+- https://www.w3.org/copyright/software-license-2023/
+> Copyright © 2013-2024 World Wide Web Consortium. W3C® liability, trademark and permissive document license rules apply.
