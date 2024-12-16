@@ -1,0 +1,354 @@
+{
+  "alert": {
+    "description": "A type of [live region](https://w3c.github.io/aria/#dfn-live-region) with important, and usually time-sensitive, information. See related [`alertdialog`](https://w3c.github.io/aria/#alertdialog) and [`status`](https://w3c.github.io/aria/#status).",
+    "specLink": "https://w3c.github.io/aria/#alert"
+  },
+  "alertdialog": {
+    "description": "A type of dialog that contains an alert message, where initial focus goes to an [element](https://dom.spec.whatwg.org/#concept-element) within the dialog. See related [`alert`](https://w3c.github.io/aria/#alert) and [`dialog`](https://w3c.github.io/aria/#dialog).",
+    "specLink": "https://w3c.github.io/aria/#alertdialog"
+  },
+  "application": {
+    "description": "A [`structure`](https://w3c.github.io/aria/#structure) containing one or more focusable elements requiring user input, such as keyboard or gesture events, that do not follow a standard interaction pattern supported by a [`widget`](https://w3c.github.io/aria/#widget) role.",
+    "specLink": "https://w3c.github.io/aria/#application"
+  },
+  "article": {
+    "description": "A section of a page that consists of a composition that forms an independent part of a document, page, or site.",
+    "specLink": "https://w3c.github.io/aria/#article"
+  },
+  "banner": {
+    "description": "A [`landmark`](https://w3c.github.io/aria/#landmark) that contains mostly site-oriented content, rather than page-specific content.",
+    "specLink": "https://w3c.github.io/aria/#banner"
+  },
+  "blockquote": {
+    "description": "A section of content that is quoted from another source.",
+    "specLink": "https://w3c.github.io/aria/#blockquote"
+  },
+  "button": {
+    "description": "An input that allows for user-triggered actions when clicked or pressed. See related [`link`](https://w3c.github.io/aria/#link).",
+    "specLink": "https://w3c.github.io/aria/#button"
+  },
+  "caption": {
+    "description": "Visible content that names, or describes a [`figure`](https://w3c.github.io/aria/#figure), [`grid`](https://w3c.github.io/aria/#grid), [`group`](https://w3c.github.io/aria/#group), [`radiogroup`](https://w3c.github.io/aria/#radiogroup), [`table`](https://w3c.github.io/aria/#table) or [`treegrid`](https://w3c.github.io/aria/#treegrid).",
+    "specLink": "https://w3c.github.io/aria/#caption"
+  },
+  "cell": {
+    "description": "A cell in a tabular container. See related [`gridcell`](https://w3c.github.io/aria/#gridcell).",
+    "specLink": "https://w3c.github.io/aria/#cell"
+  },
+  "checkbox": {
+    "description": "A checkable input that has three possible values: `true`, `false`, or `mixed`.",
+    "specLink": "https://w3c.github.io/aria/#checkbox"
+  },
+  "code": {
+    "description": "A section whose content represents a fragment of computer code.",
+    "specLink": "https://w3c.github.io/aria/#code"
+  },
+  "columnheader": {
+    "description": "A cell containing header information for a column.",
+    "specLink": "https://w3c.github.io/aria/#columnheader"
+  },
+  "combobox": {
+    "description": "An [`input`](https://w3c.github.io/aria/#input) that controls another element, such as a [`listbox`](https://w3c.github.io/aria/#listbox) or [`grid`](https://w3c.github.io/aria/#grid), that can dynamically pop up to help the user set the value of the [`input`](https://w3c.github.io/aria/#input).",
+    "specLink": "https://w3c.github.io/aria/#combobox"
+  },
+  "comment": {
+    "description": "A comment contains content expressing reaction to other content.",
+    "specLink": "https://w3c.github.io/aria/#comment"
+  },
+  "complementary": {
+    "description": "A [`landmark`](https://w3c.github.io/aria/#landmark) that is designed to be complementary to the main content that it is a sibling to, or a direct descendant of. The contents of a complementary landmark would be expected to remain meaningful if it were to be separated from the main content it is relevant to.",
+    "specLink": "https://w3c.github.io/aria/#complementary"
+  },
+  "contentinfo": {
+    "description": "A [`landmark`](https://w3c.github.io/aria/#landmark) that contains information about the parent document.",
+    "specLink": "https://w3c.github.io/aria/#contentinfo"
+  },
+  "definition": {
+    "description": "A definition of a term or concept. See related [`term`](https://w3c.github.io/aria/#term).",
+    "specLink": "https://w3c.github.io/aria/#definition"
+  },
+  "deletion": {
+    "description": "A deletion represents content that is marked as removed, content that is being suggested for removal, or content that is no longer relevant in the context of its accompanying content. See related [`insertion`](https://w3c.github.io/aria/#insertion).",
+    "specLink": "https://w3c.github.io/aria/#deletion"
+  },
+  "dialog": {
+    "description": "A dialog is a descendant window of the primary window of a web application. For HTML pages, the primary application window is the entire web document.",
+    "specLink": "https://w3c.github.io/aria/#dialog"
+  },
+  "directory": {
+    "description": "[Deprecated in ARIA 1.2] A list of references to members of a group, such as a static table of contents.",
+    "specLink": "https://w3c.github.io/aria/#directory"
+  },
+  "document": {
+    "description": "An [element](https://dom.spec.whatwg.org/#concept-element) containing content that [assistive technology](https://w3c.github.io/aria/#dfn-assistive-technologies) users might want to browse in a reading mode.",
+    "specLink": "https://w3c.github.io/aria/#document"
+  },
+  "emphasis": {
+    "description": "One or more emphasized characters. See related [`strong`](https://w3c.github.io/aria/#strong).",
+    "specLink": "https://w3c.github.io/aria/#emphasis"
+  },
+  "feed": {
+    "description": "A scrollable [`list`](https://w3c.github.io/aria/#list) of [`articles`](https://w3c.github.io/aria/#article) where scrolling might cause [`articles`](https://w3c.github.io/aria/#article) to be added to or removed from either end of the list.",
+    "specLink": "https://w3c.github.io/aria/#feed"
+  },
+  "figure": {
+    "description": "A perceivable [`section`](https://w3c.github.io/aria/#section) of content that typically contains a [graphical document](https://w3c.github.io/aria/#dfn-graphical-document), images, media player, code snippets, or example text. The parts of a `figure` _MAY_ be user-navigable.",
+    "specLink": "https://w3c.github.io/aria/#figure"
+  },
+  "form": {
+    "description": "A [`landmark`](https://w3c.github.io/aria/#landmark) region that contains a collection of items and objects that, as a whole, combine to create a form. See related [`search`](https://w3c.github.io/aria/#search).",
+    "specLink": "https://w3c.github.io/aria/#form"
+  },
+  "generic": {
+    "description": "A nameless container [element](https://dom.spec.whatwg.org/#concept-element) that has no semantic meaning on its own.",
+    "specLink": "https://w3c.github.io/aria/#generic"
+  },
+  "grid": {
+    "description": "A composite [`widget`](https://w3c.github.io/aria/#widget) containing a collection of one or more rows with one or more cells where some or all cells in the grid are focusable by using methods of two-dimensional navigation, such as directional arrow keys.",
+    "specLink": "https://w3c.github.io/aria/#grid"
+  },
+  "gridcell": {
+    "description": "A [`cell`](https://w3c.github.io/aria/#cell) in a [`grid`](https://w3c.github.io/aria/#grid) or [`treegrid`](https://w3c.github.io/aria/#treegrid).",
+    "specLink": "https://w3c.github.io/aria/#gridcell"
+  },
+  "group": {
+    "description": "A set of user interface [objects](https://w3c.github.io/aria/#dfn-object) that is not intended to be included in a page summary or table of contents by [assistive technologies](https://w3c.github.io/aria/#dfn-assistive-technologies).",
+    "specLink": "https://w3c.github.io/aria/#group"
+  },
+  "heading": {
+    "description": "A heading for a section of the page.",
+    "specLink": "https://w3c.github.io/aria/#heading"
+  },
+  "image": {
+    "description": "A container for a collection of [elements](https://dom.spec.whatwg.org/#concept-element) that form an image. See synonym [`img`](https://w3c.github.io/aria/#img).",
+    "specLink": "https://w3c.github.io/aria/#image"
+  },
+  "img": {
+    "description": "A container for a collection of [elements](https://dom.spec.whatwg.org/#concept-element) that form an image. See synonym [`image`](https://w3c.github.io/aria/#image).",
+    "specLink": "https://w3c.github.io/aria/#img"
+  },
+  "insertion": {
+    "description": "An insertion contains content that is marked as added or content that is being suggested for addition. See related [`deletion`](https://w3c.github.io/aria/#deletion).",
+    "specLink": "https://w3c.github.io/aria/#insertion"
+  },
+  "link": {
+    "description": "An interactive reference to an internal or external resource that, when activated, causes the user agent to navigate to that resource. See related [`button`](https://w3c.github.io/aria/#button).",
+    "specLink": "https://w3c.github.io/aria/#link"
+  },
+  "list": {
+    "description": "A [`section`](https://w3c.github.io/aria/#section) containing [`listitem`](https://w3c.github.io/aria/#listitem) elements. See related [`listbox`](https://w3c.github.io/aria/#listbox).",
+    "specLink": "https://w3c.github.io/aria/#list"
+  },
+  "listbox": {
+    "description": "A [widget](https://w3c.github.io/aria/#dfn-widget) that allows the user to select one or more items from a list of choices. See related [`combobox`](https://w3c.github.io/aria/#combobox) and [`list`](https://w3c.github.io/aria/#list).",
+    "specLink": "https://w3c.github.io/aria/#listbox"
+  },
+  "listitem": {
+    "description": "A single item in a list or directory.",
+    "specLink": "https://w3c.github.io/aria/#listitem"
+  },
+  "log": {
+    "description": "A type of [live region](https://w3c.github.io/aria/#dfn-live-region) where new information is added in meaningful order and old information can disappear. See related [`marquee`](https://w3c.github.io/aria/#marquee).",
+    "specLink": "https://w3c.github.io/aria/#log"
+  },
+  "main": {
+    "description": "A [`landmark`](https://w3c.github.io/aria/#landmark) containing the main content of a document.",
+    "specLink": "https://w3c.github.io/aria/#main"
+  },
+  "mark": {
+    "description": "Content which is marked or highlighted for reference or notation purposes, due to the content's relevance in the enclosing context.",
+    "specLink": "https://w3c.github.io/aria/#mark"
+  },
+  "marquee": {
+    "description": "A type of [live region](https://w3c.github.io/aria/#dfn-live-region) where non-essential information changes frequently. See related [`log`](https://w3c.github.io/aria/#log).",
+    "specLink": "https://w3c.github.io/aria/#marquee"
+  },
+  "math": {
+    "description": "Content that represents a mathematical expression.",
+    "specLink": "https://w3c.github.io/aria/#math"
+  },
+  "menu": {
+    "description": "A type of [widget](https://w3c.github.io/aria/#dfn-widget) that offers a list of choices to the user.",
+    "specLink": "https://w3c.github.io/aria/#menu"
+  },
+  "menubar": {
+    "description": "A presentation of [`menu`](https://w3c.github.io/aria/#menu) that usually remains visible and is usually presented horizontally.",
+    "specLink": "https://w3c.github.io/aria/#menubar"
+  },
+  "menuitem": {
+    "description": "An option in a set of choices contained by a [`menu`](https://w3c.github.io/aria/#menu) or [`menubar`](https://w3c.github.io/aria/#menubar).",
+    "specLink": "https://w3c.github.io/aria/#menuitem"
+  },
+  "menuitemcheckbox": {
+    "description": "A [`menuitem`](https://w3c.github.io/aria/#menuitem) with a checkable state whose possible values are `true`, `false`, or `mixed`.",
+    "specLink": "https://w3c.github.io/aria/#menuitemcheckbox"
+  },
+  "menuitemradio": {
+    "description": "A checkable [`menuitem`](https://w3c.github.io/aria/#menuitem) in a set of elements with the same role, only one of which can be checked at a time.",
+    "specLink": "https://w3c.github.io/aria/#menuitemradio"
+  },
+  "meter": {
+    "description": "An [element](https://dom.spec.whatwg.org/#concept-element) that represents a scalar measurement within a known range, or a fractional value. See related [`progressbar`](https://w3c.github.io/aria/#progressbar).",
+    "specLink": "https://w3c.github.io/aria/#meter"
+  },
+  "navigation": {
+    "description": "A [`landmark`](https://w3c.github.io/aria/#landmark) containing a collection of navigational [elements](https://dom.spec.whatwg.org/#concept-element) (usually links) for navigating the document or related documents.",
+    "specLink": "https://w3c.github.io/aria/#navigation"
+  },
+  "none": {
+    "description": "An [element](https://dom.spec.whatwg.org/#concept-element) whose implicit native role semantics will not be mapped to the [accessibility API](https://w3c.github.io/aria/#dfn-accessibility-api). See synonym [`presentation`](https://w3c.github.io/aria/#presentation).",
+    "specLink": "https://w3c.github.io/aria/#none"
+  },
+  "note": {
+    "description": "A [`section`](https://w3c.github.io/aria/#section) whose content represents additional information or parenthetical context to the primary content it supplements.",
+    "specLink": "https://w3c.github.io/aria/#note"
+  },
+  "option": {
+    "description": "An item in a [`listbox`](https://w3c.github.io/aria/#listbox).",
+    "specLink": "https://w3c.github.io/aria/#option"
+  },
+  "paragraph": {
+    "description": "A paragraph of content.",
+    "specLink": "https://w3c.github.io/aria/#paragraph"
+  },
+  "presentation": {
+    "description": "An [element](https://dom.spec.whatwg.org/#concept-element) whose implicit native role semantics will not be mapped to the [accessibility API](https://w3c.github.io/aria/#dfn-accessibility-api). See synonym [`none`](https://w3c.github.io/aria/#none).",
+    "specLink": "https://w3c.github.io/aria/#presentation"
+  },
+  "progressbar": {
+    "description": "An [element](https://dom.spec.whatwg.org/#concept-element) that displays the progress status for tasks that take a long time.",
+    "specLink": "https://w3c.github.io/aria/#progressbar"
+  },
+  "radio": {
+    "description": "A checkable input in a group of elements with the same role, only one of which can be checked at a time.",
+    "specLink": "https://w3c.github.io/aria/#radio"
+  },
+  "radiogroup": {
+    "description": "A group of [`radio`](https://w3c.github.io/aria/#radio) buttons.",
+    "specLink": "https://w3c.github.io/aria/#radiogroup"
+  },
+  "region": {
+    "description": "A [`landmark`](https://w3c.github.io/aria/#landmark) containing content that is relevant to a specific, author-specified purpose and sufficiently important that users will likely want to be able to navigate to the section easily and to have it listed in a summary of the page. Such a page summary could be generated dynamically by a user agent or assistive technology.",
+    "specLink": "https://w3c.github.io/aria/#region"
+  },
+  "row": {
+    "description": "A row of cells in a tabular container.",
+    "specLink": "https://w3c.github.io/aria/#row"
+  },
+  "rowgroup": {
+    "description": "A structure containing one or more row elements in a tabular container.",
+    "specLink": "https://w3c.github.io/aria/#rowgroup"
+  },
+  "rowheader": {
+    "description": "A cell containing header information for a row.",
+    "specLink": "https://w3c.github.io/aria/#rowheader"
+  },
+  "scrollbar": {
+    "description": "A graphical object that controls the scrolling of content within a viewing area, regardless of whether the content is fully displayed within the viewing area.",
+    "specLink": "https://w3c.github.io/aria/#scrollbar"
+  },
+  "search": {
+    "description": "A [`landmark`](https://w3c.github.io/aria/#landmark) region that contains a collection of items and objects that, as a whole, combine to create a search facility. See related [`form`](https://w3c.github.io/aria/#form) and [`searchbox`](https://w3c.github.io/aria/#searchbox).",
+    "specLink": "https://w3c.github.io/aria/#search"
+  },
+  "searchbox": {
+    "description": "A type of textbox intended for specifying search criteria. See related [`textbox`](https://w3c.github.io/aria/#textbox) and [`search`](https://w3c.github.io/aria/#search).",
+    "specLink": "https://w3c.github.io/aria/#searchbox"
+  },
+  "sectionfooter": {
+    "description": "A set of user interface objects and information representing information about its closest ancestral content group. For instance, a `sectionfooter` can include information about who wrote the specific section of content, such as an [`article`](https://w3c.github.io/aria/#article). It can contain links to related documents, copyright information or other indices and colophon specific to the current section of the page.",
+    "specLink": "https://w3c.github.io/aria/#sectionfooter"
+  },
+  "sectionheader": {
+    "description": "A set of user interface objects and information that represents a collection of introductory items for the element's closest ancestral content group. For instance, a `sectionheader` can include the heading, introductory statement and related meta data for a section of content, for instance a [`region`](https://w3c.github.io/aria/#region) or [`article`](https://w3c.github.io/aria/#article), within a web page.",
+    "specLink": "https://w3c.github.io/aria/#sectionheader"
+  },
+  "separator": {
+    "description": "A divider that separates and distinguishes sections of content or groups of menuitems.",
+    "specLink": "https://w3c.github.io/aria/#separator"
+  },
+  "slider": {
+    "description": "An input where the user selects a value from within a given range.",
+    "specLink": "https://w3c.github.io/aria/#slider"
+  },
+  "spinbutton": {
+    "description": "A form of [`range`](https://w3c.github.io/aria/#range) that expects the user to select from among discrete choices.",
+    "specLink": "https://w3c.github.io/aria/#spinbutton"
+  },
+  "status": {
+    "description": "A type of [live region](https://w3c.github.io/aria/#dfn-live-region) whose content is advisory information for the user but is not important enough to justify an [`alert`](https://w3c.github.io/aria/#alert), often but not necessarily presented as a status bar.",
+    "specLink": "https://w3c.github.io/aria/#status"
+  },
+  "strong": {
+    "description": "Content that is important, serious, or urgent. See related [`emphasis`](https://w3c.github.io/aria/#emphasis).",
+    "specLink": "https://w3c.github.io/aria/#strong"
+  },
+  "subscript": {
+    "description": "One or more subscripted characters. See related [`superscript`](https://w3c.github.io/aria/#superscript).",
+    "specLink": "https://w3c.github.io/aria/#subscript"
+  },
+  "suggestion": {
+    "description": "A single proposed change to content.",
+    "specLink": "https://w3c.github.io/aria/#suggestion"
+  },
+  "superscript": {
+    "description": "One or more superscripted characters. See related [`subscript`](https://w3c.github.io/aria/#subscript).",
+    "specLink": "https://w3c.github.io/aria/#superscript"
+  },
+  "switch": {
+    "description": "A type of checkbox that represents on/off values, as opposed to checked/unchecked values. See related [`checkbox`](https://w3c.github.io/aria/#checkbox).",
+    "specLink": "https://w3c.github.io/aria/#switch"
+  },
+  "tab": {
+    "description": "A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.",
+    "specLink": "https://w3c.github.io/aria/#tab"
+  },
+  "table": {
+    "description": "A [`section`](https://w3c.github.io/aria/#section) containing data arranged in rows and columns. See related [`grid`](https://w3c.github.io/aria/#grid).",
+    "specLink": "https://w3c.github.io/aria/#table"
+  },
+  "tablist": {
+    "description": "A list of [`tab`](https://w3c.github.io/aria/#tab) [elements](https://dom.spec.whatwg.org/#concept-element), which are references to [`tabpanel`](https://w3c.github.io/aria/#tabpanel) elements.",
+    "specLink": "https://w3c.github.io/aria/#tablist"
+  },
+  "tabpanel": {
+    "description": "A container for the resources associated with a [`tab`](https://w3c.github.io/aria/#tab), where each [`tab`](https://w3c.github.io/aria/#tab) is contained in a [`tablist`](https://w3c.github.io/aria/#tablist).",
+    "specLink": "https://w3c.github.io/aria/#tabpanel"
+  },
+  "term": {
+    "description": "A word or phrase with an optional corresponding definition. See related [`definition`](https://w3c.github.io/aria/#definition).",
+    "specLink": "https://w3c.github.io/aria/#term"
+  },
+  "textbox": {
+    "description": "A type of input that allows free-form text as its value.",
+    "specLink": "https://w3c.github.io/aria/#textbox"
+  },
+  "time": {
+    "description": "An element that represents a specific point in time.",
+    "specLink": "https://w3c.github.io/aria/#time"
+  },
+  "timer": {
+    "description": "A type of [live region](https://w3c.github.io/aria/#dfn-live-region) containing a numerical counter which indicates an amount of elapsed time from a start point, or the time remaining until an end point.",
+    "specLink": "https://w3c.github.io/aria/#timer"
+  },
+  "toolbar": {
+    "description": "A collection of commonly used function buttons or controls represented in compact visual form.",
+    "specLink": "https://w3c.github.io/aria/#toolbar"
+  },
+  "tooltip": {
+    "description": "A contextual popup that displays a description for an element.",
+    "specLink": "https://w3c.github.io/aria/#tooltip"
+  },
+  "tree": {
+    "description": "A [`widget`](https://w3c.github.io/aria/#widget) that allows the user to select one or more items from a hierarchically organized collection.",
+    "specLink": "https://w3c.github.io/aria/#tree"
+  },
+  "treegrid": {
+    "description": "A [`grid`](https://w3c.github.io/aria/#grid) whose rows can be expanded and collapsed in the same manner as for a [`tree`](https://w3c.github.io/aria/#tree).",
+    "specLink": "https://w3c.github.io/aria/#treegrid"
+  },
+  "treeitem": {
+    "description": "An item in a [`tree`](https://w3c.github.io/aria/#tree).",
+    "specLink": "https://w3c.github.io/aria/#treeitem"
+  }
+}

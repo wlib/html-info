@@ -7,7 +7,7 @@
     "typescript",
     "types"
   ],
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "author": {
     "name": "Daniel Ethridge",
@@ -18,10 +18,10 @@
   "repository": "https://github.com/wlib/html-info.git",
   "types": "./index.d.ts",
   "scripts": {
-    "build": "node ./build/index.mjs",
-    "prepare": "npm run build"
+    "build": "node ./build/index.mjs"
   },
   "devDependencies": {
-    "jsdom": "^21.1.0"
+    "@types/jsdom": "^21.1.7",
+    "jsdom": "25.0.1"
   }
 }

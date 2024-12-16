@@ -27,3 +27,8 @@ ${JSON.stringify(name)}: ${value}
 
 export const makeInterface = (name, entries) =>
   `export interface ${name} ${makeCommaSeparatedBlock(entries)}`
+
+export const makeUnion = entries =>
+  entries
+    .map(entry => indent(`| ${entry}`))
+    .join("\n")
