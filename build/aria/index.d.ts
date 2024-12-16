@@ -8,7 +8,7 @@ export interface RolesData {
 export interface AriaAttributesData {
   [attributeName: string]: {
     description: string
-    type?: string
+    type: string
     specLink: string
   }
 }

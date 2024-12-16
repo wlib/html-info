@@ -59,11 +59,11 @@ const ariaAttributesData = Object.fromEntries(
 
       const detailIdRef = link.getAttribute("href")
       const detailSection = link.ownerDocument.querySelector(detailIdRef)
-      const type = detailSection?.querySelector("td.property-value")
+      const type = detailSection.querySelector("td:is(.property-value, .state-value)")
 
       return [name, {
         description: nodeToMarkdown(dt.nextElementSibling),
-        type: type ? nodeToMarkdown(type) : undefined,
+        type: nodeToMarkdown(type),
         specLink: link.href
       }]
     })
@@ -98,7 +98,7 @@ const GlobalAriaAttributes = makeInterface("GlobalAriaAttributes", [
     const comment = `
 ${attributeInfo.description}
 
-**Type**: ${attributeInfo.type || "string"}
+**Type**: ${attributeInfo.type}
 
 **Spec**: ${attributeInfo.specLink}
     `.trim()

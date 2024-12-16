@@ -172,7 +172,8 @@ export interface HTMLGlobalAttributes extends
 export interface SVGGlobalAttributes extends
   GlobalAttributes,
   GlobalAriaAttributes,
-  BuiltSVGGlobalAttributes
+  BuiltSVGGlobalAttributes,
+  Pick<BuiltHTMLGlobalAttributes, "style">
 {}
 
 export interface MathMLGlobalAttributes extends

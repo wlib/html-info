@@ -749,7 +749,7 @@ export interface GlobalAriaAttributes {
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) an element is being modified and that assistive technologies could wait until the modifications are complete before exposing them to the user.
    * 
-   * **Type**: string
+   * **Type**: [true/false](https://w3c.github.io/aria/#valuetype_true-false)
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-busy
    */
@@ -757,7 +757,7 @@ export interface GlobalAriaAttributes {
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) the current "checked" [state](https://w3c.github.io/aria/#dfn-state) of checkboxes, radio buttons, and other [widgets](https://w3c.github.io/aria/#dfn-widget). See related [`aria-pressed`](https://w3c.github.io/aria/#aria-pressed) and [`aria-selected`](https://w3c.github.io/aria/#aria-selected).
    * 
-   * **Type**: string
+   * **Type**: [tristate](https://w3c.github.io/aria/#valuetype_tristate)
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-checked
    */
@@ -837,7 +837,7 @@ export interface GlobalAriaAttributes {
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) that the [element](https://dom.spec.whatwg.org/#concept-element) is [perceivable](https://w3c.github.io/aria/#dfn-perceivable) but disabled, so it is not editable or otherwise [operable](https://w3c.github.io/aria/#dfn-operable). See related [`aria-hidden`](https://w3c.github.io/aria/#aria-hidden) and [`aria-readonly`](https://w3c.github.io/aria/#aria-readonly).
    * 
-   * **Type**: string
+   * **Type**: [true/false](https://w3c.github.io/aria/#valuetype_true-false)
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-disabled
    */
@@ -861,7 +861,7 @@ export interface GlobalAriaAttributes {
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) whether a grouping element that is the [accessibility child](https://w3c.github.io/aria/#dfn-accessibility-child) of or is controlled by this element is expanded or collapsed.
    * 
-   * **Type**: string
+   * **Type**: [true/false/undefined](https://w3c.github.io/aria/#valuetype_true-false-undefined)
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-expanded
    */
@@ -877,7 +877,7 @@ export interface GlobalAriaAttributes {
   /**
    * [Deprecated in ARIA 1.1] Indicates an element's "grabbed" [state](https://w3c.github.io/aria/#dfn-state) in a drag-and-drop operation.
    * 
-   * **Type**: string
+   * **Type**: [true/false/undefined](https://w3c.github.io/aria/#valuetype_true-false-undefined)
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-grabbed
    */
@@ -893,7 +893,7 @@ export interface GlobalAriaAttributes {
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates), when set to `true`, that an [element](https://dom.spec.whatwg.org/#concept-element) and its entire subtree are hidden from assistive technology, regardless of whether it is visibly rendered.
    * 
-   * **Type**: string
+   * **Type**: [true/false/undefined](https://w3c.github.io/aria/#valuetype_true-false-undefined)
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-hidden
    */
@@ -901,7 +901,7 @@ export interface GlobalAriaAttributes {
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) the entered value does not conform to the format expected by the application. See related [`aria-errormessage`](https://w3c.github.io/aria/#aria-errormessage).
    * 
-   * **Type**: string
+   * **Type**: [token](https://w3c.github.io/aria/#valuetype_token)
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-invalid
    */
@@ -1005,7 +1005,7 @@ export interface GlobalAriaAttributes {
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) the current "pressed" [state](https://w3c.github.io/aria/#dfn-state) of toggle buttons. See related [`aria-checked`](https://w3c.github.io/aria/#aria-checked) and [`aria-selected`](https://w3c.github.io/aria/#aria-selected).
    * 
-   * **Type**: string
+   * **Type**: [tristate](https://w3c.github.io/aria/#valuetype_tristate)
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-pressed
    */
@@ -1077,7 +1077,7 @@ export interface GlobalAriaAttributes {
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) the current "selected" [state](https://w3c.github.io/aria/#dfn-state) of various [widgets](https://w3c.github.io/aria/#dfn-widget). See related [`aria-checked`](https://w3c.github.io/aria/#aria-checked) and [`aria-pressed`](https://w3c.github.io/aria/#aria-pressed).
    * 
-   * **Type**: string
+   * **Type**: [true/false/undefined](https://w3c.github.io/aria/#valuetype_true-false-undefined)
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-selected
    */
