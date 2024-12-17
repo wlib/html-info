@@ -1143,15 +1143,7 @@ export interface HTMLTagToAttributes {
    * **Spec**: https://html.spec.whatwg.org/multipage/semantics.html#the-html-element
    */
   "html": {
-    /**
-     * undefined
-     * 
-     * **Type**: undefined
-     * 
-     * **Specs**:
-     * - https://html.spec.whatwg.org/multipage/obsolete.html#attr-html-manifest
-     */
-    "manifest": string
+    
   },
   /**
    * Alternate voice

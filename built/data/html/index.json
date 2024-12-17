@@ -974,13 +974,7 @@
     "html": {
       "specLink": "https://html.spec.whatwg.org/multipage/semantics.html#the-html-element",
       "description": "Root element",
-      "specificAttributes": {
-        "manifest": {
-          "specLinks": [
-            "https://html.spec.whatwg.org/multipage/obsolete.html#attr-html-manifest"
-          ]
-        }
-      }
+      "specificAttributes": {}
     },
     "i": {
       "specLink": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-i-element",
