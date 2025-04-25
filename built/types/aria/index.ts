@@ -859,7 +859,7 @@ export interface GlobalAriaAttributes {
    */
   "aria-errormessage": string,
   /**
-   * [Indicates](https://w3c.github.io/aria/#dfn-indicates) whether a grouping element that is the [accessibility child](https://w3c.github.io/aria/#dfn-accessibility-child) of or is controlled by this element is expanded or collapsed.
+   * [Indicates](https://w3c.github.io/aria/#dfn-indicates) whether a related element is expanded (shown) or collapsed (hidden).
    * 
    * **Type**: [true/false/undefined](https://w3c.github.io/aria/#valuetype_true-false-undefined)
    * 

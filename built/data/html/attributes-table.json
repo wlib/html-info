@@ -303,6 +303,19 @@
       }
     }
   ],
+  "closedby": [
+    {
+      "description": "Which user actions will close the dialog",
+      "type": "\"[`any`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-any)\"; \"[`closerequest`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-closerequest)\"; \"[`none`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-none)\";",
+      "elements": {
+        "byName": {
+          "dialog": {
+            "specLink": "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby"
+          }
+        }
+      }
+    }
+  ],
   "color": [
     {
       "description": "Color to use when customizing a site's icon (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"`mask-icon`\")",
@@ -353,6 +366,32 @@
           },
           "th": {
             "specLink": "https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan"
+          }
+        }
+      }
+    }
+  ],
+  "command": [
+    {
+      "description": "Indicates to the targeted element which action to take.",
+      "type": "\"[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)\"; \"[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)\"; \"[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)\"; \"[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)\"; \"[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)\"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)",
+      "elements": {
+        "byName": {
+          "button": {
+            "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+          }
+        }
+      }
+    }
+  ],
+  "commandfor": [
+    {
+      "description": "Targets another element to be invoked.",
+      "type": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "elements": {
+        "byName": {
+          "button": {
+            "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor"
           }
         }
       }
@@ -1852,6 +1891,19 @@
         "byName": {
           "template": {
             "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable"
+          }
+        }
+      }
+    }
+  ],
+  "shadowrootcustomelementregistry": [
+    {
+      "description": "Enables declarative shadow roots to indicate they will use a custom element registry",
+      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "elements": {
+        "byName": {
+          "template": {
+            "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry"
           }
         }
       }

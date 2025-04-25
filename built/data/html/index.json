@@ -522,6 +522,20 @@
       "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element",
       "description": "Button control",
       "specificAttributes": {
+        "command": {
+          "specLinks": [
+            "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+          ],
+          "description": "Indicates to the targeted element which action to take.",
+          "type": "\"[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)\"; \"[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)\"; \"[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)\"; \"[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)\"; \"[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)\"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)"
+        },
+        "commandfor": {
+          "specLinks": [
+            "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor"
+          ],
+          "description": "Targets another element to be invoked.",
+          "type": "[ID](https://dom.spec.whatwg.org/#concept-id)*"
+        },
         "disabled": {
           "specLinks": [
             "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled"
@@ -755,6 +769,13 @@
           ],
           "description": "Whether the dialog box is showing",
           "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)"
+        },
+        "closedby": {
+          "specLinks": [
+            "https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby"
+          ],
+          "description": "Which user actions will close the dialog",
+          "type": "\"[`any`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-any)\"; \"[`closerequest`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-closerequest)\"; \"[`none`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-none)\";"
         }
       }
     },
@@ -2275,6 +2296,13 @@
             "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable"
           ],
           "description": "Sets [serializable](https://html.spec.whatwg.org/multipage/structured-data.html#serializable) on a declarative shadow root",
+          "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)"
+        },
+        "shadowrootcustomelementregistry": {
+          "specLinks": [
+            "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry"
+          ],
+          "description": "Enables declarative shadow roots to indicate they will use a custom element registry",
           "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)"
         }
       }
