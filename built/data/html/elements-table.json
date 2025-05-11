@@ -214,6 +214,12 @@
     "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-button-element",
     "description": "Button control",
     "specificAttributes": {
+      "command": {
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
+      },
+      "commandfor": {
+        "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor"
+      },
       "disabled": {
         "specLink": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-disabled"
       },
@@ -1213,6 +1219,9 @@
       },
       "shadowrootserializable": {
         "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable"
+      },
+      "shadowrootcustomelementregistry": {
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry"
       }
     }
   },

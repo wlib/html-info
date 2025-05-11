@@ -533,6 +533,24 @@ export interface HTMLTagToAttributes {
    */
   "button": {
     /**
+     * Indicates to the targeted element which action to take.
+     * 
+     * **Type**: "[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)"; "[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)"; "[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)"; "[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)"; "[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command
+     */
+    "command": string,
+    /**
+     * Targets another element to be invoked.
+     * 
+     * **Type**: [ID](https://dom.spec.whatwg.org/#concept-id)*
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-commandfor
+     */
+    "commandfor": string,
+    /**
      * Whether the form control is disabled
      * 
      * **Type**: [Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)
@@ -834,7 +852,16 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-open
      */
-    "open": string
+    "open": string,
+    /**
+     * Which user actions will close the dialog
+     * 
+     * **Type**: "[`any`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-any)"; "[`closerequest`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-closerequest)"; "[`none`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-none)";
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby
+     */
+    "closedby": string
   },
   /**
    * Generic flow container, or container for name-value groups in [`dl`](https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element) elements
@@ -2855,7 +2882,16 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable
      */
-    "shadowrootserializable": string
+    "shadowrootserializable": string,
+    /**
+     * Enables declarative shadow roots to indicate they will use a custom element registry
+     * 
+     * **Type**: [Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootcustomelementregistry
+     */
+    "shadowrootcustomelementregistry": string
   },
   /**
    * Multiline text controls
