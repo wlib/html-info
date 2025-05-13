@@ -105,7 +105,7 @@ type ElementToEventMap_<E extends Element>
         : SVGElementEventMap
   : E extends MathMLElement
     ? MathMLElementEventMap
-  : ElementEventMap
+  : ElementEventMap & GlobalEventHandlersEventMap
 
 type   HTMLTagToEventMap_ = { [Name in   HTMLTag]: ElementToEventMap_<  HTMLElementTagNameMap[Name]> }
 type    SVGTagToEventMap_ = { [Name in    SVGTag]: ElementToEventMap_<   SVGElementTagNameMap[Name]> }
@@ -132,6 +132,27 @@ type MathMLTagToEventMap_ = { [Name in MathMLTag]: ElementToEventMap_<MathMLElem
 export interface   HTMLTagToEventMap extends   HTMLTagToEventMap_ {}
 export interface    SVGTagToEventMap extends    SVGTagToEventMap_ {}
 export interface MathMLTagToEventMap extends MathMLTagToEventMap_ {}
+
+export type ElementToEventMap<
+  Name extends string,
+  NS   extends Namespace = HTMLNamespace
+>
+  = NS extends HTMLNamespace
+    ?
+      Name extends HTMLTag
+        ? HTMLTagToEventMap[Name]
+        : HTMLElementEventMap
+  : NS extends SVGNamespace
+    ?
+      Name extends SVGTag
+        ? SVGTagToEventMap[Name]
+        : SVGElementEventMap
+  : NS extends MathMLNamespace
+    ?
+      Name extends MathMLTag
+        ? MathMLTagToEventMap[Name]
+        : MathMLElementEventMap
+  : ElementEventMap & GlobalEventHandlersEventMap
 
 
 export type ElementToAttributes<
