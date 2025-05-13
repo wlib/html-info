@@ -206,7 +206,7 @@ export interface HTMLGlobalAttributes {
    * 
    * **Spec**: https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex
    */
-  "tabindex": string,
+  "tabindex": number | string,
   /**
    * Advisory information for the element
    * 

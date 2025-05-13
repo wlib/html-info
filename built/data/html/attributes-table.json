@@ -2,7 +2,8 @@
   "abbr": [
     {
       "description": "Alternative label to use for the header cell when referencing the cell in other contexts",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "th": {
@@ -15,7 +16,8 @@
   "accept": [
     {
       "description": "Hint for expected file type in [file upload controls](https://html.spec.whatwg.org/multipage/input.html#file-upload-state-(type=file))",
-      "type": "[Set of comma-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-comma-separated-tokens)* consisting of [valid MIME type strings with no parameters](https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters) or `audio/*`, `video/*`, or `image/*`",
+      "typeDescription": "[Set of comma-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-comma-separated-tokens)* consisting of [valid MIME type strings with no parameters](https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters) or `audio/*`, `video/*`, or `image/*`",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -28,7 +30,8 @@
   "accept-charset": [
     {
       "description": "Character encodings to use for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[ASCII case-insensitive](https://infra.spec.whatwg.org/#ascii-case-insensitive) match for \"`UTF-8`\"",
+      "typeDescription": "[ASCII case-insensitive](https://infra.spec.whatwg.org/#ascii-case-insensitive) match for \"`UTF-8`\"",
+      "type": "string",
       "elements": {
         "byName": {
           "form": {
@@ -41,7 +44,8 @@
   "accesskey": [
     {
       "description": "Keyboard shortcut to activate or focus element",
-      "type": "[Ordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#ordered-set-of-unique-space-separated-tokens), none of which are [identical to](https://infra.spec.whatwg.org/#string-is) another, each consisting of one code point in length",
+      "typeDescription": "[Ordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#ordered-set-of-unique-space-separated-tokens), none of which are [identical to](https://infra.spec.whatwg.org/#string-is) another, each consisting of one code point in length",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute"
@@ -52,7 +56,8 @@
   "action": [
     {
       "description": "[URL](https://url.spec.whatwg.org/#concept-url) to use for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "byName": {
           "form": {
@@ -65,7 +70,8 @@
   "allow": [
     {
       "description": "[Permissions policy](https://w3c.github.io/webappsec-feature-policy/#permissions-policy) to be applied to the [`iframe`](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element)'s contents",
-      "type": "[Serialized permissions policy](https://w3c.github.io/webappsec-feature-policy/#serialized-permissions-policy)",
+      "typeDescription": "[Serialized permissions policy](https://w3c.github.io/webappsec-feature-policy/#serialized-permissions-policy)",
+      "type": "string",
       "elements": {
         "byName": {
           "iframe": {
@@ -78,7 +84,8 @@
   "allowfullscreen": [
     {
       "description": "Whether to allow the [`iframe`](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element)'s contents to use [`requestFullscreen()`](https://fullscreen.spec.whatwg.org/#dom-element-requestfullscreen)",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "iframe": {
@@ -91,7 +98,8 @@
   "alpha": [
     {
       "description": "Allow the color's alpha component to be set",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -104,7 +112,8 @@
   "alt": [
     {
       "description": "Replacement text for use when images are not available",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "area": {
@@ -123,7 +132,8 @@
   "as": [
     {
       "description": "[Potential destination](https://fetch.spec.whatwg.org/#concept-potential-destination) for a preload request (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)\" and [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)\")",
-      "type": "[Potential destination](https://fetch.spec.whatwg.org/#concept-potential-destination), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)\"; [script-like destination](https://fetch.spec.whatwg.org/#request-destination-script-like), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)\"",
+      "typeDescription": "[Potential destination](https://fetch.spec.whatwg.org/#concept-potential-destination), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)\"; [script-like destination](https://fetch.spec.whatwg.org/#request-destination-script-like), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -136,7 +146,8 @@
   "async": [
     {
       "description": "Execute script when available, without blocking while fetching",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "script": {
@@ -149,7 +160,8 @@
   "autocapitalize": [
     {
       "description": "Recommended autocapitalization behavior (for supported input methods)",
-      "type": "\"[`on`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-on)\"; \"[`off`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-off)\"; \"[`none`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-none)\"; \"[`sentences`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-sentences)\"; \"[`words`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-words)\"; \"[`characters`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-characters)\"",
+      "typeDescription": "\"[`on`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-on)\"; \"[`off`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-off)\"; \"[`none`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-none)\"; \"[`sentences`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-sentences)\"; \"[`words`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-words)\"; \"[`characters`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize-characters)\"",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-autocapitalize"
@@ -160,7 +172,8 @@
   "autocomplete": [
     {
       "description": "Default setting for autofill feature for controls in the form",
-      "type": "\"`on`\"; \"`off`\"",
+      "typeDescription": "\"`on`\"; \"`off`\"",
+      "type": "string",
       "elements": {
         "byName": {
           "form": {
@@ -171,7 +184,8 @@
     },
     {
       "description": "Hint for form autofill feature",
-      "type": "[Autofill field](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill-field) name and related tokens*",
+      "typeDescription": "[Autofill field](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill-field) name and related tokens*",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -190,7 +204,8 @@
   "autocorrect": [
     {
       "description": "Recommended autocorrection behavior (for supported input methods)",
-      "type": "\"[`on`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-on)\"; \"[`off`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-off)\"",
+      "typeDescription": "\"[`on`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-on)\"; \"[`off`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-off)\"",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect"
@@ -201,7 +216,8 @@
   "autofocus": [
     {
       "description": "Automatically focus the element when the page is loaded",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-fe-autofocus"
@@ -212,7 +228,8 @@
   "autoplay": [
     {
       "description": "Hint that the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) can be started automatically when the page is loaded",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "audio": {
@@ -228,7 +245,8 @@
   "blocking": [
     {
       "description": "Whether the element is [potentially render-blocking](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#potentially-render-blocking)",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens)*",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens)*",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -247,7 +265,8 @@
   "charset": [
     {
       "description": "[Character encoding declaration](https://html.spec.whatwg.org/multipage/semantics.html#character-encoding-declaration)",
-      "type": "\"`utf-8`\"",
+      "typeDescription": "\"`utf-8`\"",
+      "type": "string",
       "elements": {
         "byName": {
           "meta": {
@@ -260,7 +279,8 @@
   "checked": [
     {
       "description": "Whether the control is checked",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -273,7 +293,8 @@
   "cite": [
     {
       "description": "Link to the source of the quotation or more information about the edit",
-      "type": "[Valid URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "byName": {
           "blockquote": {
@@ -295,7 +316,8 @@
   "class": [
     {
       "description": "Classes to which the element belongs",
-      "type": "[Set of space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-space-separated-tokens)",
+      "typeDescription": "[Set of space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-space-separated-tokens)",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/dom.html#classes"
@@ -306,7 +328,8 @@
   "closedby": [
     {
       "description": "Which user actions will close the dialog",
-      "type": "\"[`any`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-any)\"; \"[`closerequest`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-closerequest)\"; \"[`none`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-none)\";",
+      "typeDescription": "\"[`any`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-any)\"; \"[`closerequest`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-closerequest)\"; \"[`none`](https://html.spec.whatwg.org/multipage/interactive-elements.html#attr-dialog-closedby-none)\";",
+      "type": "string",
       "elements": {
         "byName": {
           "dialog": {
@@ -319,7 +342,8 @@
   "color": [
     {
       "description": "Color to use when customizing a site's icon (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"`mask-icon`\")",
-      "type": "CSS [<color>](https://drafts.csswg.org/css-color/#typedef-color)",
+      "typeDescription": "CSS [<color>](https://drafts.csswg.org/css-color/#typedef-color)",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -332,7 +356,8 @@
   "colorspace": [
     {
       "description": "The color space of the serialized color",
-      "type": "\"[`limited-srgb`](https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace-limited-srgb)\"; \"[`display-p3`](https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace-display-p3)\"",
+      "typeDescription": "\"[`limited-srgb`](https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace-limited-srgb)\"; \"[`display-p3`](https://html.spec.whatwg.org/multipage/input.html#attr-input-colorspace-display-p3)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -345,7 +370,8 @@
   "cols": [
     {
       "description": "Maximum number of characters per line",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "type": "number | string",
       "elements": {
         "byName": {
           "textarea": {
@@ -358,7 +384,8 @@
   "colspan": [
     {
       "description": "Number of columns that the cell is to span",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "type": "number | string",
       "elements": {
         "byName": {
           "td": {
@@ -374,7 +401,8 @@
   "command": [
     {
       "description": "Indicates to the targeted element which action to take.",
-      "type": "\"[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)\"; \"[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)\"; \"[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)\"; \"[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)\"; \"[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)\"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)",
+      "typeDescription": "\"[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)\"; \"[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)\"; \"[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)\"; \"[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)\"; \"[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)\"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -387,7 +415,8 @@
   "commandfor": [
     {
       "description": "Targets another element to be invoked.",
-      "type": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "typeDescription": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -400,7 +429,8 @@
   "content": [
     {
       "description": "Value of the element",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "meta": {
@@ -413,7 +443,8 @@
   "contenteditable": [
     {
       "description": "Whether the element is editable",
-      "type": "\"`true`\"; \"`plaintext-only`\"; \"`false`\"",
+      "typeDescription": "\"`true`\"; \"`plaintext-only`\"; \"`false`\"",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable"
@@ -424,7 +455,8 @@
   "controls": [
     {
       "description": "Show user agent controls",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "audio": {
@@ -440,7 +472,8 @@
   "coords": [
     {
       "description": "Coordinates for the shape to be created in an [image map](https://html.spec.whatwg.org/multipage/image-maps.html#image-map)",
-      "type": "[Valid list of floating-point numbers](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-list-of-floating-point-numbers)*",
+      "typeDescription": "[Valid list of floating-point numbers](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-list-of-floating-point-numbers)*",
+      "type": "string",
       "elements": {
         "byName": {
           "area": {
@@ -453,7 +486,8 @@
   "crossorigin": [
     {
       "description": "How the element handles crossorigin requests",
-      "type": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"",
+      "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "audio": {
@@ -478,7 +512,8 @@
   "data": [
     {
       "description": "Address of the resource",
-      "type": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "byName": {
           "object": {
@@ -491,7 +526,8 @@
   "datetime": [
     {
       "description": "Date and (optionally) time of the change",
-      "type": "[Valid date string with optional time](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string-with-optional-time)",
+      "typeDescription": "[Valid date string with optional time](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string-with-optional-time)",
+      "type": "string",
       "elements": {
         "byName": {
           "del": {
@@ -505,7 +541,8 @@
     },
     {
       "description": "Machine-readable value",
-      "type": "[Valid month string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-month-string), [valid date string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string), [valid yearless date string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-yearless-date-string), [valid time string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-time-string), [valid local date and time string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-local-date-and-time-string), [valid time-zone offset string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-time-zone-offset-string), [valid global date and time string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-global-date-and-time-string), [valid week string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-week-string), [valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer), or [valid duration string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-duration-string)",
+      "typeDescription": "[Valid month string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-month-string), [valid date string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string), [valid yearless date string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-yearless-date-string), [valid time string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-time-string), [valid local date and time string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-local-date-and-time-string), [valid time-zone offset string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-time-zone-offset-string), [valid global date and time string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-global-date-and-time-string), [valid week string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-week-string), [valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer), or [valid duration string](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-duration-string)",
+      "type": "number | string",
       "elements": {
         "byName": {
           "time": {
@@ -518,7 +555,8 @@
   "decoding": [
     {
       "description": "Decoding hint to use when processing this image for presentation",
-      "type": "\"[`sync`](https://html.spec.whatwg.org/multipage/images.html#attr-img-decoding-sync)\"; \"[`async`](https://html.spec.whatwg.org/multipage/images.html#attr-img-decoding-async)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/images.html#attr-img-decoding-auto)\"",
+      "typeDescription": "\"[`sync`](https://html.spec.whatwg.org/multipage/images.html#attr-img-decoding-sync)\"; \"[`async`](https://html.spec.whatwg.org/multipage/images.html#attr-img-decoding-async)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/images.html#attr-img-decoding-auto)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "img": {
@@ -531,7 +569,8 @@
   "default": [
     {
       "description": "Enable the track if no other [text track](https://html.spec.whatwg.org/multipage/media.html#text-track) is more suitable",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "track": {
@@ -544,7 +583,8 @@
   "defer": [
     {
       "description": "Defer script execution",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "script": {
@@ -557,7 +597,8 @@
   "dir": [
     {
       "description": "[The text directionality](https://html.spec.whatwg.org/multipage/dom.html#the-directionality) of the element",
-      "type": "\"[`ltr`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-ltr)\"; \"[`rtl`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-rtl)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-auto)\"",
+      "typeDescription": "\"[`ltr`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-ltr)\"; \"[`rtl`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-rtl)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-auto)\"",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-dir"
@@ -566,7 +607,8 @@
     },
     {
       "description": "[The text directionality](https://html.spec.whatwg.org/multipage/dom.html#the-directionality) of the element",
-      "type": "\"[`ltr`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-ltr)\"; \"[`rtl`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-rtl)\"",
+      "typeDescription": "\"[`ltr`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-ltr)\"; \"[`rtl`](https://html.spec.whatwg.org/multipage/dom.html#attr-dir-rtl)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "bdo": {
@@ -579,7 +621,8 @@
   "dirname": [
     {
       "description": "Name of form control to use for sending the element's [directionality](https://html.spec.whatwg.org/multipage/dom.html#the-directionality) in [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -595,7 +638,8 @@
   "disabled": [
     {
       "description": "Whether the form control is disabled",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -624,7 +668,8 @@
     },
     {
       "description": "Whether the descendant form controls, except any inside [`legend`](https://html.spec.whatwg.org/multipage/form-elements.html#the-legend-element), are disabled",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "fieldset": {
@@ -635,7 +680,8 @@
     },
     {
       "description": "Whether the link is disabled",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -648,7 +694,8 @@
   "download": [
     {
       "description": "Whether to download the resource instead of navigating to it, and its filename if so",
-      "type": "Text",
+      "typeDescription": "Text",
+      "type": "string",
       "elements": {
         "byName": {
           "a": {
@@ -664,7 +711,8 @@
   "draggable": [
     {
       "description": "Whether the element is draggable",
-      "type": "\"`true`\"; \"`false`\"",
+      "typeDescription": "\"`true`\"; \"`false`\"",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/dnd.html#attr-draggable"
@@ -675,7 +723,8 @@
   "enctype": [
     {
       "description": "[Entry list](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#entry-list) encoding type to use for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "\"[`application/x-www-form-urlencoded`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-urlencoded)\"; \"[`multipart/form-data`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-formdata)\"; \"[`text/plain`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-text)\"",
+      "typeDescription": "\"[`application/x-www-form-urlencoded`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-urlencoded)\"; \"[`multipart/form-data`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-formdata)\"; \"[`text/plain`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-text)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "form": {
@@ -688,7 +737,8 @@
   "enterkeyhint": [
     {
       "description": "Hint for selecting an enter key action",
-      "type": "\"[`enter`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-enter)\"; \"[`done`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-done)\"; \"[`go`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-go)\"; \"[`next`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-next)\"; \"[`previous`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-previous)\"; \"[`search`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-search)\"; \"[`send`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-send)\"",
+      "typeDescription": "\"[`enter`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-enter)\"; \"[`done`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-done)\"; \"[`go`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-go)\"; \"[`next`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-next)\"; \"[`previous`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-previous)\"; \"[`search`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-search)\"; \"[`send`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-send)\"",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint"
@@ -699,7 +749,8 @@
   "fetchpriority": [
     {
       "description": "Sets the [priority](https://fetch.spec.whatwg.org/#request-priority) for [fetches](https://fetch.spec.whatwg.org/#concept-fetch) initiated by the element",
-      "type": "\"[`auto`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto)\"; \"[`high`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high)\"; \"[`low`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-low)\"",
+      "typeDescription": "\"[`auto`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-auto)\"; \"[`high`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-high)\"; \"[`low`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-fetchpriority-low)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "img": {
@@ -718,7 +769,8 @@
   "for": [
     {
       "description": "Associate the label with form control",
-      "type": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "typeDescription": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "type": "string",
       "elements": {
         "byName": {
           "label": {
@@ -729,7 +781,8 @@
     },
     {
       "description": "Specifies controls from which the output was calculated",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of IDs*",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of IDs*",
+      "type": "string",
       "elements": {
         "byName": {
           "output": {
@@ -742,7 +795,8 @@
   "form": [
     {
       "description": "Associates the element with a [`form`](https://html.spec.whatwg.org/multipage/forms.html#the-form-element) element",
-      "type": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "typeDescription": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -776,7 +830,8 @@
   "formaction": [
     {
       "description": "[URL](https://url.spec.whatwg.org/#concept-url) to use for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -792,7 +847,8 @@
   "formenctype": [
     {
       "description": "[Entry list](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#entry-list) encoding type to use for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "\"[`application/x-www-form-urlencoded`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-urlencoded)\"; \"[`multipart/form-data`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-formdata)\"; \"[`text/plain`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-text)\"",
+      "typeDescription": "\"[`application/x-www-form-urlencoded`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-urlencoded)\"; \"[`multipart/form-data`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-formdata)\"; \"[`text/plain`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-enctype-text)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -808,7 +864,8 @@
   "formmethod": [
     {
       "description": "Variant to use for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "\"`GET`\"; \"`POST`\"; \"`dialog`\"",
+      "typeDescription": "\"`GET`\"; \"`POST`\"; \"`dialog`\"",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -824,7 +881,8 @@
   "formnovalidate": [
     {
       "description": "Bypass form control validation for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -840,7 +898,8 @@
   "formtarget": [
     {
       "description": "[Navigable](https://html.spec.whatwg.org/multipage/document-sequences.html#navigable) for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "typeDescription": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -856,7 +915,8 @@
   "headers": [
     {
       "description": "The header cells for this cell",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of IDs*",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of IDs*",
+      "type": "string",
       "elements": {
         "byName": {
           "td": {
@@ -872,7 +932,8 @@
   "height": [
     {
       "description": "Vertical dimension",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "type": "number | string",
       "elements": {
         "byName": {
           "canvas": {
@@ -906,7 +967,8 @@
   "hidden": [
     {
       "description": "Whether the element is relevant",
-      "type": "\"[`until-found`](https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found)\"; \"[`hidden`](https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden)\"; the empty string",
+      "typeDescription": "\"[`until-found`](https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden-until-found)\"; \"[`hidden`](https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden)\"; the empty string",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden"
@@ -917,7 +979,8 @@
   "high": [
     {
       "description": "Low limit of high range",
-      "type": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "typeDescription": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "type": "number | string",
       "elements": {
         "byName": {
           "meter": {
@@ -930,7 +993,8 @@
   "href": [
     {
       "description": "Address of the [hyperlink](https://html.spec.whatwg.org/multipage/links.html#hyperlink)",
-      "type": "[Valid URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "byName": {
           "a": {
@@ -944,7 +1008,8 @@
     },
     {
       "description": "Address of the [hyperlink](https://html.spec.whatwg.org/multipage/links.html#hyperlink)",
-      "type": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -955,7 +1020,8 @@
     },
     {
       "description": "[Document base URL](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#document-base-url)",
-      "type": "[Valid URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "byName": {
           "base": {
@@ -968,7 +1034,8 @@
   "hreflang": [
     {
       "description": "Language of the linked resource",
-      "type": "Valid BCP 47 language tag",
+      "typeDescription": "Valid BCP 47 language tag",
+      "type": "string",
       "elements": {
         "byName": {
           "a": {
@@ -984,7 +1051,8 @@
   "http-equiv": [
     {
       "description": "Pragma directive",
-      "type": "\"[`content-type`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-content-type)\"; \"[`default-style`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-default-style)\"; \"[`refresh`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-refresh)\"; \"[`x-ua-compatible`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-x-ua-compatible)\"; \"[`content-security-policy`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-content-security-policy)\"",
+      "typeDescription": "\"[`content-type`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-content-type)\"; \"[`default-style`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-default-style)\"; \"[`refresh`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-refresh)\"; \"[`x-ua-compatible`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-x-ua-compatible)\"; \"[`content-security-policy`](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-keyword-content-security-policy)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "meta": {
@@ -997,7 +1065,8 @@
   "id": [
     {
       "description": "The element's [ID](https://dom.spec.whatwg.org/#concept-id)",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute"
@@ -1008,7 +1077,8 @@
   "imagesizes": [
     {
       "description": "Image sizes for different page layouts (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)\")",
-      "type": "[Valid source size list](https://html.spec.whatwg.org/multipage/images.html#valid-source-size-list)",
+      "typeDescription": "[Valid source size list](https://html.spec.whatwg.org/multipage/images.html#valid-source-size-list)",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -1021,7 +1091,8 @@
   "imagesrcset": [
     {
       "description": "Images to use in different situations, e.g., high-resolution displays, small monitors, etc. (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)\")",
-      "type": "Comma-separated list of [image candidate strings](https://html.spec.whatwg.org/multipage/images.html#image-candidate-string)",
+      "typeDescription": "Comma-separated list of [image candidate strings](https://html.spec.whatwg.org/multipage/images.html#image-candidate-string)",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -1034,7 +1105,8 @@
   "inert": [
     {
       "description": "Whether the element is [inert](https://html.spec.whatwg.org/multipage/interaction.html#inert).",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#the-inert-attribute"
@@ -1045,7 +1117,8 @@
   "inputmode": [
     {
       "description": "Hint for selecting an input modality",
-      "type": "\"[`none`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-none)\"; \"[`text`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-text)\"; \"[`tel`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-tel)\"; \"[`email`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-email)\"; \"[`url`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-url)\"; \"[`numeric`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-numeric)\"; \"[`decimal`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-decimal)\"; \"[`search`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-search)\"",
+      "typeDescription": "\"[`none`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-none)\"; \"[`text`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-text)\"; \"[`tel`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-tel)\"; \"[`email`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-email)\"; \"[`url`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-url)\"; \"[`numeric`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-numeric)\"; \"[`decimal`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-decimal)\"; \"[`search`](https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode-keyword-search)\"",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode"
@@ -1056,7 +1129,8 @@
   "integrity": [
     {
       "description": "Integrity metadata used in Subresource Integrity checks [[SRI]](https://html.spec.whatwg.org/multipage/references.html#refsSRI)",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -1072,7 +1146,8 @@
   "is": [
     {
       "description": "Creates a [customized built-in element](https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element)",
-      "type": "[Valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name) of a defined [customized built-in element](https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element)",
+      "typeDescription": "[Valid custom element name](https://html.spec.whatwg.org/multipage/custom-elements.html#valid-custom-element-name) of a defined [customized built-in element](https://html.spec.whatwg.org/multipage/custom-elements.html#customized-built-in-element)",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-is"
@@ -1083,7 +1158,8 @@
   "ismap": [
     {
       "description": "Whether the image is a server-side image map",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "img": {
@@ -1096,7 +1172,8 @@
   "itemid": [
     {
       "description": "[Global identifier](https://html.spec.whatwg.org/multipage/microdata.html#global-identifier) for a microdata item",
-      "type": "[Valid URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemid"
@@ -1107,7 +1184,8 @@
   "itemprop": [
     {
       "description": "[Property names](https://html.spec.whatwg.org/multipage/microdata.html#property-names) of a microdata item",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of [valid absolute URLs](https://url.spec.whatwg.org/#syntax-url-absolute), [defined property names](https://html.spec.whatwg.org/multipage/microdata.html#defined-property-name), or text*",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of [valid absolute URLs](https://url.spec.whatwg.org/#syntax-url-absolute), [defined property names](https://html.spec.whatwg.org/multipage/microdata.html#defined-property-name), or text*",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute"
@@ -1118,7 +1196,8 @@
   "itemref": [
     {
       "description": "[Referenced](https://html.spec.whatwg.org/multipage/dom.html#referenced) elements",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of IDs*",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of IDs*",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemref"
@@ -1129,7 +1208,8 @@
   "itemscope": [
     {
       "description": "Introduces a microdata item",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemscope"
@@ -1140,7 +1220,8 @@
   "itemtype": [
     {
       "description": "[Item types](https://html.spec.whatwg.org/multipage/microdata.html#item-types) of a microdata item",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of [valid absolute URLs](https://url.spec.whatwg.org/#syntax-url-absolute)*",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens) consisting of [valid absolute URLs](https://url.spec.whatwg.org/#syntax-url-absolute)*",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/microdata.html#attr-itemtype"
@@ -1151,7 +1232,8 @@
   "kind": [
     {
       "description": "The type of text track",
-      "type": "\"[`subtitles`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-subtitles)\"; \"[`captions`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-captions)\"; \"[`descriptions`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-descriptions)\"; \"[`chapters`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-chapters)\"; \"[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-metadata)\"",
+      "typeDescription": "\"[`subtitles`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-subtitles)\"; \"[`captions`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-captions)\"; \"[`descriptions`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-descriptions)\"; \"[`chapters`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-chapters)\"; \"[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-metadata)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "track": {
@@ -1164,7 +1246,8 @@
   "label": [
     {
       "description": "User-visible label",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "byName": {
           "optgroup": {
@@ -1183,7 +1266,8 @@
   "lang": [
     {
       "description": "[Language](https://html.spec.whatwg.org/multipage/dom.html#language) of the element",
-      "type": "Valid BCP 47 language tag or the empty string",
+      "typeDescription": "Valid BCP 47 language tag or the empty string",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-lang"
@@ -1194,7 +1278,8 @@
   "list": [
     {
       "description": "List of autocomplete options",
-      "type": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "typeDescription": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -1207,7 +1292,8 @@
   "loading": [
     {
       "description": "Used when determining loading deferral",
-      "type": "\"[`lazy`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy)\"; \"[`eager`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-eager)\"",
+      "typeDescription": "\"[`lazy`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy)\"; \"[`eager`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-eager)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "iframe": {
@@ -1223,7 +1309,8 @@
   "loop": [
     {
       "description": "Whether to loop the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource)",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "audio": {
@@ -1239,7 +1326,8 @@
   "low": [
     {
       "description": "High limit of low range",
-      "type": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "typeDescription": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "type": "number | string",
       "elements": {
         "byName": {
           "meter": {
@@ -1252,7 +1340,8 @@
   "max": [
     {
       "description": "Maximum value",
-      "type": "Varies*",
+      "typeDescription": "Varies*",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -1263,7 +1352,8 @@
     },
     {
       "description": "Upper bound of range",
-      "type": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "typeDescription": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "type": "number | string",
       "elements": {
         "byName": {
           "meter": {
@@ -1279,7 +1369,8 @@
   "maxlength": [
     {
       "description": "Maximum [length](https://infra.spec.whatwg.org/#string-length) of value",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "type": "number | string",
       "elements": {
         "byName": {
           "input": {
@@ -1295,7 +1386,8 @@
   "media": [
     {
       "description": "Applicable media",
-      "type": "[Valid media query list](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-media-query-list)",
+      "typeDescription": "[Valid media query list](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-media-query-list)",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -1317,7 +1409,8 @@
   "method": [
     {
       "description": "Variant to use for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "\"[`GET`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method-get-keyword)\"; \"[`POST`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method-post-keyword)\"; \"[`dialog`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method-dialog-keyword)\"",
+      "typeDescription": "\"[`GET`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method-get-keyword)\"; \"[`POST`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method-post-keyword)\"; \"[`dialog`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fs-method-dialog-keyword)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "form": {
@@ -1330,7 +1423,8 @@
   "min": [
     {
       "description": "Minimum value",
-      "type": "Varies*",
+      "typeDescription": "Varies*",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -1341,7 +1435,8 @@
     },
     {
       "description": "Lower bound of range",
-      "type": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "typeDescription": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "type": "number | string",
       "elements": {
         "byName": {
           "meter": {
@@ -1354,7 +1449,8 @@
   "minlength": [
     {
       "description": "Minimum [length](https://infra.spec.whatwg.org/#string-length) of value",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "type": "number | string",
       "elements": {
         "byName": {
           "input": {
@@ -1370,7 +1466,8 @@
   "multiple": [
     {
       "description": "Whether to allow multiple values",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -1386,7 +1483,8 @@
   "muted": [
     {
       "description": "Whether to mute the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) by default",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "audio": {
@@ -1402,7 +1500,8 @@
   "name": [
     {
       "description": "Name of the element to use for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2) and in the [`form.elements`](https://html.spec.whatwg.org/multipage/forms.html#dom-form-elements) API",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -1431,7 +1530,8 @@
     },
     {
       "description": "Name of group of mutually-exclusive [`details`](https://html.spec.whatwg.org/multipage/interactive-elements.html#the-details-element) elements",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "details": {
@@ -1442,7 +1542,8 @@
     },
     {
       "description": "Name of form to use in the [`document.forms`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-forms) API",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "form": {
@@ -1453,7 +1554,8 @@
     },
     {
       "description": "Name of [content navigable](https://html.spec.whatwg.org/multipage/document-sequences.html#content-navigable)",
-      "type": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "typeDescription": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "type": "string",
       "elements": {
         "byName": {
           "iframe": {
@@ -1467,7 +1569,8 @@
     },
     {
       "description": "Name of [image map](https://html.spec.whatwg.org/multipage/image-maps.html#image-map) to [reference](https://html.spec.whatwg.org/multipage/dom.html#referenced) from the [`usemap`](https://html.spec.whatwg.org/multipage/image-maps.html#attr-hyperlink-usemap) attribute",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "map": {
@@ -1478,7 +1581,8 @@
     },
     {
       "description": "Metadata name",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "meta": {
@@ -1489,7 +1593,8 @@
     },
     {
       "description": "Name of shadow tree slot",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "byName": {
           "slot": {
@@ -1502,7 +1607,8 @@
   "nomodule": [
     {
       "description": "Prevents execution in user agents that support [module scripts](https://html.spec.whatwg.org/multipage/webappapis.html#module-script)",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "script": {
@@ -1515,7 +1621,8 @@
   "nonce": [
     {
       "description": "Cryptographic nonce used in Content Security Policy checks [[CSP]](https://html.spec.whatwg.org/multipage/references.html#refsCSP)",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-nonce"
@@ -1526,7 +1633,8 @@
   "novalidate": [
     {
       "description": "Bypass form control validation for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "form": {
@@ -1539,7 +1647,8 @@
   "open": [
     {
       "description": "Whether the details are visible",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "details": {
@@ -1550,7 +1659,8 @@
     },
     {
       "description": "Whether the dialog box is showing",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "dialog": {
@@ -1563,7 +1673,8 @@
   "optimum": [
     {
       "description": "Optimum value in gauge",
-      "type": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "typeDescription": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)*",
+      "type": "number | string",
       "elements": {
         "byName": {
           "meter": {
@@ -1576,7 +1687,8 @@
   "pattern": [
     {
       "description": "Pattern to be matched by the form control's value",
-      "type": "Regular expression matching the JavaScript _[Pattern](https://tc39.es/ecma262/#prod-Pattern)_ production",
+      "typeDescription": "Regular expression matching the JavaScript _[Pattern](https://tc39.es/ecma262/#prod-Pattern)_ production",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -1589,7 +1701,8 @@
   "ping": [
     {
       "description": "[URLs](https://url.spec.whatwg.org/#concept-url) to ping",
-      "type": "[Set of space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-space-separated-tokens) consisting of [valid non-empty URLs](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url)",
+      "typeDescription": "[Set of space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-space-separated-tokens) consisting of [valid non-empty URLs](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url)",
+      "type": "string",
       "elements": {
         "byName": {
           "a": {
@@ -1605,7 +1718,8 @@
   "placeholder": [
     {
       "description": "User-visible label to be placed within the form control",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -1621,7 +1735,8 @@
   "playsinline": [
     {
       "description": "Encourage the user agent to display video content within the element's playback area",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "video": {
@@ -1634,7 +1749,8 @@
   "popover": [
     {
       "description": "Makes the element a [popover](https://html.spec.whatwg.org/multipage/popover.html#attr-popover) element",
-      "type": "\"[`auto`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto)\"; \"[`manual`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-manual)\";",
+      "typeDescription": "\"[`auto`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto)\"; \"[`manual`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-manual)\";",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover"
@@ -1645,7 +1761,8 @@
   "popovertarget": [
     {
       "description": "Targets a popover element to toggle, show, or hide",
-      "type": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "typeDescription": "[ID](https://dom.spec.whatwg.org/#concept-id)*",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -1661,7 +1778,8 @@
   "popovertargetaction": [
     {
       "description": "Indicates whether a targeted popover element is to be toggled, shown, or hidden",
-      "type": "\"[`toggle`](https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-toggle)\"; \"[`show`](https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-show)\"; \"[`hide`](https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-hide)\"",
+      "typeDescription": "\"[`toggle`](https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-toggle)\"; \"[`show`](https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-show)\"; \"[`hide`](https://html.spec.whatwg.org/multipage/popover.html#attr-popovertargetaction-hide)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -1677,7 +1795,8 @@
   "poster": [
     {
       "description": "Poster frame to show prior to video playback",
-      "type": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "byName": {
           "video": {
@@ -1690,7 +1809,8 @@
   "preload": [
     {
       "description": "Hints how much buffering the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) will likely need",
-      "type": "\"[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)\"; \"[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)\"",
+      "typeDescription": "\"[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)\"; \"[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "audio": {
@@ -1706,7 +1826,8 @@
   "readonly": [
     {
       "description": "Whether to allow the value to be edited by the user",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -1720,7 +1841,8 @@
     },
     {
       "description": "Affects [`willValidate`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-elementinternals-willvalidate), plus any behavior added by the custom element author",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "form-associated custom elements": {
           "specLink": "https://html.spec.whatwg.org/multipage/custom-elements.html#attr-face-readonly"
@@ -1731,7 +1853,8 @@
   "referrerpolicy": [
     {
       "description": "[Referrer policy](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy) for [fetches](https://fetch.spec.whatwg.org/#concept-fetch) initiated by the element",
-      "type": "[Referrer policy](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy)",
+      "typeDescription": "[Referrer policy](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy)",
+      "type": "string",
       "elements": {
         "byName": {
           "a": {
@@ -1759,7 +1882,8 @@
   "rel": [
     {
       "description": "Relationship between the location in the document containing the [hyperlink](https://html.spec.whatwg.org/multipage/links.html#hyperlink) and the destination resource",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens)*",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens)*",
+      "type": "string",
       "elements": {
         "byName": {
           "a": {
@@ -1773,7 +1897,8 @@
     },
     {
       "description": "Relationship between the document containing the [hyperlink](https://html.spec.whatwg.org/multipage/links.html#hyperlink) and the destination resource",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens)*",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens)*",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -1786,7 +1911,8 @@
   "required": [
     {
       "description": "Whether the control is required for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -1805,7 +1931,8 @@
   "reversed": [
     {
       "description": "Number the list backwards",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "ol": {
@@ -1818,7 +1945,8 @@
   "rows": [
     {
       "description": "Number of lines to show",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "type": "number | string",
       "elements": {
         "byName": {
           "textarea": {
@@ -1831,7 +1959,8 @@
   "rowspan": [
     {
       "description": "Number of rows that the cell is to span",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "type": "number | string",
       "elements": {
         "byName": {
           "td": {
@@ -1847,7 +1976,8 @@
   "sandbox": [
     {
       "description": "Security rules for nested content",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens), [ASCII case-insensitive](https://infra.spec.whatwg.org/#ascii-case-insensitive), consisting of \n- \"[`allow-downloads`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-downloads)\"\n- \"[`allow-forms`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-forms)\"\n- \"[`allow-modals`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-modals)\"\n- \"[`allow-orientation-lock`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-orientation-lock)\"\n- \"[`allow-pointer-lock`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-pointer-lock)\"\n- \"[`allow-popups`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-popups)\"\n- \"[`allow-popups-to-escape-sandbox`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-popups-to-escape-sandbox)\"\n- \"[`allow-presentation`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-presentation)\"\n- \"[`allow-same-origin`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-same-origin)\"\n- \"[`allow-scripts`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-scripts)\"\n- \"[`allow-top-navigation`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation)\"\n- \"[`allow-top-navigation-by-user-activation`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation-by-user-activation)\"\n- \"[`allow-top-navigation-to-custom-protocols`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation-to-custom-protocols)\"",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens), [ASCII case-insensitive](https://infra.spec.whatwg.org/#ascii-case-insensitive), consisting of \n- \"[`allow-downloads`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-downloads)\"\n- \"[`allow-forms`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-forms)\"\n- \"[`allow-modals`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-modals)\"\n- \"[`allow-orientation-lock`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-orientation-lock)\"\n- \"[`allow-pointer-lock`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-pointer-lock)\"\n- \"[`allow-popups`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-popups)\"\n- \"[`allow-popups-to-escape-sandbox`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-popups-to-escape-sandbox)\"\n- \"[`allow-presentation`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-presentation)\"\n- \"[`allow-same-origin`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-same-origin)\"\n- \"[`allow-scripts`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-scripts)\"\n- \"[`allow-top-navigation`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation)\"\n- \"[`allow-top-navigation-by-user-activation`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation-by-user-activation)\"\n- \"[`allow-top-navigation-to-custom-protocols`](https://html.spec.whatwg.org/multipage/browsers.html#attr-iframe-sandbox-allow-top-navigation-to-custom-protocols)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "iframe": {
@@ -1860,7 +1990,8 @@
   "scope": [
     {
       "description": "Specifies which cells the header cell applies to",
-      "type": "\"[`row`](https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-row)\"; \"[`col`](https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-col)\"; \"[`rowgroup`](https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-rowgroup)\"; \"[`colgroup`](https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-colgroup)\"",
+      "typeDescription": "\"[`row`](https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-row)\"; \"[`col`](https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-col)\"; \"[`rowgroup`](https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-rowgroup)\"; \"[`colgroup`](https://html.spec.whatwg.org/multipage/tables.html#attr-th-scope-colgroup)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "th": {
@@ -1873,7 +2004,8 @@
   "selected": [
     {
       "description": "Whether the option is selected by default",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "option": {
@@ -1886,7 +2018,8 @@
   "shadowrootclonable": [
     {
       "description": "Sets [clonable](https://dom.spec.whatwg.org/#shadowroot-clonable) on a declarative shadow root",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "template": {
@@ -1899,7 +2032,8 @@
   "shadowrootcustomelementregistry": [
     {
       "description": "Enables declarative shadow roots to indicate they will use a custom element registry",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "template": {
@@ -1912,7 +2046,8 @@
   "shadowrootdelegatesfocus": [
     {
       "description": "Sets [delegates focus](https://dom.spec.whatwg.org/#shadowroot-delegates-focus) on a declarative shadow root",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "template": {
@@ -1925,7 +2060,8 @@
   "shadowrootmode": [
     {
       "description": "Enables streaming declarative shadow roots",
-      "type": "\"`open`\"; \"`closed`\"",
+      "typeDescription": "\"`open`\"; \"`closed`\"",
+      "type": "string",
       "elements": {
         "byName": {
           "template": {
@@ -1938,7 +2074,8 @@
   "shadowrootserializable": [
     {
       "description": "Sets [serializable](https://html.spec.whatwg.org/multipage/structured-data.html#serializable) on a declarative shadow root",
-      "type": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
       "elements": {
         "byName": {
           "template": {
@@ -1951,7 +2088,8 @@
   "shape": [
     {
       "description": "The kind of shape to be created in an [image map](https://html.spec.whatwg.org/multipage/image-maps.html#image-map)",
-      "type": "\"[`circle`](https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-circle)\"; \"[`default`](https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-default)\"; \"[`poly`](https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-poly)\"; \"[`rect`](https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-rect)\"",
+      "typeDescription": "\"[`circle`](https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-circle)\"; \"[`default`](https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-default)\"; \"[`poly`](https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-poly)\"; \"[`rect`](https://html.spec.whatwg.org/multipage/image-maps.html#attr-area-shape-keyword-rect)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "area": {
@@ -1964,7 +2102,8 @@
   "size": [
     {
       "description": "Size of the control",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "type": "number | string",
       "elements": {
         "byName": {
           "input": {
@@ -1980,7 +2119,8 @@
   "sizes": [
     {
       "description": "Sizes of the icons (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`icon`](https://html.spec.whatwg.org/multipage/links.html#rel-icon)\")",
-      "type": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens), [ASCII case-insensitive](https://infra.spec.whatwg.org/#ascii-case-insensitive), consisting of sizes*",
+      "typeDescription": "[Unordered set of unique space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#unordered-set-of-unique-space-separated-tokens), [ASCII case-insensitive](https://infra.spec.whatwg.org/#ascii-case-insensitive), consisting of sizes*",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -1991,7 +2131,8 @@
     },
     {
       "description": "Image sizes for different page layouts",
-      "type": "[Valid source size list](https://html.spec.whatwg.org/multipage/images.html#valid-source-size-list)",
+      "typeDescription": "[Valid source size list](https://html.spec.whatwg.org/multipage/images.html#valid-source-size-list)",
+      "type": "string",
       "elements": {
         "byName": {
           "img": {
@@ -2007,7 +2148,8 @@
   "slot": [
     {
       "description": "The element's desired slot",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/dom.html#the-id-attribute"
@@ -2018,7 +2160,8 @@
   "span": [
     {
       "description": "Number of columns spanned by the element",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) greater than zero",
+      "type": "number | string",
       "elements": {
         "byName": {
           "col": {
@@ -2034,7 +2177,8 @@
   "spellcheck": [
     {
       "description": "Whether the element is to have its spelling and grammar checked",
-      "type": "\"[`true`](https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck-true)\"; \"[`false`](https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck-false)\"; the empty string",
+      "typeDescription": "\"[`true`](https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck-true)\"; \"[`false`](https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck-false)\"; the empty string",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-spellcheck"
@@ -2045,7 +2189,8 @@
   "src": [
     {
       "description": "Address of the resource",
-      "type": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "typeDescription": "[Valid non-empty URL potentially surrounded by spaces](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#valid-non-empty-url-potentially-surrounded-by-spaces)",
+      "type": "string",
       "elements": {
         "byName": {
           "audio": {
@@ -2082,7 +2227,8 @@
   "srcdoc": [
     {
       "description": "A document to render in the [`iframe`](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element)",
-      "type": "The source of [an `iframe` `srcdoc` document](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#an-iframe-srcdoc-document)*",
+      "typeDescription": "The source of [an `iframe` `srcdoc` document](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#an-iframe-srcdoc-document)*",
+      "type": "string",
       "elements": {
         "byName": {
           "iframe": {
@@ -2095,7 +2241,8 @@
   "srclang": [
     {
       "description": "Language of the text track",
-      "type": "Valid BCP 47 language tag",
+      "typeDescription": "Valid BCP 47 language tag",
+      "type": "string",
       "elements": {
         "byName": {
           "track": {
@@ -2108,7 +2255,8 @@
   "srcset": [
     {
       "description": "Images to use in different situations, e.g., high-resolution displays, small monitors, etc.",
-      "type": "Comma-separated list of [image candidate strings](https://html.spec.whatwg.org/multipage/images.html#image-candidate-string)",
+      "typeDescription": "Comma-separated list of [image candidate strings](https://html.spec.whatwg.org/multipage/images.html#image-candidate-string)",
+      "type": "string",
       "elements": {
         "byName": {
           "img": {
@@ -2124,7 +2272,8 @@
   "start": [
     {
       "description": "[Starting value](https://html.spec.whatwg.org/multipage/grouping-content.html#concept-ol-start) of the list",
-      "type": "[Valid integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-integer)",
+      "typeDescription": "[Valid integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-integer)",
+      "type": "number | string",
       "elements": {
         "byName": {
           "ol": {
@@ -2137,7 +2286,8 @@
   "step": [
     {
       "description": "Granularity to be matched by the form control's value",
-      "type": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number) greater than zero, or \"`any`\"",
+      "typeDescription": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number) greater than zero, or \"`any`\"",
+      "type": "number | string",
       "elements": {
         "byName": {
           "input": {
@@ -2150,7 +2300,8 @@
   "style": [
     {
       "description": "Presentational and formatting instructions",
-      "type": "CSS declarations*",
+      "typeDescription": "CSS declarations*",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-style"
@@ -2161,7 +2312,8 @@
   "tabindex": [
     {
       "description": "Whether the element is [focusable](https://html.spec.whatwg.org/multipage/interaction.html#focusable) and [sequentially focusable](https://html.spec.whatwg.org/multipage/interaction.html#sequentially-focusable), and the relative order of the element for the purposes of [sequential focus navigation](https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation)",
-      "type": "[Valid integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-integer)",
+      "typeDescription": "[Valid integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-integer)",
+      "type": "number | string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex"
@@ -2172,7 +2324,8 @@
   "target": [
     {
       "description": "[Navigable](https://html.spec.whatwg.org/multipage/document-sequences.html#navigable) for [hyperlink](https://html.spec.whatwg.org/multipage/links.html#hyperlink) [navigation](https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate)",
-      "type": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "typeDescription": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "type": "string",
       "elements": {
         "byName": {
           "a": {
@@ -2186,7 +2339,8 @@
     },
     {
       "description": "Default [navigable](https://html.spec.whatwg.org/multipage/document-sequences.html#navigable) for [hyperlink](https://html.spec.whatwg.org/multipage/links.html#hyperlink) [navigation](https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate) and [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "typeDescription": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "type": "string",
       "elements": {
         "byName": {
           "base": {
@@ -2197,7 +2351,8 @@
     },
     {
       "description": "[Navigable](https://html.spec.whatwg.org/multipage/document-sequences.html#navigable) for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "typeDescription": "[Valid navigable target name or keyword](https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword)",
+      "type": "string",
       "elements": {
         "byName": {
           "form": {
@@ -2210,7 +2365,8 @@
   "title": [
     {
       "description": "Advisory information for the element",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-title"
@@ -2219,7 +2375,8 @@
     },
     {
       "description": "Full term or expansion of abbreviation",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "byName": {
           "abbr": {
@@ -2233,7 +2390,8 @@
     },
     {
       "description": "Description of pattern (when used with [`pattern`](https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern) attribute)",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -2244,7 +2402,8 @@
     },
     {
       "description": "Title of the link",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -2255,7 +2414,8 @@
     },
     {
       "description": "[CSS style sheet set name](https://drafts.csswg.org/cssom/#css-style-sheet-set-name)",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "byName": {
           "link": {
@@ -2271,7 +2431,8 @@
   "translate": [
     {
       "description": "Whether the element is to be translated when the page is localized",
-      "type": "\"`yes`\"; \"`no`\"",
+      "typeDescription": "\"`yes`\"; \"`no`\"",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-translate"
@@ -2282,7 +2443,8 @@
   "type": [
     {
       "description": "Hint for the type of the referenced resource",
-      "type": "[Valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type)",
+      "typeDescription": "[Valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type)",
+      "type": "string",
       "elements": {
         "byName": {
           "a": {
@@ -2296,7 +2458,8 @@
     },
     {
       "description": "Type of button",
-      "type": "\"[`submit`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-submit)\"; \"[`reset`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-reset)\"; \"[`button`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-button)\"",
+      "typeDescription": "\"[`submit`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-submit)\"; \"[`reset`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-reset)\"; \"[`button`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-type-button)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -2307,7 +2470,8 @@
     },
     {
       "description": "Type of embedded resource",
-      "type": "[Valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type)",
+      "typeDescription": "[Valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type)",
+      "type": "string",
       "elements": {
         "byName": {
           "embed": {
@@ -2324,7 +2488,8 @@
     },
     {
       "description": "Type of form control",
-      "type": "[`input` type keyword](https://html.spec.whatwg.org/multipage/input.html#attr-input-type)",
+      "typeDescription": "[`input` type keyword](https://html.spec.whatwg.org/multipage/input.html#attr-input-type)",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -2335,7 +2500,8 @@
     },
     {
       "description": "Kind of list marker",
-      "type": "\"[`1`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-decimal)\"; \"[`a`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-alpha)\"; \"[`A`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-upper-alpha)\"; \"[`i`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-roman)\"; \"[`I`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-upper-roman)\"",
+      "typeDescription": "\"[`1`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-decimal)\"; \"[`a`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-alpha)\"; \"[`A`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-upper-alpha)\"; \"[`i`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-lower-roman)\"; \"[`I`](https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-type-keyword-upper-roman)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "ol": {
@@ -2346,7 +2512,8 @@
     },
     {
       "description": "Type of script",
-      "type": "\"`module`\"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)",
+      "typeDescription": "\"`module`\"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)",
+      "type": "string",
       "elements": {
         "byName": {
           "script": {
@@ -2359,7 +2526,8 @@
   "usemap": [
     {
       "description": "Name of [image map](https://html.spec.whatwg.org/multipage/image-maps.html#image-map) to use",
-      "type": "[Valid hash-name reference](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-hash-name-reference)*",
+      "typeDescription": "[Valid hash-name reference](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-hash-name-reference)*",
+      "type": "string",
       "elements": {
         "byName": {
           "img": {
@@ -2372,7 +2540,8 @@
   "value": [
     {
       "description": "Value to be used for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)",
+      "type": "string",
       "elements": {
         "byName": {
           "button": {
@@ -2386,7 +2555,8 @@
     },
     {
       "description": "Machine-readable value",
-      "type": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "typeDescription": "[Text](https://html.spec.whatwg.org/multipage/dom.html#attribute-text)*",
+      "type": "string",
       "elements": {
         "byName": {
           "data": {
@@ -2397,7 +2567,8 @@
     },
     {
       "description": "Value of the form control",
-      "type": "Varies*",
+      "typeDescription": "Varies*",
+      "type": "string",
       "elements": {
         "byName": {
           "input": {
@@ -2408,7 +2579,8 @@
     },
     {
       "description": "[Ordinal value](https://html.spec.whatwg.org/multipage/grouping-content.html#ordinal-value) of the list item",
-      "type": "[Valid integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-integer)",
+      "typeDescription": "[Valid integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-integer)",
+      "type": "number | string",
       "elements": {
         "byName": {
           "li": {
@@ -2419,7 +2591,8 @@
     },
     {
       "description": "Current value of the element",
-      "type": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)",
+      "typeDescription": "[Valid floating-point number](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-floating-point-number)",
+      "type": "number | string",
       "elements": {
         "byName": {
           "meter": {
@@ -2435,7 +2608,8 @@
   "width": [
     {
       "description": "Horizontal dimension",
-      "type": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer)",
+      "type": "number | string",
       "elements": {
         "byName": {
           "canvas": {
@@ -2469,7 +2643,8 @@
   "wrap": [
     {
       "description": "How the value of the form control is to be wrapped for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)",
-      "type": "\"[`soft`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap-soft)\"; \"[`hard`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap-hard)\"",
+      "typeDescription": "\"[`soft`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap-soft)\"; \"[`hard`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-wrap-hard)\"",
+      "type": "string",
       "elements": {
         "byName": {
           "textarea": {
@@ -2482,7 +2657,8 @@
   "writingsuggestions": [
     {
       "description": "Whether the element can offer writing suggestions or not.",
-      "type": "\"[`true`](https://html.spec.whatwg.org/multipage/interaction.html#attr-writingsuggestions-true)\"; \"[`false`](https://html.spec.whatwg.org/multipage/interaction.html#attr-writingsuggestions-false)\"; the empty string",
+      "typeDescription": "\"[`true`](https://html.spec.whatwg.org/multipage/interaction.html#attr-writingsuggestions-true)\"; \"[`false`](https://html.spec.whatwg.org/multipage/interaction.html#attr-writingsuggestions-false)\"; the empty string",
+      "type": "string",
       "elements": {
         "global": {
           "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-writingsuggestions"

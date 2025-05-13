@@ -14,6 +14,7 @@ export type AttributesTableData = {
   [attribute: string]: ReadonlyArray<
     {
       description: string,
+      typeDescription: string,
       type: string,
       elements: {
         global?: {
@@ -37,6 +38,7 @@ export type MergedData = {
     [attribute: string]: {
       specLink: string,
       description: string,
+      typeDescription: string,
       type: string
     }
   },
@@ -48,6 +50,7 @@ export type MergedData = {
         [attribute: string]: {
           specLinks: ReadonlyArray<string>,
           description: string,
+          typeDescription: string,
           type: string
         }
       }

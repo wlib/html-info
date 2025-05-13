@@ -3,6 +3,7 @@ import { writeFile } from "node:fs/promises"
 
 import { makeInterface, makeCommentedEntry, makeCommaSeparatedBlock } from "../utils/typescript.mjs"
 import { nodeToMarkdown } from "../utils/markdown.mjs"
+import { getType } from "../utils/attributes.mjs"
 
 const htmlSpecIndices = await JSDOM.fromURL("https://html.spec.whatwg.org/multipage/indices.html")
 // TODO
@@ -92,7 +93,7 @@ const attributesTableData =
         _attribute,
         _elements,
         description,
-        type
+        typeDescription
       ] = row.cells
 
       const attribute = _attribute.querySelector("code")?.textContent?.trim()
@@ -162,7 +163,8 @@ const attributesTableData =
       attributesTableData[attribute] ??= []
       attributesTableData[attribute].push({
         description: nodeToMarkdown(description),
-        type: nodeToMarkdown(type),
+        typeDescription: nodeToMarkdown(typeDescription),
+        type: getType(attribute, typeDescription),
         elements
       })
 
@@ -198,6 +200,7 @@ Object.entries(attributesTableData).forEach(([attribute, attributeInstances]) =>
     if (attributeInstance.elements.global) {
       mergedData.globalAttributes[attribute] = {
         description: attributeInstance.description,
+        typeDescription: attributeInstance.typeDescription,
         type: attributeInstance.type,
         specLink: attributeInstance.elements.global.specLink
       }
@@ -211,6 +214,7 @@ Object.entries(attributesTableData).forEach(([attribute, attributeInstances]) =>
           attributeInfo.specLinks.push(elementAttributeInstance.specLink)
 
         attributeInfo.description = attributeInstance.description
+        attributeInfo.typeDescription = attributeInstance.typeDescription
         attributeInfo.type = attributeInstance.type
       })
   })
@@ -227,12 +231,12 @@ const HTMLGlobalAttributes = makeInterface("HTMLGlobalAttributes",
     const comment = `
 ${attributeInfo.description}
 
-**Type**: ${attributeInfo.type}
+**Type**: ${attributeInfo.typeDescription}
 
 **Spec**: ${attributeInfo.specLink}
     `.trim()
 
-    return makeCommentedEntry(comment, attribute, "string")
+    return makeCommentedEntry(comment, attribute, attributeInfo.type)
   })
 )
 
@@ -253,9 +257,9 @@ ${elementInfo.description}
     const attributeEntries = Object.entries(elementInfo.specificAttributes)
       .map(([attribute, attributeInfo]) => {
         const comment = `
-${attributeInfo.description}
+${attributeInfo.description ?? ""}
 
-**Type**: ${attributeInfo.type}
+**Type**: ${attributeInfo.typeDescription}
 
 **Specs**:
 ${
@@ -265,7 +269,7 @@ attributeInfo.specLinks
 }
         `.trim()
 
-        return makeCommentedEntry(comment, attribute, "string")
+        return makeCommentedEntry(comment, attribute, attributeInfo.type ?? "string")
       })
 
     return makeCommentedEntry(comment, element, makeCommaSeparatedBlock(attributeEntries))

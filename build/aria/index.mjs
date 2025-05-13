@@ -3,6 +3,7 @@ import { writeFile } from "node:fs/promises"
 
 import { makeInterface, makeCommentedEntry, makeUnion, indent } from "../utils/typescript.mjs"
 import { nodeToMarkdown } from "../utils/markdown.mjs"
+import { getType } from "../utils/attributes.mjs"
 
 const ariaSpec = await JSDOM.fromURL("https://w3c.github.io/aria/")
 // TODO scrape from these specs for more accurate allowed values
@@ -27,7 +28,7 @@ const abstractRoles = new Set(
     .map(code => code.textContent.trim())
 )
 
-/** @type { import("./index").RolesData */
+/** @type { import("./index").RolesData } */
 const rolesData = Object.fromEntries(
   [...rolesList.querySelectorAll("dt")]
     .map(dt => {
@@ -59,11 +60,12 @@ const ariaAttributesData = Object.fromEntries(
 
       const detailIdRef = link.getAttribute("href")
       const detailSection = link.ownerDocument.querySelector(detailIdRef)
-      const type = detailSection.querySelector("td:is(.property-value, .state-value)")
+      const typeDescription = detailSection.querySelector("td:is(.property-value, .state-value)")
 
       return [name, {
         description: nodeToMarkdown(dt.nextElementSibling),
-        type: nodeToMarkdown(type),
+        typeDescription: nodeToMarkdown(typeDescription),
+        type: getType(name, typeDescription),
         specLink: link.href
       }]
     })
@@ -98,12 +100,12 @@ const GlobalAriaAttributes = makeInterface("GlobalAriaAttributes", [
     const comment = `
 ${attributeInfo.description}
 
-**Type**: ${attributeInfo.type}
+**Type**: ${attributeInfo.typeDescription}
 
 **Spec**: ${attributeInfo.specLink}
     `.trim()
 
-    return makeCommentedEntry(comment, attribute, "string")
+    return makeCommentedEntry(comment, attribute, attributeInfo.type)
   })
 ])
 

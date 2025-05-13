@@ -769,7 +769,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-colcount
    */
-  "aria-colcount": string,
+  "aria-colcount": number | string,
   /**
    * [Defines](https://w3c.github.io/aria/#dfn-defines) an [element's](https://dom.spec.whatwg.org/#concept-element) column index or position with respect to the total number of columns within a [`table`](https://w3c.github.io/aria/#table), [`grid`](https://w3c.github.io/aria/#grid), or [`treegrid`](https://w3c.github.io/aria/#treegrid). See related [`aria-colindextext`](https://w3c.github.io/aria/#aria-colindextext), [`aria-colcount`](https://w3c.github.io/aria/#aria-colcount), and [`aria-colspan`](https://w3c.github.io/aria/#aria-colspan).
    * 
@@ -777,7 +777,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-colindex
    */
-  "aria-colindex": string,
+  "aria-colindex": number | string,
   /**
    * [Defines](https://w3c.github.io/aria/#dfn-defines) a human readable text alternative of [`aria-colindex`](https://w3c.github.io/aria/#aria-colindex). See related [`aria-rowindextext`](https://w3c.github.io/aria/#aria-rowindextext).
    * 
@@ -785,7 +785,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-colindextext
    */
-  "aria-colindextext": string,
+  "aria-colindextext": number | string,
   /**
    * [Defines](https://w3c.github.io/aria/#dfn-defines) the number of columns spanned by a cell or gridcell within a [`table`](https://w3c.github.io/aria/#table), [`grid`](https://w3c.github.io/aria/#grid), or [`treegrid`](https://w3c.github.io/aria/#treegrid). See related [`aria-colindex`](https://w3c.github.io/aria/#aria-colindex) and [`aria-rowspan`](https://w3c.github.io/aria/#aria-rowspan).
    * 
@@ -793,7 +793,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-colspan
    */
-  "aria-colspan": string,
+  "aria-colspan": number | string,
   /**
    * [Identifies](https://w3c.github.io/aria/#dfn-identifies) the [element](https://dom.spec.whatwg.org/#concept-element) (or elements) whose contents or presence are controlled by the current element. See related [`aria-owns`](https://w3c.github.io/aria/#aria-owns).
    * 
@@ -937,7 +937,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-level
    */
-  "aria-level": string,
+  "aria-level": number | string,
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) that an [element](https://dom.spec.whatwg.org/#concept-element) will be updated, and describes the types of updates the [user agents](https://infra.spec.whatwg.org/#user-agent), [assistive technologies](https://w3c.github.io/aria/#dfn-assistive-technologies), and user can expect from the [live region](https://w3c.github.io/aria/#dfn-live-region).
    * 
@@ -1001,7 +1001,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-posinset
    */
-  "aria-posinset": string,
+  "aria-posinset": number | string,
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) the current "pressed" [state](https://w3c.github.io/aria/#dfn-state) of toggle buttons. See related [`aria-checked`](https://w3c.github.io/aria/#aria-checked) and [`aria-selected`](https://w3c.github.io/aria/#aria-selected).
    * 
@@ -1049,7 +1049,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-rowcount
    */
-  "aria-rowcount": string,
+  "aria-rowcount": number | string,
   /**
    * [Defines](https://w3c.github.io/aria/#dfn-defines) an [element's](https://dom.spec.whatwg.org/#concept-element) row index or position with respect to the total number of rows within a [`table`](https://w3c.github.io/aria/#table), [`grid`](https://w3c.github.io/aria/#grid), or [`treegrid`](https://w3c.github.io/aria/#treegrid). See related [`aria-rowindextext`](https://w3c.github.io/aria/#aria-rowindextext), [`aria-rowcount`](https://w3c.github.io/aria/#aria-rowcount), and [`aria-rowspan`](https://w3c.github.io/aria/#aria-rowspan).
    * 
@@ -1057,7 +1057,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-rowindex
    */
-  "aria-rowindex": string,
+  "aria-rowindex": number | string,
   /**
    * [Defines](https://w3c.github.io/aria/#dfn-defines) a human readable text alternative of [`aria-rowindex`](https://w3c.github.io/aria/#aria-rowindex). See related [`aria-colindextext`](https://w3c.github.io/aria/#aria-colindextext).
    * 
@@ -1065,7 +1065,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-rowindextext
    */
-  "aria-rowindextext": string,
+  "aria-rowindextext": number | string,
   /**
    * [Defines](https://w3c.github.io/aria/#dfn-defines) the number of rows spanned by a cell or gridcell within a [`table`](https://w3c.github.io/aria/#table), [`grid`](https://w3c.github.io/aria/#grid), or [`treegrid`](https://w3c.github.io/aria/#treegrid). See related [`aria-rowindex`](https://w3c.github.io/aria/#aria-rowindex) and [`aria-colspan`](https://w3c.github.io/aria/#aria-colspan).
    * 
@@ -1073,7 +1073,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-rowspan
    */
-  "aria-rowspan": string,
+  "aria-rowspan": number | string,
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) the current "selected" [state](https://w3c.github.io/aria/#dfn-state) of various [widgets](https://w3c.github.io/aria/#dfn-widget). See related [`aria-checked`](https://w3c.github.io/aria/#aria-checked) and [`aria-pressed`](https://w3c.github.io/aria/#aria-pressed).
    * 
@@ -1089,7 +1089,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-setsize
    */
-  "aria-setsize": string,
+  "aria-setsize": number | string,
   /**
    * [Indicates](https://w3c.github.io/aria/#dfn-indicates) if items in a table or grid are sorted in ascending or descending order.
    * 
@@ -1105,7 +1105,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-valuemax
    */
-  "aria-valuemax": string,
+  "aria-valuemax": number | string,
   /**
    * [Defines](https://w3c.github.io/aria/#dfn-defines) the minimum allowed value for a range [widget](https://w3c.github.io/aria/#dfn-widget).
    * 
@@ -1113,7 +1113,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-valuemin
    */
-  "aria-valuemin": string,
+  "aria-valuemin": number | string,
   /**
    * [Defines](https://w3c.github.io/aria/#dfn-defines) the current value for a range [widget](https://w3c.github.io/aria/#dfn-widget). See related [`aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext).
    * 
@@ -1121,7 +1121,7 @@ export interface GlobalAriaAttributes {
    * 
    * **Spec**: https://w3c.github.io/aria/#aria-valuenow
    */
-  "aria-valuenow": string,
+  "aria-valuenow": number | string,
   /**
    * [Defines](https://w3c.github.io/aria/#dfn-defines) the human readable text alternative of [`aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow) for a range [widget](https://w3c.github.io/aria/#dfn-widget).
    * 

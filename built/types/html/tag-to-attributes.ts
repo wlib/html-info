@@ -356,8 +356,6 @@ export interface HTMLTagToAttributes {
    */
   "body": {
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -365,8 +363,6 @@ export interface HTMLTagToAttributes {
      */
     "onafterprint": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -374,8 +370,6 @@ export interface HTMLTagToAttributes {
      */
     "onbeforeprint": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -383,8 +377,6 @@ export interface HTMLTagToAttributes {
      */
     "onbeforeunload": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -392,8 +384,6 @@ export interface HTMLTagToAttributes {
      */
     "onhashchange": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -401,8 +391,6 @@ export interface HTMLTagToAttributes {
      */
     "onlanguagechange": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -410,8 +398,6 @@ export interface HTMLTagToAttributes {
      */
     "onmessage": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -419,8 +405,6 @@ export interface HTMLTagToAttributes {
      */
     "onmessageerror": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -428,8 +412,6 @@ export interface HTMLTagToAttributes {
      */
     "onoffline": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -437,8 +419,6 @@ export interface HTMLTagToAttributes {
      */
     "ononline": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -446,8 +426,6 @@ export interface HTMLTagToAttributes {
      */
     "onpageswap": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -455,8 +433,6 @@ export interface HTMLTagToAttributes {
      */
     "onpagehide": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -464,8 +440,6 @@ export interface HTMLTagToAttributes {
      */
     "onpagereveal": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -473,8 +447,6 @@ export interface HTMLTagToAttributes {
      */
     "onpageshow": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -482,8 +454,6 @@ export interface HTMLTagToAttributes {
      */
     "onpopstate": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -491,8 +461,6 @@ export interface HTMLTagToAttributes {
      */
     "onrejectionhandled": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -500,8 +468,6 @@ export interface HTMLTagToAttributes {
      */
     "onstorage": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -509,8 +475,6 @@ export interface HTMLTagToAttributes {
      */
     "onunhandledrejection": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -673,7 +637,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-width
      */
-    "width": string,
+    "width": number | string,
     /**
      * Vertical dimension
      * 
@@ -682,7 +646,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/canvas.html#attr-canvas-height
      */
-    "height": string
+    "height": number | string
   },
   /**
    * Table caption
@@ -722,7 +686,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/tables.html#attr-col-span
      */
-    "span": string
+    "span": number | string
   },
   /**
    * Group of columns in a table
@@ -738,7 +702,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/tables.html#attr-colgroup-span
      */
-    "span": string
+    "span": number | string
   },
   /**
    * Machine-readable equivalent
@@ -927,7 +891,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
      */
-    "width": string,
+    "width": number | string,
     /**
      * Vertical dimension
      * 
@@ -936,7 +900,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
      */
-    "height": string
+    "height": number | string
   },
   /**
    * Group of form controls
@@ -1066,8 +1030,6 @@ export interface HTMLTagToAttributes {
      */
     "novalidate": string,
     /**
-     * undefined
-     * 
      * **Type**: undefined
      * 
      * **Specs**:
@@ -1261,7 +1223,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
      */
-    "width": string,
+    "width": number | string,
     /**
      * Vertical dimension
      * 
@@ -1270,7 +1232,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
      */
-    "height": string,
+    "height": number | string,
     /**
      * [Referrer policy](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy) for [fetches](https://fetch.spec.whatwg.org/#concept-fetch) initiated by the element
      * 
@@ -1367,7 +1329,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
      */
-    "width": string,
+    "width": number | string,
     /**
      * Vertical dimension
      * 
@@ -1376,7 +1338,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
      */
-    "height": string,
+    "height": number | string,
     /**
      * [Referrer policy](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy) for [fetches](https://fetch.spec.whatwg.org/#concept-fetch) initiated by the element
      * 
@@ -1554,7 +1516,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
      */
-    "height": string,
+    "height": number | string,
     /**
      * List of autocomplete options
      * 
@@ -1581,7 +1543,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/input.html#attr-input-maxlength
      */
-    "maxlength": string,
+    "maxlength": number | string,
     /**
      * Minimum value
      * 
@@ -1599,7 +1561,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/input.html#attr-input-minlength
      */
-    "minlength": string,
+    "minlength": number | string,
     /**
      * Whether to allow multiple values
      * 
@@ -1680,7 +1642,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/input.html#attr-input-size
      */
-    "size": string,
+    "size": number | string,
     /**
      * Address of the resource
      * 
@@ -1698,7 +1660,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/input.html#attr-input-step
      */
-    "step": string,
+    "step": number | string,
     /**
      * Type of form control
      * 
@@ -1725,7 +1687,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
      */
-    "width": string,
+    "width": number | string,
     /**
      * Description of pattern (when used with [`pattern`](https://html.spec.whatwg.org/multipage/input.html#attr-input-pattern) attribute)
      * 
@@ -1807,7 +1769,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-li-value
      */
-    "value": string
+    "value": number | string
   },
   /**
    * Link metadata
@@ -2075,7 +2037,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-value
      */
-    "value": string,
+    "value": number | string,
     /**
      * Lower bound of range
      * 
@@ -2084,7 +2046,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-min
      */
-    "min": string,
+    "min": number | string,
     /**
      * Upper bound of range
      * 
@@ -2093,7 +2055,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-max
      */
-    "max": string,
+    "max": number | string,
     /**
      * High limit of low range
      * 
@@ -2102,7 +2064,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-low
      */
-    "low": string,
+    "low": number | string,
     /**
      * Low limit of high range
      * 
@@ -2111,7 +2073,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-high
      */
-    "high": string,
+    "high": number | string,
     /**
      * Optimum value in gauge
      * 
@@ -2120,7 +2082,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-meter-optimum
      */
-    "optimum": string
+    "optimum": number | string
   },
   /**
    * Section with navigational links
@@ -2188,7 +2150,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
      */
-    "width": string,
+    "width": number | string,
     /**
      * Vertical dimension
      * 
@@ -2197,7 +2159,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
      */
-    "height": string
+    "height": number | string
   },
   /**
    * Ordered list
@@ -2222,7 +2184,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/grouping-content.html#attr-ol-start
      */
-    "start": string,
+    "start": number | string,
     /**
      * Kind of list marker
      * 
@@ -2373,7 +2335,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-value
      */
-    "value": string,
+    "value": number | string,
     /**
      * Upper bound of range
      * 
@@ -2382,7 +2344,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-progress-max
      */
-    "max": string
+    "max": number | string
   },
   /**
    * Quotation
@@ -2621,7 +2583,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size
      */
-    "size": string
+    "size": number | string
   },
   /**
    * Shadow tree slot
@@ -2706,7 +2668,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
      */
-    "width": string,
+    "width": number | string,
     /**
      * Vertical dimension
      * 
@@ -2715,7 +2677,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
      */
-    "height": string
+    "height": number | string
   },
   /**
    * Generic phrasing container
@@ -2821,7 +2783,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan
      */
-    "colspan": string,
+    "colspan": number | string,
     /**
      * Number of rows that the cell is to span
      * 
@@ -2830,7 +2792,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan
      */
-    "rowspan": string,
+    "rowspan": number | string,
     /**
      * The header cells for this cell
      * 
@@ -2916,7 +2878,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-cols
      */
-    "cols": string,
+    "cols": number | string,
     /**
      * Name of form control to use for sending the element's [directionality](https://html.spec.whatwg.org/multipage/dom.html#the-directionality) in [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)
      * 
@@ -2952,7 +2914,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-maxlength
      */
-    "maxlength": string,
+    "maxlength": number | string,
     /**
      * Minimum [length](https://infra.spec.whatwg.org/#string-length) of value
      * 
@@ -2961,7 +2923,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-minlength
      */
-    "minlength": string,
+    "minlength": number | string,
     /**
      * Name of the element to use for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2) and in the [`form.elements`](https://html.spec.whatwg.org/multipage/forms.html#dom-form-elements) API
      * 
@@ -3006,7 +2968,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-textarea-rows
      */
-    "rows": string,
+    "rows": number | string,
     /**
      * How the value of the form control is to be wrapped for [form submission](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-submission-2)
      * 
@@ -3039,7 +3001,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-colspan
      */
-    "colspan": string,
+    "colspan": number | string,
     /**
      * Number of rows that the cell is to span
      * 
@@ -3048,7 +3010,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/tables.html#attr-tdth-rowspan
      */
-    "rowspan": string,
+    "rowspan": number | string,
     /**
      * The header cells for this cell
      * 
@@ -3099,7 +3061,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/text-level-semantics.html#attr-time-datetime
      */
-    "datetime": string
+    "datetime": number | string
   },
   /**
    * Document title
@@ -3288,7 +3250,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width
      */
-    "width": string,
+    "width": number | string,
     /**
      * Vertical dimension
      * 
@@ -3297,7 +3259,7 @@ export interface HTMLTagToAttributes {
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-height
      */
-    "height": string
+    "height": number | string
   },
   /**
    * Line breaking opportunity
