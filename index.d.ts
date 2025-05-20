@@ -177,7 +177,7 @@ export type ElementToAttributes<
   : GlobalAttributes
 
 // https://dom.spec.whatwg.org/#:~:text=id%2C%20class%2C%20and%20slot%20are%20effectively%20superglobal,.
-export interface GlobalAttributes extends Pick<BuiltHTMLGlobalAttributes, "id" | "class" | "slot"> {}
+export interface GlobalAttributes extends Pick<BuiltHTMLGlobalAttributes, "id" | "class" | "slot" | "part" | "exportparts"> {}
 
 export interface GlobalAriaAttributes extends BuiltGlobalAriaAttributes {}
 
@@ -194,13 +194,21 @@ export interface SVGGlobalAttributes extends
   GlobalAttributes,
   GlobalAriaAttributes,
   BuiltSVGGlobalAttributes,
-  Pick<BuiltHTMLGlobalAttributes, "style">
-{}
+  // https://svgwg.org/svg2-draft/single-page.html#struct-CommonAttributeDefinitions
+  Pick<BuiltHTMLGlobalAttributes, "style" | "tabindex" | "autofocus" | "lang">
+{
+  [dataAttribute: `data-${string}`]: string
+}
 
 export interface MathMLGlobalAttributes extends
   GlobalAttributes,
-  BuiltMathMLGlobalAttributes
-{}
+  GlobalAriaAttributes,
+  BuiltMathMLGlobalAttributes,
+  // https://www.w3.org/TR/mathml-core/#attributes-common-to-html-and-mathml-elements
+  Pick<BuiltHTMLGlobalAttributes, "style" | "nonce" | "tabindex" | "dir">
+{
+  [dataAttribute: `data-${string}`]: string
+}
 
 // Merge standard typescript `ElementTagNameMap` into exported attributes
 type HTMLTagToAttributes_ = {

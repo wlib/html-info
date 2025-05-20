@@ -230,5 +230,21 @@ export interface HTMLGlobalAttributes {
    * 
    * **Spec**: https://html.spec.whatwg.org/multipage/interaction.html#attr-writingsuggestions
    */
-  "writingsuggestions": string
+  "writingsuggestions": string,
+  /**
+   * Used to expose the element outside of the shadow tree to CSS with the `::part()` pseudo-element.
+   * 
+   * **Type**: [Set of space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-space-separated-tokens)
+   * 
+   * **Spec**: https://drafts.csswg.org/css-shadow-parts/#element-attrdef-html-global-part
+   */
+  "part": string,
+  /**
+   * If the element is a shadow host, this is used to allow styling of parts from hosts inside the shadow tree by rules outside the shadow tree (as if they were elements in the same tree as the host, named by a part attribute).
+   * 
+   * **Type**: Comma-separated list of part mappings. Each part mapping is one of e.g. `innerIdent: outerIdent`, `ident` (shorthand), or `::fullyStylablePseudoElement: outerIdent`
+   * 
+   * **Spec**: https://drafts.csswg.org/css-shadow-parts/#element-attrdef-html-global-exportparts
+   */
+  "exportparts": string
 }

@@ -171,6 +171,33 @@ const attributesTableData =
       return attributesTableData
     }, {})
 
+Object.assign(attributesTableData, {
+  part: [
+    {
+      description: "Used to expose the element outside of the shadow tree to CSS with the `::part()` pseudo-element.",
+      typeDescription: "[Set of space-separated tokens](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-space-separated-tokens)",
+      type: "string",
+      elements: {
+        global: {
+          specLink: "https://drafts.csswg.org/css-shadow-parts/#element-attrdef-html-global-part"
+        }
+      }
+    }
+  ],
+  exportparts: [
+    {
+      description: "If the element is a shadow host, this is used to allow styling of parts from hosts inside the shadow tree by rules outside the shadow tree (as if they were elements in the same tree as the host, named by a part attribute).",
+      typeDescription: "Comma-separated list of part mappings. Each part mapping is one of e.g. `innerIdent: outerIdent`, `ident` (shorthand), or `::fullyStyleablePseudoElement: outerIdent`",
+      type: "string",
+      elements: {
+        global: {
+          specLink: "https://drafts.csswg.org/css-shadow-parts/#element-attrdef-html-global-exportparts"
+        }
+      }
+    }
+  ]
+})
+
 await writeFile(
   new URL("../../built/data/html/attributes-table.json", import.meta.url),
   JSON.stringify(attributesTableData, null, 2)
