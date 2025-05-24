@@ -795,7 +795,7 @@ export interface GlobalAriaAttributes {
    */
   "aria-colspan": number | string,
   /**
-   * [Identifies](https://w3c.github.io/aria/#dfn-identifies) the [element](https://dom.spec.whatwg.org/#concept-element) (or elements) whose contents or presence are controlled by the current element. See related [`aria-owns`](https://w3c.github.io/aria/#aria-owns).
+   * [Identifies](https://w3c.github.io/aria/#dfn-identifies) the [element](https://dom.spec.whatwg.org/#concept-element) (or elements) whose contents or presence are controlled by the focused element or composite widget. See related [`aria-details`](https://w3c.github.io/aria/#aria-details) and [`aria-owns`](https://w3c.github.io/aria/#aria-owns).
    * 
    * **Type**: [ID reference list](https://w3c.github.io/aria/#valuetype_idref_list)
    * 
