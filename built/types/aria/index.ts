@@ -105,6 +105,14 @@ type WithRole =
   }
   | {
     /**
+     * A form of widget that performs an action but does not receive input data.
+     * 
+     * **Spec**: https://w3c.github.io/aria/#command
+     */
+    "role": "command (abstract role)"
+  }
+  | {
+    /**
      * A comment contains content expressing reaction to other content.
      * 
      * **Spec**: https://w3c.github.io/aria/#comment
@@ -118,6 +126,14 @@ type WithRole =
      * **Spec**: https://w3c.github.io/aria/#complementary
      */
     "role": "complementary"
+  }
+  | {
+    /**
+     * A [widget](https://w3c.github.io/aria/#dfn-widget) that can contain navigable [accessibility descendants](https://w3c.github.io/aria/#dfn-accessibility-descendant).
+     * 
+     * **Spec**: https://w3c.github.io/aria/#composite
+     */
+    "role": "composite (abstract role)"
   }
   | {
     /**
@@ -257,11 +273,27 @@ type WithRole =
   }
   | {
     /**
+     * A generic type of [widget](https://w3c.github.io/aria/#dfn-widget) that allows user input.
+     * 
+     * **Spec**: https://w3c.github.io/aria/#input
+     */
+    "role": "input (abstract role)"
+  }
+  | {
+    /**
      * An insertion contains content that is marked as added or content that is being suggested for addition. See related [`deletion`](https://w3c.github.io/aria/#deletion).
      * 
      * **Spec**: https://w3c.github.io/aria/#insertion
      */
     "role": "insertion"
+  }
+  | {
+    /**
+     * A perceivable [`section`](https://w3c.github.io/aria/#section) containing content that is relevant to a specific, author-specified purpose and sufficiently important that users will likely want to be able to navigate to the section easily and to have it listed in a summary of the page. Such a page summary could be generated dynamically by a user agent or assistive technology.
+     * 
+     * **Spec**: https://w3c.github.io/aria/#landmark
+     */
+    "role": "landmark (abstract role)"
   }
   | {
     /**
@@ -457,11 +489,27 @@ type WithRole =
   }
   | {
     /**
+     * An element representing a range of values.
+     * 
+     * **Spec**: https://w3c.github.io/aria/#range
+     */
+    "role": "range (abstract role)"
+  }
+  | {
+    /**
      * A [`landmark`](https://w3c.github.io/aria/#landmark) containing content that is relevant to a specific, author-specified purpose and sufficiently important that users will likely want to be able to navigate to the section easily and to have it listed in a summary of the page. Such a page summary could be generated dynamically by a user agent or assistive technology.
      * 
      * **Spec**: https://w3c.github.io/aria/#region
      */
     "role": "region"
+  }
+  | {
+    /**
+     * The base [role](https://w3c.github.io/aria/#dfn-role) from which all other roles inherit.
+     * 
+     * **Spec**: https://w3c.github.io/aria/#roletype
+     */
+    "role": "roletype (abstract role)"
   }
   | {
     /**
@@ -513,6 +561,14 @@ type WithRole =
   }
   | {
     /**
+     * A renderable structural containment unit on a page.
+     * 
+     * **Spec**: https://w3c.github.io/aria/#section
+     */
+    "role": "section (abstract role)"
+  }
+  | {
+    /**
      * A set of user interface objects and information representing information about its closest ancestral content group. For instance, a `sectionfooter` can include information about who wrote the specific section of content, such as an [`article`](https://w3c.github.io/aria/#article). It can contain links to related documents, copyright information or other indices and colophon specific to the current section of the page.
      * 
      * **Spec**: https://w3c.github.io/aria/#sectionfooter
@@ -521,11 +577,27 @@ type WithRole =
   }
   | {
     /**
+     * A structure that labels or summarizes the topic of its related section.
+     * 
+     * **Spec**: https://w3c.github.io/aria/#sectionhead
+     */
+    "role": "sectionhead (abstract role)"
+  }
+  | {
+    /**
      * A set of user interface objects and information that represents a collection of introductory items for the element's closest ancestral content group. For instance, a `sectionheader` can include the heading, introductory statement and related meta data for a section of content, for instance a [`region`](https://w3c.github.io/aria/#region) or [`article`](https://w3c.github.io/aria/#article), within a web page.
      * 
      * **Spec**: https://w3c.github.io/aria/#sectionheader
      */
     "role": "sectionheader"
+  }
+  | {
+    /**
+     * A form widget that allows the user to make selections from a set of choices.
+     * 
+     * **Spec**: https://w3c.github.io/aria/#select
+     */
+    "role": "select (abstract role)"
   }
   | {
     /**
@@ -566,6 +638,14 @@ type WithRole =
      * **Spec**: https://w3c.github.io/aria/#strong
      */
     "role": "strong"
+  }
+  | {
+    /**
+     * A document structural [element](https://dom.spec.whatwg.org/#concept-element).
+     * 
+     * **Spec**: https://w3c.github.io/aria/#structure
+     */
+    "role": "structure (abstract role)"
   }
   | {
     /**
@@ -703,6 +783,22 @@ type WithRole =
      */
     "role": "treeitem"
   }
+  | {
+    /**
+     * An interactive component of a graphical user interface (GUI).
+     * 
+     * **Spec**: https://w3c.github.io/aria/#widget
+     */
+    "role": "widget (abstract role)"
+  }
+  | {
+    /**
+     * A browser or application window.
+     * 
+     * **Spec**: https://w3c.github.io/aria/#window
+     */
+    "role": "window (abstract role)"
+  }
 
 export interface GlobalAriaAttributes {
   role: WithRole["role"],
@@ -795,7 +891,7 @@ export interface GlobalAriaAttributes {
    */
   "aria-colspan": number | string,
   /**
-   * [Identifies](https://w3c.github.io/aria/#dfn-identifies) the [element](https://dom.spec.whatwg.org/#concept-element) (or elements) whose contents or presence are controlled by the current element. See related [`aria-owns`](https://w3c.github.io/aria/#aria-owns).
+   * [Identifies](https://w3c.github.io/aria/#dfn-identifies) the [element](https://dom.spec.whatwg.org/#concept-element) (or elements) whose contents or presence are controlled by the focused element or composite widget. See related [`aria-details`](https://w3c.github.io/aria/#aria-details) and [`aria-owns`](https://w3c.github.io/aria/#aria-owns).
    * 
    * **Type**: [ID reference list](https://w3c.github.io/aria/#valuetype_idref_list)
    * 

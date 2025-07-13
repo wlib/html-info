@@ -499,7 +499,7 @@ export interface HTMLTagToAttributes {
     /**
      * Indicates to the targeted element which action to take.
      * 
-     * **Type**: "[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)"; "[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)"; "[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)"; "[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)"; "[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)
+     * **Type**: "[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)"; "[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)"; "[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)"; "[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)"; "[`request-close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-request-close)"; "[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command
