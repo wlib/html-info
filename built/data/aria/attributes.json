@@ -6,7 +6,7 @@
     "specLink": "https://w3c.github.io/aria/#aria-activedescendant"
   },
   "aria-atomic": {
-    "description": "[Indicates](https://w3c.github.io/aria/#dfn-indicates) whether [assistive technologies](https://w3c.github.io/aria/#dfn-assistive-technologies) will present all, or only parts of, the changed region based on the change notifications defined by the [`aria-relevant`](https://w3c.github.io/aria/#aria-relevant) attribute.",
+    "description": "[Indicates](https://w3c.github.io/aria/#dfn-indicates) whether [assistive technologies](https://w3c.github.io/aria/#assistive-technology) will present all, or only parts of, the changed region based on the change notifications defined by the [`aria-relevant`](https://w3c.github.io/aria/#aria-relevant) attribute.",
     "typeDescription": "[true/false](https://w3c.github.io/aria/#valuetype_true-false)",
     "type": "string",
     "specLink": "https://w3c.github.io/aria/#aria-atomic"
@@ -66,7 +66,7 @@
     "specLink": "https://w3c.github.io/aria/#aria-colspan"
   },
   "aria-controls": {
-    "description": "[Identifies](https://w3c.github.io/aria/#dfn-identifies) the [element](https://dom.spec.whatwg.org/#concept-element) (or elements) whose contents or presence are controlled by the current element. See related [`aria-owns`](https://w3c.github.io/aria/#aria-owns).",
+    "description": "[Identifies](https://w3c.github.io/aria/#dfn-identifies) the [element](https://dom.spec.whatwg.org/#concept-element) (or elements) whose contents or presence are controlled by the focused element or composite widget. See related [`aria-details`](https://w3c.github.io/aria/#aria-details) and [`aria-owns`](https://w3c.github.io/aria/#aria-owns).",
     "typeDescription": "[ID reference list](https://w3c.github.io/aria/#valuetype_idref_list)",
     "type": "string",
     "specLink": "https://w3c.github.io/aria/#aria-controls"
@@ -174,7 +174,7 @@
     "specLink": "https://w3c.github.io/aria/#aria-level"
   },
   "aria-live": {
-    "description": "[Indicates](https://w3c.github.io/aria/#dfn-indicates) that an [element](https://dom.spec.whatwg.org/#concept-element) will be updated, and describes the types of updates the [user agents](https://infra.spec.whatwg.org/#user-agent), [assistive technologies](https://w3c.github.io/aria/#dfn-assistive-technologies), and user can expect from the [live region](https://w3c.github.io/aria/#dfn-live-region).",
+    "description": "[Indicates](https://w3c.github.io/aria/#dfn-indicates) that an [element](https://dom.spec.whatwg.org/#concept-element) will be updated or modified, and defines the priority of updates the [user agents](https://infra.spec.whatwg.org/#user-agent), [assistive technologies](https://w3c.github.io/aria/#assistive-technology), and user can expect from the [live region](https://w3c.github.io/aria/#dfn-live-region).",
     "typeDescription": "[token](https://w3c.github.io/aria/#valuetype_token)",
     "type": "string",
     "specLink": "https://w3c.github.io/aria/#aria-live"
