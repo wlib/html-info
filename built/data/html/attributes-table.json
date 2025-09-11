@@ -401,7 +401,7 @@
   "command": [
     {
       "description": "Indicates to the targeted element which action to take.",
-      "typeDescription": "\"[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)\"; \"[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)\"; \"[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)\"; \"[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)\"; \"[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)\"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)",
+      "typeDescription": "\"[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)\"; \"[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)\"; \"[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)\"; \"[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)\"; \"[`request-close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-request-close)\"; \"[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)\"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)",
       "type": "string",
       "elements": {
         "byName": {
@@ -1749,7 +1749,7 @@
   "popover": [
     {
       "description": "Makes the element a [popover](https://html.spec.whatwg.org/multipage/popover.html#attr-popover) element",
-      "typeDescription": "\"[`auto`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto)\"; \"[`manual`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-manual)\";",
+      "typeDescription": "\"[`auto`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto)\"; \"[`manual`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-manual)\"; \"[`hint`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint)\"",
       "type": "string",
       "elements": {
         "global": {
@@ -2512,7 +2512,7 @@
     },
     {
       "description": "Type of script",
-      "typeDescription": "\"`module`\"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)",
+      "typeDescription": "\"`module`\"; \"`importmap`\"; \"`speculationrules`\"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)",
       "type": "string",
       "elements": {
         "byName": {
@@ -2681,7 +2681,7 @@
   "exportparts": [
     {
       "description": "If the element is a shadow host, this is used to allow styling of parts from hosts inside the shadow tree by rules outside the shadow tree (as if they were elements in the same tree as the host, named by a part attribute).",
-      "typeDescription": "Comma-separated list of part mappings. Each part mapping is one of e.g. `innerIdent: outerIdent`, `ident` (shorthand), or `::fullyStylablePseudoElement: outerIdent`",
+      "typeDescription": "Comma-separated list of part mappings. Each part mapping is one of e.g. `innerIdent: outerIdent`, `ident` (shorthand), or `::fullyStyleablePseudoElement: outerIdent`",
       "type": "string",
       "elements": {
         "global": {

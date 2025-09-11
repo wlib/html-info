@@ -1101,6 +1101,11 @@
       }
     }
   },
+  "selectedcontent": {
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element",
+    "description": "Mirrors content from an [`option`](https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element)",
+    "specificAttributes": {}
+  },
   "slot": {
     "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element",
     "description": "Shadow tree slot",

@@ -499,7 +499,7 @@ export interface HTMLTagToAttributes {
     /**
      * Indicates to the targeted element which action to take.
      * 
-     * **Type**: "[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)"; "[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)"; "[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)"; "[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)"; "[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)
+     * **Type**: "[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)"; "[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)"; "[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)"; "[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)"; "[`request-close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-request-close)"; "[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command
@@ -2420,7 +2420,7 @@ export interface HTMLTagToAttributes {
     /**
      * Type of script
      * 
-     * **Type**: "`module`"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)
+     * **Type**: "`module`"; "`importmap`"; "`speculationrules`"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type
@@ -2584,6 +2584,14 @@ export interface HTMLTagToAttributes {
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size
      */
     "size": number | string
+  },
+  /**
+   * Mirrors content from an [`option`](https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element)
+   * 
+   * **Spec**: https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element
+   */
+  "selectedcontent": {
+    
   },
   /**
    * Shadow tree slot
