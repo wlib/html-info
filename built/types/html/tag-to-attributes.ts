@@ -224,7 +224,7 @@ export interface HTMLTagToAttributes {
     /**
      * How the element handles crossorigin requests
      * 
-     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"
+     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"; the empty string
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin
@@ -233,7 +233,7 @@ export interface HTMLTagToAttributes {
     /**
      * Hints how much buffering the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) will likely need
      * 
-     * **Type**: "[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)"; "[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)"; "[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)"
+     * **Type**: "[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)"; "[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)"; "[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)"; the empty string
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/media.html#attr-media-preload
@@ -248,6 +248,15 @@ export interface HTMLTagToAttributes {
      * - https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay
      */
     "autoplay": string,
+    /**
+     * Used when determining loading deferral
+     * 
+     * **Type**: "[`lazy`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy)"; "[`eager`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-eager)"
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/media.html#attr-media-loading
+     */
+    "loading": string,
     /**
      * Whether to loop the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource)
      * 
@@ -499,7 +508,7 @@ export interface HTMLTagToAttributes {
     /**
      * Indicates to the targeted element which action to take.
      * 
-     * **Type**: "[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)"; "[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)"; "[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)"; "[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)"; "[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)
+     * **Type**: "[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)"; "[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)"; "[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)"; "[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)"; "[`request-close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-request-close)"; "[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command
@@ -1297,7 +1306,7 @@ export interface HTMLTagToAttributes {
     /**
      * How the element handles crossorigin requests
      * 
-     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"
+     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"; the empty string
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin
@@ -1321,6 +1330,15 @@ export interface HTMLTagToAttributes {
      * - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap
      */
     "ismap": string,
+    /**
+     * Show user agent controls
+     * 
+     * **Type**: [Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls
+     */
+    "controls": string,
     /**
      * Horizontal dimension
      * 
@@ -1789,7 +1807,7 @@ export interface HTMLTagToAttributes {
     /**
      * How the element handles crossorigin requests
      * 
-     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"
+     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"; the empty string
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin
@@ -1805,9 +1823,9 @@ export interface HTMLTagToAttributes {
      */
     "rel": string,
     /**
-     * [Potential destination](https://fetch.spec.whatwg.org/#concept-potential-destination) for a preload request (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)="[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)" and [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)="[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)")
+     * Destination for a preload request (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)="[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)" and [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)="[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)")
      * 
-     * **Type**: [Potential destination](https://fetch.spec.whatwg.org/#concept-potential-destination), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)="[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)"; [script-like destination](https://fetch.spec.whatwg.org/#request-destination-script-like), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)="[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)"
+     * **Type**: [Preload destination](https://html.spec.whatwg.org/multipage/links.html#preload-destination), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)="[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)"; [module preload destination](https://html.spec.whatwg.org/multipage/links.html#module-preload-destination), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)="[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)"
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/semantics.html#attr-link-as
@@ -2420,7 +2438,7 @@ export interface HTMLTagToAttributes {
     /**
      * Type of script
      * 
-     * **Type**: "`module`"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)
+     * **Type**: "`module`"; "`importmap`"; "`speculationrules`"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type
@@ -2456,7 +2474,7 @@ export interface HTMLTagToAttributes {
     /**
      * How the element handles crossorigin requests
      * 
-     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"
+     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"; the empty string
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin
@@ -2584,6 +2602,14 @@ export interface HTMLTagToAttributes {
      * - https://html.spec.whatwg.org/multipage/form-elements.html#attr-select-size
      */
     "size": number | string
+  },
+  /**
+   * Mirrors content from an [`option`](https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element)
+   * 
+   * **Spec**: https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element
+   */
+  "selectedcontent": {
+    
   },
   /**
    * Shadow tree slot
@@ -2828,6 +2854,15 @@ export interface HTMLTagToAttributes {
      */
     "shadowrootdelegatesfocus": string,
     /**
+     * Sets [slot assignment](https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment) on a declarative shadow root
+     * 
+     * **Type**: "`named`"; "`manual`"
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment
+     */
+    "shadowrootslotassignment": string,
+    /**
      * Sets [clonable](https://dom.spec.whatwg.org/#shadowroot-clonable) on a declarative shadow root
      * 
      * **Type**: [Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)
@@ -2837,7 +2872,7 @@ export interface HTMLTagToAttributes {
      */
     "shadowrootclonable": string,
     /**
-     * Sets [serializable](https://html.spec.whatwg.org/multipage/structured-data.html#serializable) on a declarative shadow root
+     * Sets [serializable](https://dom.spec.whatwg.org/#shadowroot-serializable) on a declarative shadow root
      * 
      * **Type**: [Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)
      * 
@@ -3173,7 +3208,7 @@ export interface HTMLTagToAttributes {
     /**
      * How the element handles crossorigin requests
      * 
-     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"
+     * **Type**: "[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)"; "[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)"; the empty string
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin
@@ -3191,7 +3226,7 @@ export interface HTMLTagToAttributes {
     /**
      * Hints how much buffering the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) will likely need
      * 
-     * **Type**: "[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)"; "[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)"; "[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)"
+     * **Type**: "[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)"; "[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)"; "[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)"; the empty string
      * 
      * **Specs**:
      * - https://html.spec.whatwg.org/multipage/media.html#attr-media-preload
@@ -3215,6 +3250,15 @@ export interface HTMLTagToAttributes {
      * - https://html.spec.whatwg.org/multipage/media.html#attr-video-playsinline
      */
     "playsinline": string,
+    /**
+     * Used when determining loading deferral
+     * 
+     * **Type**: "[`lazy`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy)"; "[`eager`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-eager)"
+     * 
+     * **Specs**:
+     * - https://html.spec.whatwg.org/multipage/media.html#attr-media-loading
+     */
+    "loading": string,
     /**
      * Whether to loop the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource)
      * 

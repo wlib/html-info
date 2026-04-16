@@ -14,7 +14,7 @@
     },
     "autocorrect": {
       "description": "Recommended autocorrection behavior (for supported input methods)",
-      "typeDescription": "\"[`on`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-on)\"; \"[`off`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-off)\"",
+      "typeDescription": "\"[`on`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-on)\"; \"[`off`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-off)\"; the empty string",
       "type": "string",
       "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect"
     },
@@ -32,7 +32,7 @@
     },
     "contenteditable": {
       "description": "Whether the element is editable",
-      "typeDescription": "\"`true`\"; \"`plaintext-only`\"; \"`false`\"",
+      "typeDescription": "\"`true`\"; \"`false`\"; \"`plaintext-only`\"; the empty string",
       "type": "string",
       "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable"
     },
@@ -53,6 +53,18 @@
       "typeDescription": "\"[`enter`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-enter)\"; \"[`done`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-done)\"; \"[`go`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-go)\"; \"[`next`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-next)\"; \"[`previous`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-previous)\"; \"[`search`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-search)\"; \"[`send`](https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint-keyword-send)\"",
       "type": "string",
       "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint"
+    },
+    "headingoffset": {
+      "description": "Offsets heading levels for descendants",
+      "typeDescription": "[Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) between 0 and 8",
+      "type": "number | string",
+      "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex"
+    },
+    "headingreset": {
+      "description": "Prevents a heading offset computation from traversing beyond the element with the attribute",
+      "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+      "type": "string",
+      "specLink": "https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex"
     },
     "hidden": {
       "description": "Whether the element is relevant",
@@ -128,7 +140,7 @@
     },
     "popover": {
       "description": "Makes the element a [popover](https://html.spec.whatwg.org/multipage/popover.html#attr-popover) element",
-      "typeDescription": "\"[`auto`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto)\"; \"[`manual`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-manual)\";",
+      "typeDescription": "\"[`auto`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto)\"; \"[`manual`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-manual)\"; \"[`hint`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint)\"; the empty string",
       "type": "string",
       "specLink": "https://html.spec.whatwg.org/multipage/popover.html#attr-popover"
     },
@@ -164,7 +176,7 @@
     },
     "translate": {
       "description": "Whether the element is to be translated when the page is localized",
-      "typeDescription": "\"`yes`\"; \"`no`\"",
+      "typeDescription": "\"`yes`\"; \"`no`\"; the empty string",
       "type": "string",
       "specLink": "https://html.spec.whatwg.org/multipage/dom.html#attr-translate"
     },
@@ -182,7 +194,7 @@
     },
     "exportparts": {
       "description": "If the element is a shadow host, this is used to allow styling of parts from hosts inside the shadow tree by rules outside the shadow tree (as if they were elements in the same tree as the host, named by a part attribute).",
-      "typeDescription": "Comma-separated list of part mappings. Each part mapping is one of e.g. `innerIdent: outerIdent`, `ident` (shorthand), or `::fullyStylablePseudoElement: outerIdent`",
+      "typeDescription": "Comma-separated list of part mappings. Each part mapping is one of e.g. `innerIdent: outerIdent`, `ident` (shorthand), or `::fullyStyleablePseudoElement: outerIdent`",
       "type": "string",
       "specLink": "https://drafts.csswg.org/css-shadow-parts/#element-attrdef-html-global-exportparts"
     }
@@ -382,7 +394,7 @@
             "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin"
           ],
           "description": "How the element handles crossorigin requests",
-          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"",
+          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"; the empty string",
           "type": "string"
         },
         "preload": {
@@ -390,7 +402,7 @@
             "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload"
           ],
           "description": "Hints how much buffering the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) will likely need",
-          "typeDescription": "\"[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)\"; \"[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)\"",
+          "typeDescription": "\"[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)\"; \"[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)\"; the empty string",
           "type": "string"
         },
         "autoplay": {
@@ -399,6 +411,14 @@
           ],
           "description": "Hint that the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) can be started automatically when the page is loaded",
           "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+          "type": "string"
+        },
+        "loading": {
+          "specLinks": [
+            "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading"
+          ],
+          "description": "Used when determining loading deferral",
+          "typeDescription": "\"[`lazy`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy)\"; \"[`eager`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-eager)\"",
           "type": "string"
         },
         "loop": {
@@ -597,7 +617,7 @@
             "https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command"
           ],
           "description": "Indicates to the targeted element which action to take.",
-          "typeDescription": "\"[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)\"; \"[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)\"; \"[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)\"; \"[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)\"; \"[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)\"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)",
+          "typeDescription": "\"[`toggle-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-toggle-popover)\"; \"[`show-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-popover)\"; \"[`hide-popover`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-hide-popover)\"; \"[`close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-close)\"; \"[`request-close`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-request-close)\"; \"[`show-modal`](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-show-modal)\"; a [custom command keyword](https://html.spec.whatwg.org/multipage/form-elements.html#attr-button-command-custom)",
           "type": "string"
         },
         "commandfor": {
@@ -1240,7 +1260,7 @@
             "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-crossorigin"
           ],
           "description": "How the element handles crossorigin requests",
-          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"",
+          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"; the empty string",
           "type": "string"
         },
         "usemap": {
@@ -1256,6 +1276,14 @@
             "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap"
           ],
           "description": "Whether the image is a server-side image map",
+          "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+          "type": "string"
+        },
+        "controls": {
+          "specLinks": [
+            "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls"
+          ],
+          "description": "Show user agent controls",
           "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
           "type": "string"
         },
@@ -1672,7 +1700,7 @@
             "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-crossorigin"
           ],
           "description": "How the element handles crossorigin requests",
-          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"",
+          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"; the empty string",
           "type": "string"
         },
         "rel": {
@@ -1687,8 +1715,8 @@
           "specLinks": [
             "https://html.spec.whatwg.org/multipage/semantics.html#attr-link-as"
           ],
-          "description": "[Potential destination](https://fetch.spec.whatwg.org/#concept-potential-destination) for a preload request (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)\" and [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)\")",
-          "typeDescription": "[Potential destination](https://fetch.spec.whatwg.org/#concept-potential-destination), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)\"; [script-like destination](https://fetch.spec.whatwg.org/#request-destination-script-like), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)\"",
+          "description": "Destination for a preload request (for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)\" and [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)\")",
+          "typeDescription": "[Preload destination](https://html.spec.whatwg.org/multipage/links.html#preload-destination), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`preload`](https://html.spec.whatwg.org/multipage/links.html#link-type-preload)\"; [module preload destination](https://html.spec.whatwg.org/multipage/links.html#module-preload-destination), for [`rel`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-rel)=\"[`modulepreload`](https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload)\"",
           "type": "string"
         },
         "media": {
@@ -2203,7 +2231,7 @@
             "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type"
           ],
           "description": "Type of script",
-          "typeDescription": "\"`module`\"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)",
+          "typeDescription": "\"`module`\"; \"`importmap`\"; \"`speculationrules`\"; a [valid MIME type string](https://mimesniff.spec.whatwg.org/#valid-mime-type) that is not a [JavaScript MIME type essence match](https://mimesniff.spec.whatwg.org/#javascript-mime-type-essence-match)",
           "type": "string"
         },
         "nomodule": {
@@ -2235,7 +2263,7 @@
             "https://html.spec.whatwg.org/multipage/scripting.html#attr-script-crossorigin"
           ],
           "description": "How the element handles crossorigin requests",
-          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"",
+          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"; the empty string",
           "type": "string"
         },
         "integrity": {
@@ -2343,6 +2371,11 @@
           "type": "number | string"
         }
       }
+    },
+    "selectedcontent": {
+      "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element",
+      "description": "Mirrors content from an [`option`](https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element)",
+      "specificAttributes": {}
     },
     "slot": {
       "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element",
@@ -2540,6 +2573,14 @@
           "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
           "type": "string"
         },
+        "shadowrootslotassignment": {
+          "specLinks": [
+            "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment"
+          ],
+          "description": "Sets [slot assignment](https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment) on a declarative shadow root",
+          "typeDescription": "\"`named`\"; \"`manual`\"",
+          "type": "string"
+        },
         "shadowrootclonable": {
           "specLinks": [
             "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable"
@@ -2552,7 +2593,7 @@
           "specLinks": [
             "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootserializable"
           ],
-          "description": "Sets [serializable](https://html.spec.whatwg.org/multipage/structured-data.html#serializable) on a declarative shadow root",
+          "description": "Sets [serializable](https://dom.spec.whatwg.org/#shadowroot-serializable) on a declarative shadow root",
           "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
           "type": "string"
         },
@@ -2834,7 +2875,7 @@
             "https://html.spec.whatwg.org/multipage/media.html#attr-media-crossorigin"
           ],
           "description": "How the element handles crossorigin requests",
-          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"",
+          "typeDescription": "\"[`anonymous`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-anonymous-keyword)\"; \"[`use-credentials`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-crossorigin-use-credentials-keyword)\"; the empty string",
           "type": "string"
         },
         "poster": {
@@ -2850,7 +2891,7 @@
             "https://html.spec.whatwg.org/multipage/media.html#attr-media-preload"
           ],
           "description": "Hints how much buffering the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) will likely need",
-          "typeDescription": "\"[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)\"; \"[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)\"",
+          "typeDescription": "\"[`none`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-none)\"; \"[`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-metadata)\"; \"[`auto`](https://html.spec.whatwg.org/multipage/media.html#attr-media-preload-auto)\"; the empty string",
           "type": "string"
         },
         "autoplay": {
@@ -2867,6 +2908,14 @@
           ],
           "description": "Encourage the user agent to display video content within the element's playback area",
           "typeDescription": "[Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)",
+          "type": "string"
+        },
+        "loading": {
+          "specLinks": [
+            "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading"
+          ],
+          "description": "Used when determining loading deferral",
+          "typeDescription": "\"[`lazy`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-lazy)\"; \"[`eager`](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#attr-loading-eager)\"",
           "type": "string"
         },
         "loop": {

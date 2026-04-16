@@ -18,7 +18,7 @@ export interface HTMLGlobalAttributes {
   /**
    * Recommended autocorrection behavior (for supported input methods)
    * 
-   * **Type**: "[`on`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-on)"; "[`off`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-off)"
+   * **Type**: "[`on`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-on)"; "[`off`](https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect-off)"; the empty string
    * 
    * **Spec**: https://html.spec.whatwg.org/multipage/interaction.html#attr-autocorrect
    */
@@ -42,7 +42,7 @@ export interface HTMLGlobalAttributes {
   /**
    * Whether the element is editable
    * 
-   * **Type**: "`true`"; "`plaintext-only`"; "`false`"
+   * **Type**: "`true`"; "`false`"; "`plaintext-only`"; the empty string
    * 
    * **Spec**: https://html.spec.whatwg.org/multipage/interaction.html#attr-contenteditable
    */
@@ -71,6 +71,22 @@ export interface HTMLGlobalAttributes {
    * **Spec**: https://html.spec.whatwg.org/multipage/interaction.html#attr-enterkeyhint
    */
   "enterkeyhint": string,
+  /**
+   * Offsets heading levels for descendants
+   * 
+   * **Type**: [Valid non-negative integer](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-non-negative-integer) between 0 and 8
+   * 
+   * **Spec**: https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex
+   */
+  "headingoffset": number | string,
+  /**
+   * Prevents a heading offset computation from traversing beyond the element with the attribute
+   * 
+   * **Type**: [Boolean attribute](https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attribute)
+   * 
+   * **Spec**: https://html.spec.whatwg.org/multipage/interaction.html#attr-tabindex
+   */
+  "headingreset": string,
   /**
    * Whether the element is relevant
    * 
@@ -170,7 +186,7 @@ export interface HTMLGlobalAttributes {
   /**
    * Makes the element a [popover](https://html.spec.whatwg.org/multipage/popover.html#attr-popover) element
    * 
-   * **Type**: "[`auto`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto)"; "[`manual`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-manual)";
+   * **Type**: "[`auto`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-auto)"; "[`manual`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-manual)"; "[`hint`](https://html.spec.whatwg.org/multipage/popover.html#attr-popover-hint)"; the empty string
    * 
    * **Spec**: https://html.spec.whatwg.org/multipage/popover.html#attr-popover
    */
@@ -218,7 +234,7 @@ export interface HTMLGlobalAttributes {
   /**
    * Whether the element is to be translated when the page is localized
    * 
-   * **Type**: "`yes`"; "`no`"
+   * **Type**: "`yes`"; "`no`"; the empty string
    * 
    * **Spec**: https://html.spec.whatwg.org/multipage/dom.html#attr-translate
    */
@@ -242,7 +258,7 @@ export interface HTMLGlobalAttributes {
   /**
    * If the element is a shadow host, this is used to allow styling of parts from hosts inside the shadow tree by rules outside the shadow tree (as if they were elements in the same tree as the host, named by a part attribute).
    * 
-   * **Type**: Comma-separated list of part mappings. Each part mapping is one of e.g. `innerIdent: outerIdent`, `ident` (shorthand), or `::fullyStylablePseudoElement: outerIdent`
+   * **Type**: Comma-separated list of part mappings. Each part mapping is one of e.g. `innerIdent: outerIdent`, `ident` (shorthand), or `::fullyStyleablePseudoElement: outerIdent`
    * 
    * **Spec**: https://drafts.csswg.org/css-shadow-parts/#element-attrdef-html-global-exportparts
    */

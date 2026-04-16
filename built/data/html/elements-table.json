@@ -98,6 +98,9 @@
       "autoplay": {
         "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-autoplay"
       },
+      "loading": {
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading"
+      },
       "loop": {
         "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop"
       },
@@ -581,6 +584,9 @@
       },
       "ismap": {
         "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-ismap"
+      },
+      "controls": {
+        "specLink": "https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-controls"
       },
       "width": {
         "specLink": "https://html.spec.whatwg.org/multipage/embedded-content-other.html#attr-dim-width"
@@ -1101,6 +1107,11 @@
       }
     }
   },
+  "selectedcontent": {
+    "specLink": "https://html.spec.whatwg.org/multipage/form-elements.html#the-selectedcontent-element",
+    "description": "Mirrors content from an [`option`](https://html.spec.whatwg.org/multipage/form-elements.html#the-option-element)",
+    "specificAttributes": {}
+  },
   "slot": {
     "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#the-slot-element",
     "description": "Shadow tree slot",
@@ -1213,6 +1224,9 @@
       },
       "shadowrootdelegatesfocus": {
         "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootdelegatesfocus"
+      },
+      "shadowrootslotassignment": {
+        "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootslotassignment"
       },
       "shadowrootclonable": {
         "specLink": "https://html.spec.whatwg.org/multipage/scripting.html#attr-template-shadowrootclonable"
@@ -1377,6 +1391,9 @@
       },
       "playsinline": {
         "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-video-playsinline"
+      },
+      "loading": {
+        "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loading"
       },
       "loop": {
         "specLink": "https://html.spec.whatwg.org/multipage/media.html#attr-media-loop"
